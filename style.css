@@ -1,54 +1,62 @@
+nav {
+  background-color:peachpuff;
+  overflow-wrap: break-word;
+}
 
+nav > ol > li {
+  float:left;
+  margin: 10px;
+}
 
-body{
-  width: 90%;
-  padding: 0px 10px 0px 10px;
-  border: 2px solid rgba(220, 220, 220, 0.849);
+body {
+  padding: 5px 20px 5px 20px;
+  font-family: 'Open Sans', sans-serif;
   
 }
 
+h2.name{
+  text-transform: uppercase;
+  text-align:center;
+  background-color: peachpuff;
+  font-size: 28px;
+  font-family: 'Open Sans',sans-serif;
+}
+
 hr {
-  color: orange;
-
+ clear:both;
+ border-radius: 20px;
+ background-color: gainsboro;
+ height: 10px;
+ border: none;
 }
 
-h2{
-  border: rgb(184, 84, 84) 2px solid;
-  color: white;
-  background-color: rgb(184, 84, 84);
+div.card{
+  float:left;
+  background-color:whitesmoke;
+  margin: 0px 50px 0px 50px;
+  width: 50em;
+}
+
+div.card > H3{
+  background-color:blueviolet;
+  color:white;
   text-transform: uppercase;
-  box-shadow: 0px 10px 20px 0px;
+  padding-left: 10px;
 }
 
-h3{
-  border-style: 4px double black;
-  text-transform: uppercase;
+ol li{
+  list-style-type:none;
 }
 
-a.linkedin img {
- float:right;
- width: 5%;
+ol.card-list > li{
+  float:left;
+  background-color:whitesmoke;
+  margin: 0px 10px 5px 10px;
+  overflow-wrap: break-word; 
+  width:200px;
+  
 }
 
-img {
-  float: right;
-  width: 25%;
-  border-style: solid 4px red;
-}
-
-table{
-  border: 3px solid rgb(39, 38, 38);
- }
-
-tr.toprow {
-  background-color: rgb(226, 148, 148);
-  font-family: cursive;
-  text-transform: uppercase;
-}
-
-
-p.ipsom{
-  background-color: gainsboro;
-  width: 80%;
-  padding: 0px, 10px, 0px, 10px;
+ol.card-list > h3.orange {
+  background-color:orange;
 }
