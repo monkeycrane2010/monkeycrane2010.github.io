@@ -17,7 +17,7 @@ body {
 h2.name{
   text-transform: uppercase;
   text-align:center;
-  background-color: peachpuff;
+  background-color:whitesmoke;
   font-size: 28px;
   font-family: 'Open Sans',sans-serif;
 }
@@ -25,7 +25,7 @@ h2.name{
 hr {
  clear:both;
  border-radius: 20px;
- background-color:blueviolet;
+ background-color:whitesmoke;
  height: 10px;
  border: none;
 }
