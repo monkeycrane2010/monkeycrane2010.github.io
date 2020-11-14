@@ -17,9 +17,10 @@ body {
 h2.name{
   text-transform: uppercase;
   text-align:center;
-  background-color:whitesmoke;
+  background-color:blueviolet;
   font-size: 28px;
   font-family: 'Open Sans',sans-serif;
+  color:white;
 }
 
 hr {
