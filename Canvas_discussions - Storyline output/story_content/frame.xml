@@ -28,8 +28,8 @@
           <optionlist name="tabs">
             <listitems>
               <listitem name="resources" value="false" group="linkright" />
-              <listitem name="outline" value="true" group="linkright" />
               <listitem name="transcript" value="true" group="sidebar" />
+              <listitem name="outline" value="true" group="sidebar" />
               <listitem name="glossary" value="false" group="sidebar" />
             </listitems>
           </optionlist>
