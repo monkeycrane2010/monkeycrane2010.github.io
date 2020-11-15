@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns10111000101" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns10111001101" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
   <layouts>
-    <layout name="npnxnanbsnfns10111000101" font="Open Sans" controllayout="npnxnanbsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
-    <layout name="pxabnsnfns10111000101" font="Open Sans" controllayout="pxabnsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
-    <layout name="npxnabnsnfns10111000101" font="Open Sans" controllayout="npxnabnsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
-    <layout name="npnxnanbnsnfns10111000101" font="Open Sans" controllayout="npnxnanbnsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
-    <layout name="pxabnsnfns10111000100" font="Open Sans" controllayout="pxabnsnfns10111000100" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
+    <layout name="npnxnanbsnfns10111001101" font="Open Sans" controllayout="npnxnanbsnfns10111001101" colorscheme="pxabnsnfns10111001101" string_table="pxabnsnfns10111001101" />
+    <layout name="pxabnsnfns10111001101" font="Open Sans" controllayout="pxabnsnfns10111001101" colorscheme="pxabnsnfns10111001101" string_table="pxabnsnfns10111001101" />
+    <layout name="npxnabnsnfns10111001101" font="Open Sans" controllayout="npxnabnsnfns10111001101" colorscheme="pxabnsnfns10111001101" string_table="pxabnsnfns10111001101" />
+    <layout name="npnxnanbnsnfns10111001101" font="Open Sans" controllayout="npnxnanbnsnfns10111001101" colorscheme="pxabnsnfns10111001101" string_table="pxabnsnfns10111001101" />
+    <layout name="pxabnsnfns10111001100" font="Open Sans" controllayout="pxabnsnfns10111001100" colorscheme="pxabnsnfns10111001101" string_table="pxabnsnfns10111001101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -28,9 +28,9 @@
           <optionlist name="tabs">
             <listitems>
               <listitem name="resources" value="false" group="linkright" />
-              <listitem name="outline" value="true" group="sidebar" />
+              <listitem name="outline" value="true" group="linkright" />
+              <listitem name="transcript" value="true" group="sidebar" />
               <listitem name="glossary" value="false" group="sidebar" />
-              <listitem name="transcript" value="false" group="sidebar" />
             </listitems>
           </optionlist>
           <option name="time_enabled" value="false">
@@ -82,7 +82,7 @@
     </optiongroups>
   </control_options>
   <control_layouts>
-    <control_layout name="npnxnanbsnfns10111000101">
+    <control_layout name="npnxnanbsnfns10111001101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -97,7 +97,7 @@
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
+      <control name="transcript" enabled="true" />
       <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
@@ -105,7 +105,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns10111000101">
+    <control_layout name="pxabnsnfns10111001101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -120,7 +120,7 @@
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
+      <control name="transcript" enabled="true" />
       <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
@@ -128,7 +128,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npxnabnsnfns10111000101">
+    <control_layout name="npxnabnsnfns10111001101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -143,7 +143,7 @@
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
+      <control name="transcript" enabled="true" />
       <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
@@ -151,7 +151,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npnxnanbnsnfns10111000101">
+    <control_layout name="npnxnanbnsnfns10111001101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -166,7 +166,7 @@
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
+      <control name="transcript" enabled="true" />
       <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
@@ -174,7 +174,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns10111000100">
+    <control_layout name="pxabnsnfns10111001100">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -189,7 +189,7 @@
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
+      <control name="transcript" enabled="true" />
       <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
@@ -199,7 +199,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="pxabnsnfns10111000101">
+    <colorscheme name="pxabnsnfns10111001101">
       <color_group name="infopanel">
         <group_colors>
           <color name="link_text">
@@ -1103,53 +1103,53 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="pxabnsnfns10111000101">
+    <string_table name="pxabnsnfns10111001101">
       <string id="acc_active">active</string>
-      <string id="acc_closed_captions">Closed captions. Press the spacebar to toggle captions on and off.</string>
-      <string id="acc_definition">definition</string>
-      <string id="acc_finish">finish</string>
-      <string id="acc_next">next</string>
-      <string id="acc_pause">pause</string>
-      <string id="acc_play">play</string>
-      <string id="acc_previous">previous</string>
-      <string id="acc_replay">replay</string>
-      <string id="acc_resources">resources</string>
-      <string id="acc_search_input">search</string>
-      <string id="acc_skipnavigation">Skip navigation. Press enter to return to the slide.</string>
-      <string id="acc_submit">submit</string>
-      <string id="acc_submitall">submit all</string>
-      <string id="acc_volume">volume</string>
-      <string id="bio">Bio</string>
       <string id="check_include">Check to include</string>
       <string id="clear">Clear and return to menu</string>
       <string id="close">Close</string>
-      <string id="closed_captions">Captions</string>
+      <string id="acc_closed_captions">Closed captions. Press the spacebar to toggle captions on and off.</string>
       <string id="continue">Continue</string>
       <string id="continueresponsive">Continue</string>
-      <string id="definition">Definition</string>
-      <string id="disabled_orientation">Please rotate your device</string>
       <string id="exit">Exit</string>
       <string id="filter">Filter</string>
       <string id="finish">FINISH</string>
+      <string id="acc_finish">finish</string>
+      <string id="definition">Definition</string>
+      <string id="acc_definition">definition</string>
       <string id="glossary">Glossary</string>
-      <string id="more_info">More info</string>
-      <string id="next">NEXT</string>
+      <string id="terms">Terms</string>
       <string id="outline">Menu</string>
+      <string id="disabled_orientation">Please rotate your device</string>
+      <string id="next">NEXT</string>
+      <string id="acc_next">next</string>
+      <string id="transcript_chk">Notes</string>
+      <string id="transcript">Notes</string>
+      <string id="bio">Bio</string>
+      <string id="more_info">More info</string>
+      <string id="closed_captions">Captions</string>
+      <string id="acc_pause">pause</string>
+      <string id="acc_play">play</string>
+      <string id="send_an_email">Send an email</string>
       <string id="prev">PREV</string>
+      <string id="acc_previous">previous</string>
       <string id="question_list">Question List</string>
+      <string id="acc_replay">replay</string>
       <string id="resources">Resources</string>
+      <string id="acc_resources">resources</string>
       <string id="restart">Restart</string>
       <string id="resume">Resume</string>
       <string id="search">Search...</string>
+      <string id="acc_search_input">search</string>
       <string id="search_in">Search in:</string>
       <string id="search_results">Search Results</string>
-      <string id="send_an_email">Send an email</string>
+      <string id="acc_skipnavigation">Skip navigation. Press enter to return to the slide.</string>
       <string id="slide_text_chk">Slide Text</string>
-      <string id="submit">SUBMIT</string>
       <string id="submitall">SUBMIT ALL</string>
-      <string id="terms">Terms</string>
-      <string id="transcript">Notes</string>
-      <string id="transcript_chk">Notes</string>
+      <string id="acc_submitall">submit all</string>
+      <string id="submit">SUBMIT</string>
+      <string id="acc_submit">submit</string>
+      <string id="acc_volume">volume</string>
     </string_table>
   </string_tables>
   <fonts>
@@ -1179,6 +1179,13 @@
     </outline>
   </nav_data>
   <resource_data description="" />
-  <transcript_data />
+  <transcript_data>
+    <slidetranscripts>
+      <slidetranscript slideid="61uYbx7Wzvu.5cauyl8Fkww" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="0">&lt;html&gt;&lt;p align='left' style='text-align:left;direction: ltr; padding-left: 0px'&gt;&lt;textformat leading='0' tabstops='[0, 48, 96, 144]'&gt;&lt;font face='Open Sans' size='12.5pt' style="font-size:12.5pt;" color='#ffffff'&gt; Hello and welcome to our presentation on peer&lt;br&gt;&lt;/font&gt;&lt;/textformat&gt;&lt;/p&gt;&lt;p align='left' style='text-align:left;direction: ltr; padding-left: 0px'&gt;&lt;textformat leading='0' tabstops='[0, 48, 96, 144]'&gt;&lt;font face='Open Sans' size='12.5pt' style="font-size:12.5pt;" color='#ffffff'&gt;discussion boards. &lt;/font&gt;&lt;/textformat&gt;&lt;/p&gt;&lt;/html&gt;</slidetranscript>
+      <slidetranscript slideid="61uYbx7Wzvu.6UtZEJnpBQh" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="1">&lt;html&gt;&lt;p align='left' style='text-align:left;direction: ltr; padding-left: 0px'&gt;&lt;textformat leading='0' tabstops='[0, 48, 96, 144]'&gt;&lt;font face='Open Sans' size='12.5pt' style="font-size:12.5pt;" color='#ffffff'&gt;When you&amp;#39;re in the class, does everyone get a turn to ask a question?&lt;br&gt;&lt;/font&gt;&lt;font face='Open Sans' size='12.5pt' style="font-size:12.5pt;" color='#ffffff'&gt;How about sharing their ideas?&lt;br&gt;&lt;/font&gt;&lt;/textformat&gt;&lt;/p&gt;&lt;/html&gt;</slidetranscript>
+      <slidetranscript slideid="61uYbx7Wzvu.5htd8xI6EUg" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="2">&lt;html&gt;&lt;p align='left' style='text-align:left;direction: ltr; padding-left: 0px'&gt;&lt;textformat leading='0' tabstops='[0, 48, 96, 144]'&gt;&lt;font face='Open Sans' size='12.5pt' style="font-size:12.5pt;" color='#ffffff'&gt; Often times, we as educators, don&amp;#39;t have enough time to answer each person&amp;#39;s question during the live sesssion&lt;/font&gt;&lt;/textformat&gt;&lt;/p&gt;&lt;/html&gt;</slidetranscript>
+      <slidetranscript slideid="61uYbx7Wzvu.6oEBScQqL3x" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="3">&lt;html&gt;&lt;p align='left' style='text-align:left;direction: ltr; padding-left: 0px'&gt;&lt;textformat leading='0' tabstops='[0, 48, 96, 144]'&gt;&lt;font face='Open Sans' size='12.5pt' style="font-size:12.5pt;" color='#ffffff'&gt;We need to provide a space for students to ask questions and share their different viewpoints  &lt;br&gt;&lt;/font&gt;&lt;/textformat&gt;&lt;/p&gt;&lt;p align='left' style='text-align:left;direction: ltr; padding-left: 0px'&gt;&lt;textformat leading='0' tabstops='[0, 48, 96, 144]'&gt;&lt;font face='Open Sans' size='12.5pt' style="font-size:12.5pt;" color='#ffffff'&gt;One tool we can use, is the discussion boards which are open 24 / 7 and allow for text communication and for students to share their files or link to other resources. &lt;br&gt;&lt;/font&gt;&lt;/textformat&gt;&lt;/p&gt;&lt;p align='left' style='text-align:left;direction: ltr; padding-left: 0px'&gt;&lt;textformat leading='0' tabstops='[0, 48, 96, 144]'&gt;&lt;font face='Open Sans' size='12.5pt' style="font-size:12.5pt;" color='#ffffff'&gt;Instructors and TAs can also jump into the conversation to post their views or add a comment&lt;br&gt;&lt;/font&gt;&lt;/textformat&gt;&lt;/p&gt;&lt;/html&gt;</slidetranscript>
+    </slidetranscripts>
+  </transcript_data>
   <glossary_data />
 </bwFrame>
