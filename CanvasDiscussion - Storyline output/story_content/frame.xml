@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npnxnanbsnfns10111100101" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns10111000101" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
   <layouts>
-    <layout name="npnxnanbsnfns10111100101" font="Open Sans" controllayout="npnxnanbsnfns10111100101" colorscheme="npnxnanbsnfns10111100101" string_table="npnxnanbsnfns10111100101" />
-    <layout name="pxabnsnfns10111100101" font="Open Sans" controllayout="pxabnsnfns10111100101" colorscheme="npnxnanbsnfns10111100101" string_table="npnxnanbsnfns10111100101" />
-    <layout name="npxnabnsnfns10111100101" font="Open Sans" controllayout="npxnabnsnfns10111100101" colorscheme="npnxnanbsnfns10111100101" string_table="npnxnanbsnfns10111100101" />
-    <layout name="npnxnanbnsnfns10111100101" font="Open Sans" controllayout="npnxnanbnsnfns10111100101" colorscheme="npnxnanbsnfns10111100101" string_table="npnxnanbsnfns10111100101" />
-    <layout name="pxabnsnfns10111100100" font="Open Sans" controllayout="pxabnsnfns10111100100" colorscheme="npnxnanbsnfns10111100101" string_table="npnxnanbsnfns10111100101" />
+    <layout name="npnxnanbsnfns10111000101" font="Open Sans" controllayout="npnxnanbsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
+    <layout name="pxabnsnfns10111000101" font="Open Sans" controllayout="pxabnsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
+    <layout name="npxnabnsnfns10111000101" font="Open Sans" controllayout="npxnabnsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
+    <layout name="npnxnanbnsnfns10111000101" font="Open Sans" controllayout="npnxnanbnsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
+    <layout name="pxabnsnfns10111000100" font="Open Sans" controllayout="pxabnsnfns10111000100" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -28,7 +28,7 @@
           <optionlist name="tabs">
             <listitems>
               <listitem name="outline" value="true" group="sidebar" />
-              <listitem name="resources" value="true" group="sidebar" />
+              <listitem name="resources" value="false" group="sidebar" />
               <listitem name="glossary" value="false" group="sidebar" />
               <listitem name="transcript" value="false" group="sidebar" />
             </listitems>
@@ -82,7 +82,7 @@
     </optiongroups>
   </control_options>
   <control_layouts>
-    <control_layout name="npnxnanbsnfns10111100101">
+    <control_layout name="npnxnanbsnfns10111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -95,7 +95,7 @@
       <control name="submit" enabled="true" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -105,7 +105,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns10111100101">
+    <control_layout name="pxabnsnfns10111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -118,7 +118,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -128,7 +128,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npxnabnsnfns10111100101">
+    <control_layout name="npxnabnsnfns10111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -141,7 +141,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -151,7 +151,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npnxnanbnsnfns10111100101">
+    <control_layout name="npnxnanbnsnfns10111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -164,7 +164,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -174,7 +174,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns10111100100">
+    <control_layout name="pxabnsnfns10111000100">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -187,7 +187,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -199,7 +199,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="npnxnanbsnfns10111100101">
+    <colorscheme name="pxabnsnfns10111000101">
       <color_group name="infopanel">
         <group_colors>
           <color name="link_text">
@@ -1105,7 +1105,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="npnxnanbsnfns10111100101">
+    <string_table name="pxabnsnfns10111000101">
       <string id="acc_active">active</string>
       <string id="check_include">Check to include</string>
       <string id="clear">Clear and return to menu</string>
@@ -1166,25 +1166,21 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.5mBpA0pgaYo" displaytext="Untitled Scene" expand="true" type="slide">
+        <slidelink slideid="_player.6bUbJBQQ7Kn" displaytext="Canvas_DiscussionBoard" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.5mBpA0pgaYo.6lLzfnNMET9" displaytext="Q: Think of a time you were a learner at a workshop or class. What were the reasons someone raised their hand, during the presentation? (select any)" expand="false" type="slide" />
-            <slidelink slideid="_player.5mBpA0pgaYo.68XL6LB26RR" displaytext="Untitled Slide" expand="false" type="slide" />
-            <slidelink slideid="_player.5mBpA0pgaYo.5ga3LRxFkeR" displaytext="Untitled Slide" expand="false" type="slide" />
-            <slidelink slideid="_player.5mBpA0pgaYo.6nmokMVygIh" displaytext="Untitled Slide" expand="false" type="slide" />
-            <slidelink slideid="_player.5mBpA0pgaYo.6rIE8ohwodr" displaytext="Untitled Slide" expand="false" type="slide" />
-            <slidelink slideid="_player.5mBpA0pgaYo.6cUsVCZj006" displaytext="Untitled Slide" expand="false" type="slide" />
+            <slidelink slideid="_player.6bUbJBQQ7Kn.5qqYeI05qAy" displaytext="Title" expand="false" type="slide" />
+            <slidelink slideid="_player.6bUbJBQQ7Kn.6lLzfnNMET9" displaytext="Q: Think of a time you were a learner at a workshop or class. What were the reasons someone raised their hand, during the presentation? (select any)" expand="false" type="slide" />
+            <slidelink slideid="_player.6bUbJBQQ7Kn.5eNHHkxWj7P" displaytext="Untitled Slide" expand="false" type="slide" />
+            <slidelink slideid="_player.6bUbJBQQ7Kn.6NA3SoN9zjV" displaytext="Untitled Slide" expand="false" type="slide" />
+            <slidelink slideid="_player.6bUbJBQQ7Kn.6WWfLtg80Wb" displaytext="Untitled Slide" expand="false" type="slide" />
+            <slidelink slideid="_player.6bUbJBQQ7Kn.5YwJJiqpiS3" displaytext="Demo" expand="false" type="slide" />
+            <slidelink slideid="_player.6bUbJBQQ7Kn.6Uxy2878I3a" displaytext="Video tutorial from Canvas" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
     </outline>
   </nav_data>
-  <resource_data description="&lt;p align='left'&gt;&lt;font face='Open Sans' style='font-size: 11px;' size='11' color='#FFFFFF'&gt;Here are some useful links and documents:&lt;/font&gt;&lt;/p&gt;">
-    <resources>
-      <resource url="https://community.canvaslms.com/t5/Video-Guide/Discussions-Overview-Students/ta-p/383515" image="story_content/url.png" title="Post a response (video) - Canvas Student Guide" />
-      <resource url="https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-reply-to-a-discussion-as-an-instructor/ta-p/1110" image="story_content/url.png" title="Posting to a discussion board as an instructor" />
-    </resources>
-  </resource_data>
+  <resource_data description="" />
   <transcript_data />
   <glossary_data />
 </bwFrame>
