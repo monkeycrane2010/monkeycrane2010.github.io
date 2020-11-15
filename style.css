@@ -31,6 +31,16 @@ hr {
  border: none;
 }
 
+table{
+  margin: 0px 50px 10px 50px;
+}
+
+table tr:nth-child(1) {
+  background-color:rgb(224, 222, 217);
+  font-weight: bold;
+  font-family: 'Open Sans',sans-serif;
+}
+
 div.card{
   float:left;
   background-color:whitesmoke;
