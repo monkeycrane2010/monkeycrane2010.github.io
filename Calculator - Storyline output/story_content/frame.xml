@@ -1174,15 +1174,11 @@
             <slidelink slideid="_player.5yinX8Ojl8i.6iotmfcgkOt" displaytext="Frog" expand="false" type="slide" />
           </links>
         </slidelink>
+        <slidelink slideid="_player.5nNcBoA8u27.6rU2SE9RG8F" displaytext="Monk" expand="false" type="slide" />
+        <slidelink slideid="_player.5nNcBoA8u27.5YEschjgKmC" displaytext="Chatty monkey" expand="false" type="slide" />
         <slidelink slideid="_player.68g0CWeNdBK" displaytext="QUIZ" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.68g0CWeNdBK.5sSfFELoheE" displaytext="Drag and Drop" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="_player.5nNcBoA8u27" displaytext="icons" expand="true" type="slide">
-          <links>
-            <slidelink slideid="_player.5nNcBoA8u27.6rU2SE9RG8F" displaytext="Monk" expand="false" type="slide" />
-            <slidelink slideid="_player.5nNcBoA8u27.5YEschjgKmC" displaytext="Chatty monkey" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
