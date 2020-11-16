@@ -72,3 +72,14 @@ ol.card-list > li{
 ol.card-list > h3.orange {
   background-color:orange;
 }
+
+p#javascript {
+  font-family: 'Pangolin', cursive;
+  font-size: 16px;
+}
+
+h4#javascript {
+  font-family: 'Pangolin', cursive;
+  color:rgb(204, 124, 19);
+  text-transform:uppercase;
+}
