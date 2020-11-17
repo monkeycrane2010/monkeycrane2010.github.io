@@ -73,13 +73,37 @@ ol.card-list > h3.orange {
   background-color:orange;
 }
 
-p#javascript {
+p#cuckoo{
   font-family: 'Pangolin', cursive;
   font-size: 16px;
 }
 
-h4#javascript {
+h4#cuckoo {
   font-family: 'Pangolin', cursive;
   color:rgb(204, 124, 19);
   text-transform:uppercase;
+}
+
+#myCanvas{
+  background-color:gainsboro;
+}
+
+button.threebuttons {
+  border-radius: 40%;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  background-color:greenyellow;
+  width: 120px;
+  height: 75px;
+  float:left;
+  margin: 0px 5px 0px 5px;
+}
+
+button.threebuttons:nth-last-child(3){
+  background-color:rgb(144, 165, 233);
+}
+
+button.threebuttons:hover{
+  background-color: white;
 }
