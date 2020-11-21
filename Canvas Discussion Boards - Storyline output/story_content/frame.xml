@@ -29,21 +29,14 @@
             <listitems>
               <listitem name="customlink" value="true" group="linkright">
                 <properties>
-                  <property name="title" value="Switch to VERTICAL" />
-                  <property name="data" value="6QOVb3O7gYi" />
-                  <property name="ignoreSlideLock" value="true" />
-                </properties>
-              </listitem>
-              <listitem name="customlink" value="true" group="linkright">
-                <properties>
                   <property name="title" value="go to Canvas Community site" />
                   <property name="data" value="5kFXr3yxQMP" />
                   <property name="ignoreSlideLock" value="true" />
                 </properties>
               </listitem>
-              <listitem name="resources" value="false" group="linkright" />
-              <listitem name="outline" value="true" group="sidebar" />
               <listitem name="transcript" value="true" group="sidebar" />
+              <listitem name="outline" value="true" group="sidebar" />
+              <listitem name="resources" value="false" group="sidebar" />
               <listitem name="glossary" value="false" group="sidebar" />
             </listitems>
           </optionlist>
@@ -1178,14 +1171,9 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.6oDv6WhBLxs" displaytext="Desktop" expand="true" type="slide">
+        <slidelink slideid="_player.6oDv6WhBLxs" displaytext="Horizontal (view)" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6oDv6WhBLxs.5ZU9IZ0eVlf" displaytext="Activity - YOUR TURN" expand="false" type="slide" />
-          </links>
-        </slidelink>
-        <slidelink slideid="" displaytext="Vertical" expand="true" type="slide" />
-        <slidelink slideid="_player.6oDv6WhBLxs" displaytext="Tutorial" expand="true" type="slide">
-          <links>
             <slidelink slideid="_player.6oDv6WhBLxs.5ohuDAXxPOE" displaytext="Tutorial" expand="false" type="slide" />
           </links>
         </slidelink>
@@ -1197,7 +1185,6 @@
     <slidetranscripts>
       <slidetranscript slideid="6oDv6WhBLxs.5ZU9IZ0eVlf" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="0">&lt;html&gt;&lt;p align='left' style='text-align:left;direction: ltr; padding-left: 0px'&gt;&lt;textformat leading='0' tabstops='[0, 48, 96, 144]'&gt;&lt;font face='Open Sans' size='12.5pt' style="font-size:12.5pt;" color='#ffffff'&gt;TaDa sound effect - https://freesound.org/people/plasterbrain/sounds/397355/&lt;/font&gt;&lt;/textformat&gt;&lt;/p&gt;&lt;/html&gt;</slidetranscript>
       <slidetranscript slideid="6oDv6WhBLxs.5ohuDAXxPOE" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="1">&lt;html&gt;&lt;p align='left' style='text-align:left;direction: ltr; padding-left: 0px'&gt;&lt;textformat leading='0' tabstops='[0, 48, 96, 144]'&gt;&lt;font face='Open Sans' size='12.5pt' style="font-size:12.5pt;" color='#ffffff'&gt;Pop up card – video credit  https://pixabay.com/videos/restaurant-couple-bokeh-blur-6409/&lt;/font&gt;&lt;/textformat&gt;&lt;/p&gt;&lt;p align='left' style='text-align:left;direction: ltr; padding-left: 0px'&gt;&lt;textformat leading='0' tabstops='[0, 48, 96, 144]'&gt;&lt;/textformat&gt;&lt;/p&gt;&lt;p align='left' style='text-align:left;direction: ltr; padding-left: 0px'&gt;&lt;textformat leading='0' tabstops='[0, 48, 96, 144]'&gt;&lt;font face='Open Sans' size='12.5pt' style="font-size:12.5pt;" color='#ffffff'&gt;Pop up card - video credit   https://pixabay.com/videos/reading-book-baby-education-4953/&lt;/font&gt;&lt;/textformat&gt;&lt;/p&gt;&lt;/html&gt;</slidetranscript>
-      <slidetranscript slideid="6UK9ZFlPdWZ.6JCJJzZeAYh" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="0">&lt;html&gt;&lt;p align='left' style='text-align:left;direction: ltr; padding-left: 0px'&gt;&lt;textformat leading='0' tabstops='[0, 48, 96, 144]'&gt;&lt;font face='Open Sans' size='12.5pt' style="font-size:12.5pt;" color='#ffffff'&gt;TaDa sound effect - https://freesound.org/people/plasterbrain/sounds/397355/&lt;/font&gt;&lt;/textformat&gt;&lt;/p&gt;&lt;/html&gt;</slidetranscript>
     </slidetranscripts>
   </transcript_data>
   <glossary_data />
