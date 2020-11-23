@@ -84,8 +84,9 @@ h4#cuckoo {
   text-transform:uppercase;
 }
 
-#myCanvas{
-  background-color:gainsboro;
+#whiteboard{
+  border: 5px solid black;
+  float:left;
 }
 
 button.threebuttons {
