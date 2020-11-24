@@ -1,3 +1,8 @@
+//
+/////  WHITEBOARD
+//
+let whiteboard = document.getElementById('whiteboard');
+let whiteboardContext = whiteboard.getContext('2d');
 
 //
 /////  COUNTER
@@ -23,10 +28,12 @@ gorilla.src = "images/images_for_whiteboard/gorilla.PNG";
 let hippo = document.createElement('img');
 hippo.src = "images/images_for_whiteboard/hippo.PNG";
 
-let animalLibrary = [bear, elephant, giraffe, gorilla, hippo];
+let animalLibrary = [];
 //
 //// BUILD IMAGE TEMPLATE
 //
+
+
 
 class Image {
     constructor(src, xpos, ypos) {
@@ -35,12 +42,28 @@ class Image {
       this.ypos = ypos;
     }
 
+   
+
    add(){
         clickCounter += 1;
         console.log("this.image clicked " + " " + this.image + ", "+ clickCounter);
-        document.body.appendChild(this.image);
-        
+        if (clickCounter >= 1) {
+          whiteboardContext.drawImage(this.image, this.xpos, this.ypos)
+          this.xpos += 30;
+          this.ypos += 15;
+          animalLibrary.push(this.image);
+        } else {
+             console.log("None, 0 images exist");
+        }
    };
+
+   delete(){
+     if(animalLibrary.includes('bear')){
+          animalLibrary.pop();
+          console.log("print animal Library" + " " + animalLibrary.keys());
+     }
+     console.log("delete POP");
+  };
 
    moveLeft(){
         this.xpos -= 3;
@@ -64,22 +87,12 @@ class Image {
 //
 ////  PROPERTIES OF ANIMALS
 //
-
-let bear1 = new Image(bear, 40, 10);
-let bear2 = new Image(bear, 80, 20);
-let elephant1 = new Image(elephant, 0, 0);
-
-//
-/// CANVAS INVENTORY
-//
-let whiteboard =[];
+let elephant1 = new Image(elephant, 10, 5);
 
 
 //
 ////  RUN PROGRAM
 //
 document.getElementById('add').addEventListener ('click', function() {
-    alert('clicked Add' );
-    bear1.add();
     elephant1.add();
 }, false);
