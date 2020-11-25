@@ -66,14 +66,18 @@ class Image {
   };
 
    moveLeft(){
-        this.xpos -= 3;
+        this.xpos += 5;
+        whiteboardContext.drawImage(this.image, this.xpos, this.ypos);
         console.log("Move LEFT");
+        console.log(this.xpos)
    };
 
    
    moveRight(){
-       this.xpos += 10;
+       this.ypos += 10;
+       whiteboardContext.drawImage(this.image, this.xpos, this.ypos);
        console.log("Move RIGHT");
+       console.log(this.ypos)
    };
 
    print(){
@@ -96,3 +100,11 @@ let elephant1 = new Image(elephant, 10, 5);
 document.getElementById('add').addEventListener ('click', function() {
     elephant1.add();
 }, false);
+
+document.getElementById('left').addEventListener ('click', function() {
+     elephant1.moveLeft();
+ }, false);
+
+ document.getElementById('right').addEventListener ('click', function() {
+     elephant1.moveRight();
+ }, false);
