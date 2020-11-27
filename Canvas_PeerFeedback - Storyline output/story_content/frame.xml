@@ -1175,6 +1175,11 @@
             <slidelink slideid="_player.5iibSnhv2eK.61rNocbHCY7" displaytext="Pick Many" expand="false" type="slide" />
           </links>
         </slidelink>
+        <slidelink slideid="_player.6k08e5eeh15" displaytext="Canvas_PeerFeedback" expand="true" type="slide">
+          <links>
+            <slidelink slideid="_player.6k08e5eeh15.5zkFZMABSNH" displaytext="Slide" expand="false" type="slide" />
+          </links>
+        </slidelink>
       </links>
     </outline>
   </nav_data>
