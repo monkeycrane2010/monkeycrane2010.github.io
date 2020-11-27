@@ -48,11 +48,12 @@ class Image {
         clickCounter += 1;
         console.log("this.image clicked " + " " + this.image + ", "+ clickCounter);
         if (clickCounter >= 1) {
-          whiteboardContext.drawImage(this.image, this.xpos, this.ypos)
-          this.xpos += 30;
-          this.ypos += 15;
-          animalLibrary.push(this.image.src);
-          alert("you clicked ... "  + this.image.src)
+         // whiteboardContext.drawImage(this.image, this.xpos, this.ypos)
+        //  this.xpos += 30;
+        //  this.ypos += 15;
+        this.src.CreateElement(this);
+        this.setAttribute("draggable", true);
+        console.log(e.clientX)
         } else {
              console.log("None, 0 images exist");
         }
@@ -60,7 +61,7 @@ class Image {
    };
 
    delete(){
-    
+     
      animalLibrary.pop();
      console.log("print animal Library" + " " + animalLibrary.keys());
      console.log("delete POP");

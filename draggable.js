@@ -1,16 +1,19 @@
 let draggedItem = document.getElementById('drag-item');
 let box = document.getElementById('box');
 
-/* Events fired on the drag target */
-draggedItem.addEventListener("dragstart", function(event) {
-    console.log(this.id);
-    document.getElementById("demo").innerText = "Started to drag the p element.";
-  });
-
+/* Events fired on the drag target  */
 
 box.addEventListener('dragover', function(e){
-   console.log(this.id + " LA LA LA, success");
+   console.log("ClientX is " + e.clientX + "Client Y is " + e.clientY); /// e.client X and Y are GIVEN, YOU DON'T NEED TO CREATE
+   document.getElementById('box').innerHTML = 'INSIDE the box';
    box.style.backgroundColor = 'orange';
+});
+
+draggedItem.addEventListener('dragover', function(e){
+    console.log ("e clientX "  + e.clientX);
+    document.getElementById('replacetext').innerHTML = 'YOU ARE OUTSIDE' + ' ' + 'ClientX'+ e.clientX + ' ' + 'ClientY' + e.clientY; /// WRITE TO DOCUMENT
+    box.style.backgroundColor = 'yellow';
+
 });
 
 
