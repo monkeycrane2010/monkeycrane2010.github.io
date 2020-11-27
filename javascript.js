@@ -51,8 +51,8 @@ class Image {
          // whiteboardContext.drawImage(this.image, this.xpos, this.ypos)
         //  this.xpos += 30;
         //  this.ypos += 15;
-        this.src.CreateElement(this);
-        this.setAttribute("draggable", true);
+        whiteboardContext(this.src.CreateElement(this));
+        this.src.setAttribute("draggable", true);
         console.log(e.clientX)
         } else {
              console.log("None, 0 images exist");
@@ -61,7 +61,6 @@ class Image {
    };
 
    delete(){
-     
      animalLibrary.pop();
      console.log("print animal Library" + " " + animalLibrary.keys());
      console.log("delete POP");
