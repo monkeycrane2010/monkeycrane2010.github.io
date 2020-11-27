@@ -36,7 +36,7 @@ let animalLibrary = [];
 
 
 class Image {
-    constructor(src, xpos, ypos) {
+    constructor(src, xpos, ypos, draggable = 'true') {
       this.image = src;
       this.xpos = xpos;
       this.ypos = ypos;
@@ -51,33 +51,30 @@ class Image {
           whiteboardContext.drawImage(this.image, this.xpos, this.ypos)
           this.xpos += 30;
           this.ypos += 15;
-          animalLibrary.push(this.image);
+          animalLibrary.push(this.image.src);
+          alert("you clicked ... "  + this.image.src)
         } else {
              console.log("None, 0 images exist");
         }
+       
    };
 
    delete(){
-     if(animalLibrary.includes('bear')){
-          animalLibrary.pop();
-          console.log("print animal Library" + " " + animalLibrary.keys());
-     }
+    
+     animalLibrary.pop();
+     console.log("print animal Library" + " " + animalLibrary.keys());
      console.log("delete POP");
   };
 
    moveLeft(){
-        this.xpos += 5;
-        whiteboardContext.drawImage(this.image, this.xpos, this.ypos);
-        console.log("Move LEFT");
-        console.log(this.xpos)
+        this.xpos -= 5;
+        console.log("Move LEFT" + this.xpos);
    };
 
    
    moveRight(){
-       this.ypos += 10;
-       whiteboardContext.drawImage(this.image, this.xpos, this.ypos);
-       console.log("Move RIGHT");
-       console.log(this.ypos)
+       this.xpos += 10;
+       console.log("Move RIGHT" + this.xpos);
    };
 
    print(){
@@ -107,4 +104,8 @@ document.getElementById('left').addEventListener ('click', function() {
 
  document.getElementById('right').addEventListener ('click', function() {
      elephant1.moveRight();
+ }, false);
+
+ document.getElementById('clearall').addEventListener ('click', function() {
+     elephant1.delete();
  }, false);
