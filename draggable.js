@@ -1,11 +1,12 @@
 let draggedItem = document.getElementById('drag-item');
 let box = document.getElementById('box');
 
+
 /* Events fired on the drag target  */
 
 box.addEventListener('dragover', function(e){
    console.log("ClientX is " + e.clientX + "Client Y is " + e.clientY); /// e.client X and Y are GIVEN, YOU DON'T NEED TO CREATE
-   document.getElementById('box').innerHTML = 'INSIDE the box';
+   document.getElementById('box').innerHTML = 'this.src is' + "another test";
    box.style.backgroundColor = 'orange';
 });
 
@@ -15,6 +16,7 @@ draggedItem.addEventListener('dragover', function(e){
     box.style.backgroundColor = 'yellow';
 
 });
+
 
 
 /////  RAW FILE
@@ -38,6 +40,6 @@ hippo.src = "images/images_for_whiteboard/hippo.PNG";
 
 let imageCollection = {
   scene: [],
-  animal: [],
+  animal: [monkey, hippo, giraffe],
   people: []
 }

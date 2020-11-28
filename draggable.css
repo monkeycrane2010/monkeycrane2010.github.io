@@ -13,3 +13,21 @@
     width: 400px;
     height: 400px;
 }
+
+ol.animal{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    border:none;
+}
+
+ol.animal:active{
+    border:rgba(255, 255, 0, 0.699)
+}
+
+ol.fish{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    border:none;
+}
