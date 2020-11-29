@@ -17,7 +17,7 @@ ol > li > img {
 
 /* MENU BUTTONs */
 .library{
-    display:grid;
+    display:grid-inline;
     grid-template-columns: 1fr;
     width: 90px;
     height: 50px;
@@ -27,10 +27,6 @@ ol > li > img {
 
 .library:hover{
     border: 3px purple solid;
-}
-
-.library:active{
-    display:block;
 }
 
 /* IMAGE LIBRARY */
