@@ -1,6 +1,16 @@
 let draggedItem = document.getElementById('drag-item');
 let box = document.getElementById('box');
 
+let sceneBtn = document.getElementById('scene-btn');
+let animalBtn = document.getElementById('animal-btn');
+let fishBtn = document.getElementById('fish-btn');
+let peopleBtn = document.getElementById('people-btn');
+let textBtn = document.getElementById('text-btn');
+let clearBtn = document.getElementById('clear-btn');
+
+
+let animalList = document.getElementsByClassName('animal-img');
+let fishList = document.getElementsByClassName('fish-img');
 
 /* Events fired on the drag target  */
 
@@ -17,29 +27,38 @@ draggedItem.addEventListener('dragover', function(e){
 
 });
 
+/* Events fired on the SCENE  */
 
 
-/////  RAW FILE
-//
+/* Events fired on the ANIMAL  */
+animalBtn.addEventListener('click', function(e){
+  for( let x = 0; x < animalList.length; x++){
+      if(animalList[x].style.display === "grid"){
+        animalList[x].style.display = "none";
+      } else {
+        animalList[x].style.display = "grid";
+      }
+  }
+});
 
-let bear = document.createElement('img');
-bear.src = "bear.PNG";
+/* Events fired on the FISH  */
+fishBtn.addEventListener('click', function(e){
+  for( let x = 0; x < fishList.length; x++){
+      if(fishList[x].style.display === "grid"){
+        fishList[x].style.display = "none";
+      } else {
+        fishList[x].style.display = "grid";
+      }
+  }
+});
 
-let elephant = document.createElement('img');
-elephant.src = "images/images_for_whiteboard/elephant.PNG";
-
-let giraffe = document.createElement('img');
-giraffe.src = "images/images_for_whiteboard/giraffe.PNG";
-
-let gorilla = document.createElement('img');
-gorilla.src = "images/images_for_whiteboard/gorilla.PNG";
-
-let hippo = document.createElement('img');
-hippo.src = "images/images_for_whiteboard/hippo.PNG";
+/* Events fired on the PEOPLE  */
 
 
-let imageCollection = {
-  scene: [],
-  animal: [monkey, hippo, giraffe],
-  people: []
-}
+/* Events fired on the TEXT  */
+
+
+/* Events fired on the CLEAR ALL  */
+clearBtn.addEventListener('click', function(e){
+   box.style.backgroundColor = 'white';
+});

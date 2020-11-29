@@ -1,4 +1,5 @@
-#drag-item > img {
+#drag-item > img, 
+ol > li > img {
     width: 100px;
     height: 100px;
     cursor:move;    /* CHANGES CURSOR TYPE */
@@ -14,6 +15,25 @@
     height: 400px;
 }
 
+/* MENU BUTTONs */
+.library{
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 90px;
+    height: 50px;
+    align-content:center;
+    border:none;
+}
+
+.library:hover{
+    border: 3px purple solid;
+}
+
+.library:active{
+    display:block;
+}
+
+/* IMAGE LIBRARY */
 ol.animal{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -21,8 +41,8 @@ ol.animal{
     border:none;
 }
 
-ol.animal:active{
-    border:rgba(255, 255, 0, 0.699)
+ol.animal > .animal-img{
+    display:none;
 }
 
 ol.fish{
@@ -30,4 +50,8 @@ ol.fish{
     grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
     border:none;
+}
+
+ol.fish > .fish-img{
+    display:none;
 }

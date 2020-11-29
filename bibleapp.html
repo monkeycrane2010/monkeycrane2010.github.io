@@ -42,53 +42,43 @@
             <td>11-27-2020</td>
         </tr>
         
-        <tr  width="50%">
-            <td> <a href="/Calculator - Storyline output/story_html5.html">Froggie Fun</a></td>
-            <td>11-15-2020</td>
-        </tr>
 </tbody>
 </table>
 </div>
-        
-<br style="clear:both"/>
-<div class = "card">
-<h3>Javascript</h3>
-<p>In the introductory class, I learned how to make mini Javascript games.
-    <p>GAME 1 - a "Guess a random number" game <img src="images/dice.png" style="float:right; margin-top:10px;" width="40px" height="40px" title="dice" alt="dice"></p> 
-    <p><a href="https://repl.it/@monkeycrane2010/zorkington-monkeycrane2010#README.md" target="_blank"> GAME 2  </a>- a variation of a text-adventure game called, Zork. <img src="images/detective.png" style="float:right; margin-top:10px;" width="40px" height="60px" title="cartoon detective" alt="cartoon detective"> </p>
-    <p style="font-style: italic;">Took class at Vermont's <a href="https://www.burlingtoncodeacademy.com/" target="_blank"> Burlington Code Academy</a></p>
-    <p><a href="https://repl.it/@monkeycrane2010/monkeycrane2010-jukebox#index.js" target="_blank">Personal practice # 1 </a>- Jukebox, keep clicking stop and run at top to see the random song given</p>
-</div>
-
-<br style="clear:both"/>
-<div class = "card">
-<h3>Zork variation , IMAGE</h3>
-<p>Here is a map of the variation of Zork game above.
-    <p> <img src="images/Zork_test_TANIALEE.png" width="500px" height="300px" alt="none"></p> 
-</div>
-
-
-<br style="clear:both"/>
-<div class = "card">
-    <h3>Articulate Storyline 3</h3>
-    <p>Check out some of my demo projects in the "Testers Needed" section above. </p>
-</div>
-
-<br style="clear:both"/>
-<div class = "card">
-    <h3>Title Card 3</h3>
-    <p>My practice Javascript getElementbyId <a href="javascript.html" target="_blank">Whiteboard.html</a> </p>
-</div>
-<div class = "card">
-    <h3> Drag N Drop</h3>
-    <p>Drag N Drop test<a href="draggable.html" target="_blank">Draggable.html</a> </p>
-</div>
-
 <br style="clear:both"/>
 <div class = "card">
     <h3>Bible Storytime APP</h3>
     <p> <img src="images/BIBLEstorytime.png" width="500px" height="300px" alt="none"></p> 
 </div>
 
+<br style="clear:both"/>
+<p id="replacetext">Replace this text</p>
+<div id="drag-item"><img src="images/monkey_happy.png" draggable="true"></div>
+
+<div id="box" ondrop="drop(event)" ondragover="allowDrop(event)">replace</div>
+
+<div>
+    <button class="library" id="scene-btn">Scene</button>
+    <button class="library" id="animal-btn">Animal</button>
+    <button class="library" id="fish-btn">Fish</button>
+    <button class="library" id="people-btn">People</button>
+    <button class="library" id="text-btn">Text</button>
+    <button class="library" id="clear-btn">Clear All</button>
+</div>
+<div>
+    <ol class="animal">
+        <li class="animal-img"><img src="images/monkey.png" draggable="true"></li>
+        <li class="animal-img"><img src="images/frog.png" draggable="true"></li>
+        <li class="animal-img"><img src="images/sheep.png" draggable="true"></li>
+        <li class="animal-img"><img src="images/banana.png" draggable="true"></li>
+    </ol>
+
+    <ol class="fish">
+        <li class="fish-img"><img src="images/fish.png" draggable="true"></li>
+        <li class="fish-img"><img src="images/frog.png" draggable="true"></li>
+        <li class="fish-img"><img src="images/octopus.png" draggable="true"></li>
+    </ol>
+ </div>
+<script src="draggable.js"></script> <!--MUST BE AT END -->
 </body>
 </html>
