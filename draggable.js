@@ -15,10 +15,9 @@ let fishList = document.getElementsByClassName('fish-img');
 /* CREATE 'CANVAS'  */
 class Canvas {
   
-  constructor(c.width, c.height) {
-    this.image = src;
-    this.canvaswidth = c.width;
-    this.canvasheight = c.height;
+  constructor(cwidth, cheight) {
+    this.canvaswidth = cwidth;
+    this.canvasheight = cheight;
   }
 
   dragover(){
@@ -27,7 +26,7 @@ class Canvas {
       document.getElementById('box').innerHTML = 'this.src is' + "another test";
       box.style.backgroundColor = 'orange';
     }); // Events fired on DRAGOVER of Canvas
-  }
+  };
 
 }
 
