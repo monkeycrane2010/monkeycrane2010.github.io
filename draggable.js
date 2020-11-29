@@ -12,23 +12,33 @@ let clearBtn = document.getElementById('clear-btn');
 let animalList = document.getElementsByClassName('animal-img');
 let fishList = document.getElementsByClassName('fish-img');
 
-/* Events fired on the drag target  */
+/* CREATE 'CANVAS'  */
+class Canvas {
+  
+  constructor(c.width, c.height) {
+    this.image = src;
+    this.canvaswidth = c.width;
+    this.canvasheight = c.height;
+  }
 
-box.addEventListener('dragover', function(e){
-   console.log("ClientX is " + e.clientX + "Client Y is " + e.clientY); /// e.client X and Y are GIVEN, YOU DON'T NEED TO CREATE
-   document.getElementById('box').innerHTML = 'this.src is' + "another test";
-   box.style.backgroundColor = 'orange';
-});
+  dragover(){
+    box.addEventListener('dragover', function(e){
+      console.log("ClientX is " + e.clientX + "Client Y is " + e.clientY); /// e.client X and Y are GIVEN, YOU DON'T NEED TO CREATE
+      document.getElementById('box').innerHTML = 'this.src is' + "another test";
+      box.style.backgroundColor = 'orange';
+    }); // Events fired on DRAGOVER of Canvas
+  }
 
-draggedItem.addEventListener('dragover', function(e){
-    console.log ("e clientX "  + e.clientX);
-    document.getElementById('replacetext').innerHTML = 'YOU ARE OUTSIDE' + ' ' + 'ClientX'+ e.clientX + ' ' + 'ClientY' + e.clientY; /// WRITE TO DOCUMENT
-    box.style.backgroundColor = 'yellow';
+}
 
-});
+let canvas1 = new Canvas(600, 400);
+canvas1.dragover();
+
+let canvas2 = new Canvas(300, 400);
+canvas2.dragover();
+canvas2.style.backgroundColor =  'brown';
 
 /* Events fired on the SCENE  */
-
 
 /* Events fired on the ANIMAL  */
 animalBtn.addEventListener('click', function(e){
