@@ -5,8 +5,8 @@
     <style>
      #whiteboard{
          border: 2px solid black;
-         width: 75%;
-         height: 50%;
+         width: 90%;
+         height: 90%;
      }
 
      .animal-img{
@@ -23,7 +23,7 @@
 
 
 <img src="/images/monkey.png" class = "animal-img" id = "monkey" draggable = "true" ondragstart="drag(event)">
-
+<img src="/images/banana.png" class = "animal-img" id = "banana" draggable = "true" ondragstart="drag(event)">
 
 
 
@@ -31,18 +31,20 @@
 
 let monkey = document.getElementById('monkey');
     monkey.src = "images/monkey.PNG";
+
+let banana = document.getElementById('banana');
+    banana.src = "images/banana.PNG";
 //
 /// CANVAS 
 //
 let whiteboard = document.getElementById('whiteboard');
 let whiteboardContext = whiteboard.getContext('2d');
 
-let PosX = e.clientX;
-let PosY = e.clientY;
+
 
 // RUN PROGRAM
 function drag(event) {
-   event.dataTransfer.setData("text", event.target.id);
+ 
 }
 
 function allowDrop(event) {
@@ -51,13 +53,17 @@ function allowDrop(event) {
 
 function drop(event) {
   event.preventDefault();
-  monkey = e.target();
-  myX = e.offsetX === undefined ? e.layerX : e.offsetX;
-  myY = e.offsetY === undefined ? e.layerY : e.offsetY;
-  monkey.style.zIndex = 10;
+  whiteboardContext.drawImage(banana, 0, 0, event.clientX, event.clientY, 5, 5, 90, 90);
+  whiteboardContext.drawImage(monkey, 0, 0, event.clientX, event.clientY);
+  if(this.id === "monkey"){
+    whiteboardContext.drawImage(monkey, 0, 0, event.clientX, event.clientY);
+  }
+  if(this.id === "banana"){
+    whiteboardContext.drawImage(banana, 0, 0, event.clientX, event.clientY);
+  }
   console.log(event.clientX + "Client X");
   console.log(event.clientY + "Client Y");
-  
+
 }
 
 </script> <!--MUST BE AT END -->
