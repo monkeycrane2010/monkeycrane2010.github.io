@@ -6,25 +6,6 @@
 </head>
 <body>
     <p id="replacetext">Replace this text</p>
-    <div id="drag-item"><img src="images/monkey_happy.png" draggable="true"></div>
-
-    <div>
-        <ol class="animal">
-            <li class="animal-img"><img src="images/monkey.png" draggable="true"></li>
-            <li class="animal-img"><img src="images/frog.png" draggable="true"></li>
-            <li class="animal-img"><img src="images/sheep.png" draggable="true"></li>
-            <li class="animal-img"><img src="images/banana.png" draggable="true"></li>
-        </ol>
-
-        <ol class="fish">
-            <li class="fish-img"><img src="images/fish.png" draggable="true"></li>
-            <li class="fish-img"><img src="images/frog.png" draggable="true"></li>
-            <li class="fish-img"><img src="images/octopus.png" draggable="true"></li>
-        </ol>
-     </div>
-
-    <div id="box">replace</div>
-
     <div>
         <button class="library" id="scene-btn">Scene</button>
         <button class="library" id="animal-btn">Animal</button>
@@ -33,6 +14,23 @@
         <button class="library" id="text-btn">Text</button>
         <button class="library" id="clear-btn">Clear All</button>
     </div>
+    
+    <div>
+        <ol class="animal">
+            <li class="animal-img" id="monkey"><img src="images/monkey.png" draggable="true"></li>
+            <li class="animal-img" id="sheep"><img src="images/sheep.png" draggable="true"></li>
+            <li class="animal-img" id="banana"><img src="images/banana.png" draggable="true"></li>
+            <li class="fish-img" id="fish"><img src="images/fish.png" draggable="true"></li>
+            <li class="fish-img" id="frog"><img src="images/frog.png" draggable="true"></li>
+            <li class="fish-img" id="octopus"><img src="images/octopus.png" draggable="true"></li>
+            <li class="fish-img" id="penguin"><img src="images/penguin.png" draggable="true"></li>
+            <li class="fish-img" id="shark"><img src="images/shark.png" draggable="true"></li>
+        </ol>
+     </div>
+
+    <canvas id="whiteboard"></canvas>
+
+    
     
 <script src="draggable.js"></script> <!--MUST BE AT END -->
 </body>

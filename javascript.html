@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>First HTML!</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet"> 
-     
-</head>
+    <title>First HTML!</title>
+    <style>
+     #whiteboard{
+         border: 2px solid black;
+         width: 75%;
+         height: 50%;
+     }
+
+     .animal-img{
+         cursor: move;
+     }
+
+    </style>  
+    </head>
 <body>
 
 <h2 class="name">Tania</h2> 
-<h4 id="javascript">Draw Exercise</h4>
 
-<canvas id = "whiteboard" width = 800;  height = 400;></canvas>
+<canvas id = "whiteboard" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
 
 
-<button class = "threebuttons" id ="add" >+ADD</button>
-<button class = "threebuttons" id = "left" >Move Left</button>
-<button class = "threebuttons" id = "right" >Move Right</button>
-<button class = "threebuttons" id = "clearall" >Clear ALL</button>
+<img src="/images/monkey.png" class = "animal-img" id = "monkey" draggable = "true" ondragstart="drag(event)">
 
-<script src="javascript.js"></script> <!--MUST BE AT END -->
+
+
+
+<script>
+
+let monkey = document.getElementById('monkey');
+    monkey.src = "images/monkey.PNG";
+//
+/// CANVAS 
+//
+let whiteboard = document.getElementById('whiteboard');
+let whiteboardContext = whiteboard.getContext('2d');
+
+let PosX = e.clientX;
+let PosY = e.clientY;
+
+// RUN PROGRAM
+function drag(event) {
+   event.dataTransfer.setData("text", event.target.id);
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  monkey = e.target();
+  myX = e.offsetX === undefined ? e.layerX : e.offsetX;
+  myY = e.offsetY === undefined ? e.layerY : e.offsetY;
+  monkey.style.zIndex = 10;
+  console.log(event.clientX + "Client X");
+  console.log(event.clientY + "Client Y");
+  
+}
+
+</script> <!--MUST BE AT END -->
 </body>
 </html>

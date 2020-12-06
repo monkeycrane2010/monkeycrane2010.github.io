@@ -1,18 +1,15 @@
-#drag-item > img, 
 ol > li > img {
     width: 100px;
     height: 100px;
     cursor:move;    /* CHANGES CURSOR TYPE */
 }
 
-#drag-item > img:hover{
-    background-color: blue;
-}
-
-#box{
-    border: 2px solid purple;
-    width: 400px;
+#whiteboard{
+    border: 2px solid orange;
+    width: 800px;
     height: 400px;
+    display:grid-inline;
+    grid-template-columns: 2fr;
 }
 
 /* MENU BUTTONs */
@@ -37,17 +34,6 @@ ol.animal{
     border:none;
 }
 
-ol.animal > .animal-img{
-    display:none;
-}
-
-ol.fish{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    list-style: none;
-    border:none;
-}
-
-ol.fish > .fish-img{
+ol.animal > .animal-img, .fish-img{
     display:none;
 }
