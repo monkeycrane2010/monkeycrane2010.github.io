@@ -17,7 +17,7 @@
     </head>
 <body>
 
-<h2 class="name">Tania</h2> 
+<h2 class="name" id = "title">Tania</h2> 
 
 <canvas id = "whiteboard" ondrop="drop(event)" ondragover="allowDrop(event)"></canvas>
 
@@ -25,6 +25,7 @@
 <img src="/images/monkey.png" class = "animal-img" id = "monkey" draggable = "true" ondragstart="drag(event)">
 <img src="/images/banana.png" class = "animal-img" id = "banana" draggable = "true" ondragstart="drag(event)">
 
+<div id="testerBox"></div>
 
 
 <script>
@@ -65,6 +66,34 @@ function drop(event) {
   console.log(event.clientY + "Client Y");
 
 }
+
+//////////
+//
+//////////
+function dragStart(){
+  console.log('start');
+}
+
+function dragEnd(){
+  console.log('end');
+}
+
+function mouseOver(){
+  document.body.style.backgroundColor = 'purple';
+  document.getElementById('title').innerHTML = this.id;
+}
+
+function mouseOut(){
+  document.body.style.backgroundColor = '';
+  console.log('mouseOut complete');
+}
+
+
+document.getElementById('monkey').addEventListener('dragstart', dragStart , false);
+document.getElementById('monkey').addEventListener('dragend', dragEnd, false);
+
+document.getElementById('banana').addEventListener('mouseover', mouseOver, false);
+document.getElementById('banana').addEventListener('mouseout', mouseOut, false);
 
 </script> <!--MUST BE AT END -->
 </body>
