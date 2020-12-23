@@ -69,7 +69,33 @@ function dragEnter(event){
 
 }
 
+function mouseMove(event){
+    firstparagraph.style.color = 'purple'
+    firstparagraph.innerText = 'Mouse Move';
+    xpos.innerText = event.x;
+    ypos.innerText = event.y;
+
+}
+
+function mouseUp(event){
+    firstparagraph.style.color = 'pink'
+    firstparagraph.innerText = 'Mouse UP';
+    xpos.innerText = event.x;
+    ypos.innerText = event.y;
+
+}
+
 whiteboard.addEventListener('dragover', dragOver, false);
 whiteboard.addEventListener('dragenter', dragEnter, false);
 whiteboard.addEventListener('drop', onDrop, false);
 
+whiteboard.addEventListener('mousemove', mouseMove, false);
+whiteboard.addEventListener('mouseup', mouseUp, false);
+
+let monkey2 = document.createElement('img');
+monkey2.setAttribute("src", "images/monkey.png");
+whiteboard.appendChild(monkey2);
+
+let sheep2 = document.createElement('img');
+sheep2.setAttribute("src", "images/sheep.png");
+whiteboard.appendChild(sheep2);
