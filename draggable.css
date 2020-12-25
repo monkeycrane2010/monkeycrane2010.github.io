@@ -1,16 +1,26 @@
 ol > li > img {
+   
     cursor:move;    /* CHANGES CURSOR TYPE */
 }
 
-#whiteboard{
-    border: 2px solid blueviolet;
-    width: 320px;
-    height: 320px;
-}
-
-.item {
+#monkey {
     width: 90px;
     height: 90px;
     position: absolute; /* REQUIRED*/
-    background:palevioletred;
+    z-index: 0;
+}
+
+#sheep {
+    width: 90px;
+    height: 90px;
+    position: absolute; /* REQUIRED*/
+    background:papayawhip;
+    z-index: 0;
+}
+
+#banana {
+    width: 90px;
+    height: 90px;
+    position: absolute; /* REQUIRED*/
+    z-index: 0;
 }

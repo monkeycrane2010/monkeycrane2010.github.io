@@ -1,17 +1,8 @@
-let whiteboard = document.getElementById('whiteboard');
-
 let monkey = document.getElementById('monkey');
 let sheep = document.getElementById('sheep');
 let banana = document.getElementById('banana');
 
-
-
-let firstparagraph = document.getElementById('plaintext');
-let xpos = document.getElementById('cursorx');
-let ypos = document.getElementById('cursory');
-
-let el = document.querySelector('.item');
-el.addEventListener('mousedown', mouseDown);
+sheep.addEventListener('mousedown', mouseDown);
 
 function mouseDown(e){
     window.addEventListener('mousemove', mouseMove);
@@ -24,10 +15,10 @@ function mouseDown(e){
        let newX = prevX - e.clientX;
        let newY = prevY - e.clientY;
 
-       let rect = el.getBoundingClientRect();
+       let rect = sheep.getBoundingClientRect();
 
-       el.style.left = rect.left - newX + "px";
-       el.style.top = rect.top - newY + "px";
+       sheep.style.left = rect.left - newX + "px";
+       sheep.style.top = rect.top - newY + "px";
 
        prevX = e.clientX;
        prevY = e.clientY;

@@ -1,21 +1,10 @@
-ol > li > img {
-   
+div > img {
     cursor:move;    /* CHANGES CURSOR TYPE */
 }
 
-.select img {
-    border: 4px dotted palevioletred;
-}
-
-#whiteboard{
-    border: 2px solid blueviolet;
-    width: 320px;
-    height: 320px;
-}
-
-.item {
+#sheep {
     width: 90px;
     height: 90px;
-    position: absolute; /* REQUIRED*/
-    background:palevioletred;
+    position: absolute;  /* REQUIRED*/
+    background:papayawhip;
 }
