@@ -1,11 +1,21 @@
 ol > li > img {
-    width: 100px;
-    height: 100px;
+   
     cursor:move;    /* CHANGES CURSOR TYPE */
+}
+
+.select img {
+    border: 4px dotted palevioletred;
 }
 
 #whiteboard{
     border: 2px solid blueviolet;
     width: 320px;
     height: 320px;
+}
+
+.item {
+    width: 90px;
+    height: 90px;
+    position: absolute; /* REQUIRED*/
+    background:palevioletred;
 }
