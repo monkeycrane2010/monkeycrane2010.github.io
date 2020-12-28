@@ -46,27 +46,27 @@ function mouseDown(e){
 
 
 class Imagefactory {
-   constructor(url, width, height) {
+   constructor(url, id, width, height) {
     this.url = url;
+    this.id = id;
     this.width = width;
     this.height = height;
    }
 
    attribute(){
      console.log(this.url);
-     console.log(this.width);
+     console.log(this.id);
      console.log('this is ATTRIBUTE');
    }
 
    add(){
       
-      for(let x = 0; x < 1; x++){
-         let imageNew = document.createElement('img');
-         imageNew.setAttribute('src', this.url);
-         imageNew.setAttribute('id', x);
-         imageNew.setAttribute('style', "position: absolute");
-         image_placeholder1.appendChild(imageNew);
-         imageplaceholder.push(imageNew);
+      for(let x = 0; x <= imageplaceholder.length; x++){
+         let imgNew = document.createElement('img');
+         imgNew.setAttribute('src', this.url);
+         imgNew.setAttribute('id', this.id + "_" + imageplaceholder.length);
+         image_placeholder1.appendChild(imgNew);
+         imageplaceholder.push(imgNew);
          return imageplaceholder;
       }
   
@@ -74,19 +74,12 @@ class Imagefactory {
 
 }
 
-let monkey2 = new Imagefactory("images/monkey.png", 20, 30);
+let monkey2 = new Imagefactory("images/monkey.png", monkey.id, 20, 30);
 
-let counter = 0;
-
-function monkey2add(){
-      let imageNew;
-      imageNew = document.createElement('img');
-      imageNew.setAttribute('src', "images/monkey.png");
-      imageNew.setAttribute('id', "monkey" + counter);
-      image_placeholder1.appendChild(imageNew);
-      counter++;
-   return imageplaceholder.push(imageNew);
-   
-}
-
-monkeybtn.addEventListener("click", monkey2add, false); // NEED HELP PLEASE - How do I make 'monkey2.add' here, work?
+monkeybtn.addEventListener("click", function() {
+   if(image_placeholder1.hasChildNodes()){
+      console.log('1 monkey exists');
+     } else{
+        monkey2.attribute()
+     }
+ }, false); // NEED HELP PLEASE - How do I make 'monkey2.add' here, work?
