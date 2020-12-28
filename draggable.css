@@ -1,26 +1,15 @@
-ol > li > img {
-   
+div > img {
     cursor:move;    /* CHANGES CURSOR TYPE */
-}
-
-#monkey {
-    width: 90px;
-    height: 90px;
-    position: absolute; /* REQUIRED*/
-    z-index: 0;
 }
 
 #sheep {
     width: 90px;
     height: 90px;
-    position: absolute; /* REQUIRED*/
     background:papayawhip;
-    z-index: 0;
 }
 
-#banana {
-    width: 90px;
-    height: 90px;
-    position: absolute; /* REQUIRED*/
-    z-index: 0;
+#img_placeholder1, #img_placeholder2 {
+    width: 100px;
+    height: 100px;
+    border: 2px dotted rgb(90, 83, 156);
 }

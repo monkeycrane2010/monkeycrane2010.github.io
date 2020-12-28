@@ -5,6 +5,11 @@ div > img {
 #sheep {
     width: 90px;
     height: 90px;
-    position: absolute;  /* REQUIRED*/
     background:papayawhip;
+}
+
+#img_placeholder1, #img_placeholder2 {
+    width: 100px;
+    height: 100px;
+    border: 2px dotted rgb(90, 83, 156);
 }
