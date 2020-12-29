@@ -97,18 +97,18 @@ monkeybtn.addEventListener("click", function() {
 
 
 
- 
+
 
 function moveRight(){
    imageplaceholder[0].setAttribute('style', "position: absolute"); // REQUIRED
-   imageplaceholder[0].style.right = "10px";
+   imageplaceholder[0].style.right = 10 + "px";
    console.log(imageplaceholder[0]);
 }
 
 
 function moveLeft(){
    imageplaceholder[0].setAttribute('style', "position: absolute"); // REQUIRED
-   imageplaceholder[0].style.left = "5px";
+   imageplaceholder[0].style.left = 5 + "px";
 }
 
 rightbtn.addEventListener("click", moveRight, false);
