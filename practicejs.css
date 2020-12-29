@@ -5,6 +5,7 @@ div > img {
 #sheep {
     width: 90px;
     height: 90px;
+    position: absolute;
     background:papayawhip;
 }
 

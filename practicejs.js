@@ -1,4 +1,5 @@
 let image_placeholder1 = document.getElementById('img_placeholder1');
+let image_placeholder2 = document.getElementById('img_placeholder2');
 let imageplaceholder = [];
 
 let monkey = document.getElementById('monkey');
@@ -6,7 +7,8 @@ let sheep = document.getElementById('sheep');
 let banana = document.getElementById('banana');
 
 let monkeybtn = document.getElementById('monkeybtn');
-
+let leftbtn = document.getElementById('leftbtn');
+let rightbtn = document.getElementById('rightbtn');
 
 ///////
 ////   RUN PROGRAM
@@ -46,17 +48,16 @@ function mouseDown(e){
 
 
 class Imagefactory {
-   constructor(url, id, width, height) {
+   constructor(url, id) {
     this.url = url;
     this.id = id;
-    this.width = width;
-    this.height = height;
    }
 
    attribute(){
      console.log(this.url);
      console.log(this.id);
      console.log('this is ATTRIBUTE');
+    
    }
 
    add(){
@@ -67,19 +68,33 @@ class Imagefactory {
          imgNew.setAttribute('id', this.id + "_" + imageplaceholder.length);
          image_placeholder1.appendChild(imgNew);
          imageplaceholder.push(imgNew);
-         return imageplaceholder;
-      }
+      //   return imageplaceholder; // REQUIRED for inventory
+   }
   
    }
 
 }
 
-let monkey2 = new Imagefactory("images/monkey.png", monkey.id, 20, 30);
+let monkey2 = new Imagefactory("images/monkey.png", monkey.id);
 
 monkeybtn.addEventListener("click", function() {
    if(image_placeholder1.hasChildNodes()){
-      console.log('1 monkey exists');
-     } else{
-        monkey2.attribute()
+       console.log('click the RIGHT btn, now');
+     } else {
+       monkey2.add();
      }
- }, false); // NEED HELP PLEASE - How do I make 'monkey2.add' here, work?
+ }, false); // NEED HELP PLEASE - How do I make 'monkey2.add' here, work
+
+
+
+ rightbtn.addEventListener("click", function() {
+   imageplaceholder[0].setAttribute('style', "position: absolute"); // REQUIRED
+   imageplaceholder[0].style.right +=5 + "px";  
+   
+}, false);
+
+leftbtn.addEventListener("click", function() {
+   imageplaceholder[0].setAttribute('style', "position: absolute"); // REQUIRED
+   imageplaceholder[0].style.left -=2 + "px";  
+   
+}, false);
