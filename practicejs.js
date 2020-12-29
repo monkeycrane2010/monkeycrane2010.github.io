@@ -68,7 +68,7 @@ class Imagefactory {
          imgNew.setAttribute('id', this.id + "_" + imageplaceholder.length);
          image_placeholder1.appendChild(imgNew);
          imageplaceholder.push(imgNew);
-      //   return imageplaceholder; // REQUIRED for inventory
+         return imageplaceholder; // REQUIRED for inventory
    }
   
    }
@@ -76,25 +76,41 @@ class Imagefactory {
 }
 
 let monkey2 = new Imagefactory("images/monkey.png", monkey.id);
+let banana2 = new Imagefactory("images/banana.png", banana.id);
 
 monkeybtn.addEventListener("click", function() {
    if(image_placeholder1.hasChildNodes()){
-       console.log('click the RIGHT btn, now');
+       monkey2.attribute();
      } else {
        monkey2.add();
      }
  }, false); // NEED HELP PLEASE - How do I make 'monkey2.add' here, work
 
 
+ bananabtn.addEventListener("click", function() {
+   if(image_placeholder2.hasChildNodes()){
+       banana2.attribute();
+     } else {
+       banana2.add();
+     }
+ }, false); 
 
- rightbtn.addEventListener("click", function() {
-   imageplaceholder[0].setAttribute('style', "position: absolute"); // REQUIRED
-   imageplaceholder[0].style.right +=5 + "px";  
-   
-}, false);
 
-leftbtn.addEventListener("click", function() {
+
+ 
+
+function moveRight(){
    imageplaceholder[0].setAttribute('style', "position: absolute"); // REQUIRED
-   imageplaceholder[0].style.left -=2 + "px";  
+   imageplaceholder[0].style.right = "10px";
+   console.log(imageplaceholder[0]);
+}
+
+
+function moveLeft(){
+   imageplaceholder[0].setAttribute('style', "position: absolute"); // REQUIRED
+   imageplaceholder[0].style.left = "5px";
+}
+
+rightbtn.addEventListener("click", moveRight, false);
    
-}, false);
+leftbtn.addEventListener("click", moveLeft, false);
