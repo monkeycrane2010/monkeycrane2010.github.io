@@ -68,7 +68,8 @@ function dropzone1(event) {
    if (event.type === "drop"){
       let data = event.dataTransfer.getData("text");
       event.target.appendChild(document.getElementById(data));
-      dropzoneThree.innerText = "value of THIS: " + id;
+      imageplaceholder.push(data);
+      dropzoneThree.innerText = imageplaceholder;
    }
 
 }
