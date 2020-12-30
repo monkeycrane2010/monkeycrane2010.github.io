@@ -7,7 +7,6 @@ let dropzoneOne = document.getElementById('dropzone1');
 let dropzoneTwo = document.getElementById('dropzone2');
 let dropzoneThree = document.getElementById('dropzone3');
 
-
 ///////
 ////   SOUND EFFECT
 ///////
@@ -55,8 +54,7 @@ letterR.addEventListener('click', playSound, false);
 let letterU = document.querySelector('#U');
 letterU.addEventListener('click', playSound, false);
 
-
-///////
+//////////////
 ////   DRAG 
 ///////
 
