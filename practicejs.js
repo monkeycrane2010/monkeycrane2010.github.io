@@ -11,7 +11,7 @@ let dropzoneThree = document.getElementById('dropzone3');
 ///////
 ////   SOUND EFFECT
 ///////
-let drum = document.querySelectorAll('.drum');
+let drum = document.querySelectorAll('.drum');  // this is just for visual
 
 for (let i = 0; i < drum.length; i++){
    drum[i].style.border = "2px solid orange";
@@ -24,7 +24,7 @@ for (let i = 0; i < drum.length; i++){
 
 
 
-
+//real code starts here
 function playSound(){
 
    let drumsound1 = new Audio('sounds/freesound-org_ajubamusic_1.mp3');
