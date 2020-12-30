@@ -9,6 +9,54 @@ let dropzoneThree = document.getElementById('dropzone3');
 
 
 ///////
+////   SOUND EFFECT
+///////
+let drum = document.querySelectorAll('.drum');
+
+for (let i = 0; i < drum.length; i++){
+   drum[i].style.border = "2px solid orange";
+ 
+   drum[i].addEventListener('mouseover', function(){
+      drum[i].setAttribute('title', i);
+   }, false);
+
+}
+
+
+
+
+function playSound(){
+
+   let drumsound1 = new Audio('sounds/freesound-org_ajubamusic_1.mp3');
+   let drumsound2 = new Audio('sounds/freesound-org_ajubamusic_2.mp3');
+   let drumsound3 = new Audio('sounds/freesound-org_Tropical_Musical_sound_3.mp3');
+
+   if(this.id === "D"){
+        letterD.style.background = "yellow";
+        drumsound1.play();
+   } else if(this.id === "R"){
+        letterR.style.background = "blue";
+        drumsound2.play();
+   } else if(this.id === "U"){
+      letterU.style.background = "pink";
+      drumsound3.play();
+   } else {
+      console.log("please click on a LETTER");
+   }
+    
+  
+  
+}
+
+let letterD = document.querySelector('#D');
+letterD.addEventListener('click', playSound, false);
+let letterR = document.querySelector('#R');
+letterR.addEventListener('click', playSound, false);
+let letterU = document.querySelector('#U');
+letterU.addEventListener('click', playSound, false);
+
+
+///////
 ////   DRAG 
 ///////
 
