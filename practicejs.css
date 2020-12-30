@@ -8,23 +8,26 @@
     padding: 0px;
     margin: 0px;
     display:grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr 2fr ;
+    grid-template-columns: 10% 10% 10% 10%;
     grid-template-areas: 
-    "menu1-1 menu1-2 . . menu2-1";
+    "menu1-1 menu1-2 menu1-3 . . menu2-1";
 }
 
-#menu1-1 {
+#addbtn {
     grid-area: menu1-1;
 }
 
-#menu1-2 {
+#savebtn {
     grid-area: menu1-2;
 }
 
-#menu2-1 {
-    grid-area: menu2-1;
+#helpbtn {
+    grid-area: menu1-3;
 }
 
+#deletebtn {
+    grid-area: menu2-1;
+}
 
 /* 
 ////  CSS for DROP ZONE

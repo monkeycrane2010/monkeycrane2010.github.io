@@ -1,13 +1,34 @@
 let imageplaceholder = [];
 
+let addbtn = document.getElementById('addbtn');
+
 let monkey = document.getElementById('monkey');
 let sheep = document.getElementById('sheep');
 let banana = document.getElementById('banana');
+
 let dropzoneOne = document.getElementById('dropzone1');
 let dropzoneTwo = document.getElementById('dropzone2');
 let dropzoneThree = document.getElementById('dropzone3');
 
 
+///////
+////   ADD NEW
+///////
+let boxforNew = document.getElementsByClassName('new');
+
+class NewImage {
+   constructor(id, url) {
+     this.id = id;
+     this.url = url;
+
+   }
+
+
+
+}
+
+
+addbtn.addEventListener('dragstart', monkeyActions, false);
 ///////
 ////   DRAG 
 ///////

@@ -1,59 +1,34 @@
 let imageplaceholder = [];
 
+let addbtn = document.getElementById('addbtn');
+
 let monkey = document.getElementById('monkey');
 let sheep = document.getElementById('sheep');
 let banana = document.getElementById('banana');
+
 let dropzoneOne = document.getElementById('dropzone1');
 let dropzoneTwo = document.getElementById('dropzone2');
 let dropzoneThree = document.getElementById('dropzone3');
 
+
 ///////
-////   SOUND EFFECT
+////   ADD NEW
 ///////
-let drum = document.querySelectorAll('.drum');  // this is just for visual
+let boxforNew = document.getElementsByClassName('new');
 
-for (let i = 0; i < drum.length; i++){
-   drum[i].style.border = "2px solid orange";
- 
-   drum[i].addEventListener('mouseover', function(){
-      drum[i].setAttribute('title', i);
-   }, false);
+class NewImage {
+   constructor(id, url) {
+     this.id = id;
+     this.url = url;
 
-}
-
-
-
-//real code starts here
-function playSound(){
-
-   let drumsound1 = new Audio('sounds/freesound-org_ajubamusic_1.mp3');
-   let drumsound2 = new Audio('sounds/freesound-org_ajubamusic_2.mp3');
-   let drumsound3 = new Audio('sounds/freesound-org_Tropical_Musical_sound_3.mp3');
-
-   if(this.id === "D"){
-        letterD.style.background = "yellow";
-        drumsound1.play();
-   } else if(this.id === "R"){
-        letterR.style.background = "blue";
-        drumsound2.play();
-   } else if(this.id === "U"){
-      letterU.style.background = "pink";
-      drumsound3.play();
-   } else {
-      console.log("please click on a LETTER");
    }
-    
-  
-  
+
+
+
 }
 
-let letterD = document.querySelector('#D');
-letterD.addEventListener('click', playSound, false);
-let letterR = document.querySelector('#R');
-letterR.addEventListener('click', playSound, false);
-let letterU = document.querySelector('#U');
-letterU.addEventListener('click', playSound, false);
 
+addbtn.addEventListener('dragstart', monkeyActions, false);
 ///////
 ////   DRAG 
 ///////

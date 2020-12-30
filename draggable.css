@@ -1,5 +1,41 @@
+
+/* 
+////    MENU (TOP)
+////  
+*/
+
+.menu{
+    padding: 0px;
+    margin: 0px;
+    display:grid;
+    grid-template-columns: 10% 10% 10% 10%;
+    grid-template-areas: 
+    "menu1-1 menu1-2 menu1-3 . . menu2-1";
+}
+
+#addbtn {
+    grid-area: menu1-1;
+}
+
+#savebtn {
+    grid-area: menu1-2;
+}
+
+#helpbtn {
+    grid-area: menu1-3;
+}
+
+#deletebtn {
+    grid-area: menu2-1;
+}
+
+/* 
+////  CSS for DROP ZONE
+////  
+*/
+
 div > img {
-    cursor:grab;    /* CHANGES CURSOR TYPE */
+    cursor:grab; 
 }
 
 .main { 
@@ -31,10 +67,4 @@ div > img {
 .imageSelected {
     border: 3px dotted rgb(66, 66, 66);
     background-color: rgb(192, 243, 116);
-}
-
-
-
-.drumset{
-    border: 3px solid indianred;
 }

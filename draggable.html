@@ -2,10 +2,21 @@
 <html>
 <head>
     <link rel="stylesheet" href="draggable.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
 </head>
 <body>
-<a href="index.html">go HOME</a><br/>
-<H2>Work in Progress</H2>
+
+<div class="menu">
+    <button class="menu1" id="addbtn"><i class="material-icons">note_add</i>Add Item</button>
+    <button class="menu2" id="savebtn"><i class="material-icons">get_app</i>Save</button>
+    <button class="menu1" id="helpbtn"><i class="material-icons">contact_support</i>Help</button>
+    <button class="menu1" id="deletebtn"><i class="material-icons">delete</i>Delete</button>
+</div>
+
+
+<div class="new"></div>
+
 <div class="animals">
     <img src="images/monkey.png" id="monkey"> <!--ID must be applied to <img> -->
     <img src="images/sheep.png"  id="sheep">
@@ -16,20 +27,6 @@
     <div id="dropzone1"></div>
     <div id="dropzone2"></div>
     <div id="dropzone3"></div>
-</div>
-
-<div class="drumset">
-    <p class="drum" id="D">D</p>
-    <p class="drum" id="R">R</p>
-    <p class="drum" id="U">U</p>
-    <p class="drum" id="M">M</p>
-    <p class="drum" id="S">S</p>
-    <p class="drum" id="!">!</p>
-</div>
-
-<div class="soundlibrary">
-    <a href="https://freesound.org/people/ajubamusic/sounds/320806/" target="_blank">https://freesound.org/people/ajubamusic/sounds/320806/</a>
-    <a href="https://freesound.org/people/Soughtaftersounds/sounds/145464/" target="_blank">https://freesound.org/people/Soughtaftersounds/sounds/145464/</a>
 </div>
 
 <script src="draggable.js"></script> <!--MUST BE AT END -->
