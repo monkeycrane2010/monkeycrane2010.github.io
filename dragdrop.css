@@ -27,8 +27,3 @@ div > img {
     background-color: rgb(94, 240, 113);
     grid-area: dropzone3;
 }
-
-.imageSelected {
-    border: 3px dotted rgb(66, 66, 66);
-    background-color: rgb(192, 243, 116);
-}
