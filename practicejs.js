@@ -1,4 +1,5 @@
 let imageplaceholder = [];
+let workspaces = [];
 
 let addbtn = document.getElementById('addbtn');
 let boxforNew = document.getElementsByClassName("new");
@@ -136,3 +137,30 @@ dropzoneOne.addEventListener('drop', dropzone1, false);
 
 dropzoneTwo.addEventListener('dragover', allowDrop, false);
 dropzoneTwo.addEventListener('drop', dropzone2, false);
+
+
+///////
+////   WORK SPACE 
+///////
+let workspace = document.querySelector(".workspace");
+
+function deletebtnActions(){
+   let x = 0;
+   if(workspaces.length === 0) {
+      let workspacenew = document.createElement("div");
+      workspacenew.setAttribute("class", "workspace");
+      workspacenew.setAttribute("id", "workspace" + x++);
+      workspacenew.setAttribute("style", "background-color: green");
+      workspace.appendChild(workspacenew);
+      workspaces.push(workspacenew)
+   } else if (workspaces.length === 1) {
+      let answer = prompt('Do you want to START OVER? Type y or n');
+      if (answer === "y"){
+         workspace.removeChild(workspace.firstChild);
+      }
+   } else {
+      console.log("there is already X number WORKSPACES: " + workspaces.length);
+   }
+}
+
+deletebtn.addEventListener('click', deletebtnActions, false);

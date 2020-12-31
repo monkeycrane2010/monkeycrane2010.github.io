@@ -43,6 +43,20 @@
 .animal, .fish{
     display:none;
 }
+
+
+
+/* 
+////  Workspace
+////  
+*/
+.workspace {
+    background-color:gainsboro;
+    height: 200px;
+    width: 390px;
+}
+
+
 /* 
 ////  CSS for DROP ZONE
 ////  
