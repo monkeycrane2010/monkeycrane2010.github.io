@@ -1,8 +1,14 @@
 let imageplaceholder = [];
-let workspaces = [];
+let workspaceList = [];
 
 let addbtn = document.getElementById('addbtn');
+let projectbtn = document.getElementById('projectbtn');
+
+
 let boxforNew = document.getElementsByClassName("new");
+let workspace = document.querySelector(".workspace");
+let workspacecounter = document.querySelector(".workspacecounter");
+
 let animalCollection = document.querySelectorAll(".animal");
 let fishCollection = document.querySelectorAll(".fish");
 
@@ -16,7 +22,14 @@ let dropzoneThree = document.getElementById('dropzone3');
 
 
 ///////
-////   ADD NEW
+////   Workspace COUNTER
+///////
+function workspacecounterActions(){
+   workspacecounter.innerHTML = "Workspace Counter: " + workspaceList.length;
+}
+
+///////
+////   ADD BTN
 ///////
 let animalList = Array.from(animalCollection);  // converts NodeList to Array
 let fishList = Array.from(fishCollection);
@@ -43,7 +56,46 @@ function imagelibrary(){
 
 }
 
-addbtn.addEventListener('click', imagelibrary, false);
+addbtn.addEventListener('mousedown', imagelibrary, false);
+
+///////
+////   PROJECT BTN
+///////
+function projectbtnActions(){
+   let x = 0;
+   x++;
+   let usercolor = prompt('Background color: (choose blue, gray, green, orange, purple, red, yellow)');
+   if(!workspace.hasChildNodes()){
+      let workspacenew = document.createElement("div");
+      workspacenew.setAttribute("class", "workspace");
+      workspacenew.setAttribute("id", "workspace" + x)
+      workspacenew.setAttribute("style", "background-color: " + usercolor)
+      workspace.appendChild(workspacenew);
+      workspaceList.push(workspacenew);
+      workspacecounterActions();
+   } 
+}
+
+projectbtn.addEventListener('click', projectbtnActions, false);
+
+
+
+///////
+////   DELETE BTN
+///////
+
+function deletebtnActions(){
+   let x = 0;
+   if (workspace.hasChildNodes()) {
+      alert("removing.... " + workspace.firstElementChild);
+      workspace.removeChild(workspace.firstElementChild);
+      workspaceList.pop();
+      workspacecounterActions();
+   }
+}
+
+deletebtn.addEventListener('click', deletebtnActions, false);
+
 
 ///////
 ////   DRAG 
@@ -142,25 +194,4 @@ dropzoneTwo.addEventListener('drop', dropzone2, false);
 ///////
 ////   WORK SPACE 
 ///////
-let workspace = document.querySelector(".workspace");
 
-function deletebtnActions(){
-   let x = 0;
-   if(workspaces.length === 0) {
-      let workspacenew = document.createElement("div");
-      workspacenew.setAttribute("class", "workspace");
-      workspacenew.setAttribute("id", "workspace" + x++);
-      workspacenew.setAttribute("style", "background-color: green");
-      workspace.appendChild(workspacenew);
-      workspaces.push(workspacenew)
-   } else if (workspaces.length === 1) {
-      let answer = prompt('Do you want to START OVER? Type y or n');
-      if (answer === "y"){
-         workspace.removeChild(workspace.firstChild);
-      }
-   } else {
-      console.log("there is already X number WORKSPACES: " + workspaces.length);
-   }
-}
-
-deletebtn.addEventListener('click', deletebtnActions, false);
