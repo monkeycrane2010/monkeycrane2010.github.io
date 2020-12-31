@@ -153,13 +153,18 @@ function allowDrop(event) {
 function dropzone1(event) {
    
    event.preventDefault();
-
+  
    if (event.type === "drop"){
       let data = event.dataTransfer.getData("text");
-      event.target.appendChild(document.getElementById(data));
+      var nodeCopy = document.getElementById(data).cloneNode(true); // COPY THE ITEM
+      nodeCopy.id = "newId"; // COPY THE ITEM
+      event.target.appendChild(nodeCopy);
+
+    
       imageplaceholder.push(data);
       dropzoneThree.innerText = imageplaceholder;
    }
+
 
 }
 
