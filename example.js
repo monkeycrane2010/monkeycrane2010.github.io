@@ -1,6 +1,3 @@
-let toptext = document.getElementById("toptext");
-toptext.innerText = "hello how are you?";
-
 let monkey = document.getElementById("monkey");
 
 
