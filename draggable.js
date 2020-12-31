@@ -1,6 +1,9 @@
 let imageplaceholder = [];
 
 let addbtn = document.getElementById('addbtn');
+let boxforNew = document.getElementsByClassName("new");
+let animalCollection = document.querySelectorAll(".animal");
+let fishCollection = document.querySelectorAll(".fish");
 
 let monkey = document.getElementById('monkey');
 let sheep = document.getElementById('sheep');
@@ -14,21 +17,33 @@ let dropzoneThree = document.getElementById('dropzone3');
 ///////
 ////   ADD NEW
 ///////
-let boxforNew = document.getElementsByClassName('new');
+let animalList = Array.from(animalCollection);  // converts NodeList to Array
+let fishList = Array.from(fishCollection);
 
-class NewImage {
-   constructor(id, url) {
-     this.id = id;
-     this.url = url;
+function imagelibrary(){
+  
+   for(animal of animalList){
+     
+      if(animal.style.display == "none"){
+         animal.style.display = "block";
+      } else {
+         animal.style.display = "none";
+      }
+
+   }
+   for(fish of fishList){
+      if(fish.style.display == "none"){
+         fish.style.display = "block";
+      } else {
+         fish.style.display = "none";
+      }
 
    }
 
-
-
 }
 
+addbtn.addEventListener('click', imagelibrary, false);
 
-addbtn.addEventListener('dragstart', monkeyActions, false);
 ///////
 ////   DRAG 
 ///////

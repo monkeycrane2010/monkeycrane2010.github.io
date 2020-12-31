@@ -30,6 +30,20 @@
 }
 
 /* 
+////    NEW
+////  
+*/
+
+.new{
+   display:flex;
+   flex-wrap:wrap;
+   align-content:flex-start;
+}
+
+.animal, .fish{
+    display:none;
+}
+/* 
 ////  CSS for DROP ZONE
 ////  
 */
