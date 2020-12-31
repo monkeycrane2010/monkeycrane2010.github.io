@@ -8,19 +8,22 @@ monkey.onmousedown = function(event) {
  
    monkey.style.position = 'absolute';
    monkey.style.zIndex = 1000;
+                        // JUST checking  console.log(this);  SUCCESS -this- refers to image
    document.body.append(monkey);
  
    moveAt(event.pageX, event.pageY);
- 
+
    // moves the MONKEY at (pageX, pageY) coordinates
    // taking initial shifts into account
    function moveAt(pageX, pageY) {
      monkey.style.left = pageX - shiftX + 'px';
      monkey.style.top = pageY - shiftY + 'px';
+                           /// JUST check  NOO -  -this- refers to WINDOW
    }
  
    function onMouseMove(event) {
      moveAt(event.pageX, event.pageY);
+                          /// JUST check  NOO -  -this- refers to WINDOW
    }
  
    // move the ball on mousemove
@@ -30,10 +33,12 @@ monkey.onmousedown = function(event) {
    monkey.onmouseup = function() {
      document.removeEventListener('mousemove', onMouseMove);
      monkey.onmouseup = null;
+  
    };
  
  };
  
  monkey.ondragstart = function() {
+                        /// JUST checking  console.log(this);  SUCCESS -this- refers to image
    return false;
  }
