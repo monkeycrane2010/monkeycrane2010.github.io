@@ -1,39 +1,29 @@
-div > img {
-    cursor:grab;    /* CHANGES CURSOR TYPE */
+
+h1{
+    text-align: center;
+    color:blue;
+    border: solid brown;
+    border-radius: 100px;
+    padding:0;
 }
 
-.main { 
-    width: 500px;
-    height: 500px;
-    border: 2px solid purple;
-    display:grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "dropzone1 dropzone2 dropzone3";
+#tester{
+    font-size: 14px;
 }
 
-#dropzone1 {
-    background-color: rgb(247, 214, 107);
-    grid-area: dropzone1;
+img {
+    cursor: grab;
 }
 
-#dropzone2 {
-    background-color: rgb(100, 75, 243);
-    grid-area: dropzone2;
+.library{
+    display:none;
 }
 
-#dropzone3 {
-    background-color: rgb(94, 240, 113);
-    grid-area: dropzone3;
+#dropzone1{
+    width: 400px;
+    height: 300px;
+    background-color: burlywood;
 }
-
-.imageSelected {
-    border: 3px dotted rgb(66, 66, 66);
-    background-color: rgb(192, 243, 116);
-}
-
-
 
 .drumset{
     border: 3px solid indianred;
