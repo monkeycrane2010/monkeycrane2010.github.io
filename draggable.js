@@ -1,141 +1,102 @@
+let imageplaceholder = [];
 
-let imagesarray = [];
-
-
-let animalCollection = document.querySelectorAll("img"); // NodeList
-//console.log(animalCollection);
-
-let animals = Array.from(animalCollection); // convert to ARRAY
-//console.log(animals);
-
-let monkey = document.getElementById("monkey");  
-let sheep = document.getElementById("sheep"); 
-let frog = document.getElementById("frog");
+let monkey = document.getElementById('monkey');
+let sheep = document.getElementById('sheep');
+let banana = document.getElementById('banana');
+let dropzoneOne = document.getElementById('dropzone1');
+let dropzoneTwo = document.getElementById('dropzone2');
+let dropzoneThree = document.getElementById('dropzone3');
 
 
-let monkeybtn = document.getElementById("monkeybtn"); 
-let sheepbtn = document.getElementById("sheepbtn"); 
-let frogbtn = document.getElementById("frogbtn"); 
+///////
+////   DRAG 
+///////
 
-
-let text1 = document.getElementById("text1"); 
-
-
-
-/////
-//    Mouse Down
-////
-
-imagesarray.forEach(mouseDown)
-
-function mouseDown(event){
+function monkeyActions(event) {
+   console.log(event.target.id);
   
-   console.log(this);
-   console.log(this + " " + "I am free");
-   this.style.border = "2px solid red";
+   if (event.type === "dragstart"){
+      event.dataTransfer.setData("text", event.target.id);
+
+   } else if(event.type === "mousedown"){
+     monkey.classList.add("imageSelected");
+   } 
+
+}
 
 
-  /*
-    let shiftX = event.clientX - document.getElementById(this).getBoundingClientRect().left;
-    let shiftY = event.clientY - document.getElementById(this).getBoundingClientRect().top;
-    
 
-    document.getElementById(this).style.position = 'absolute';
-    document.getElementById(this).style.zIndex = 1000;
+function sheepActions(event) {
+   console.log(event.target.id);
+  
+   if (event.type === "dragstart"){
+      event.dataTransfer.setData("text", event.target.id);
+
+   } else if(event.type === "mousedown"){
+      sheep.classList.add("imageSelected");
+   } 
+
    
-    document.body.append(document.getElementById(this));
-  
-    moveAt(event.pageX, event.pageY);
-  
-     // moves the MONKEY at (pageX, pageY) coordinates
-    // taking initial shifts into account
-    function moveAt(pageX, pageY) {
-      document.getElementById(this).style.left = pageX - shiftX + 'px';
-      document.getElementById(this).style.top = pageY - shiftY + 'px';
-    }
-  
-  
-    function onMouseMove(event) {
-      moveAt(event.pageX, event.pageY);
-    }
-  
-    // move the ball on mousemove
-    document.addEventListener('mousemove', onMouseMove);
-  
-    // drop the ball, remove unneeded handlers
-    document.getElementById(this).onmouseup = function() {
-      document.removeEventListener('mousemove', onMouseMove);
-      document.getElementById(this).onmouseup = null;
-    };
+ }
 
-  */
+
+
+ function bananaActions(event) {
+  console.log(event.target.id);
   
-}
+   if (event.type === "dragstart"){
+      event.dataTransfer.setData("text", event.target.id);
 
-monkey.ondragstart = function() {
-  return false;
-}
+   }
 
-sheep.ondragstart = function() {
-  return false;
-}
+ }
 
-frog.ondragstart = function() {
-  return false;
+
+///////
+////   DROP ZONE
+///////
+function allowDrop(event) {
+   event.preventDefault();
 }
 
 
-/////
-//     DRAG start
-////
 
+function dropzone1(event) {
+   
+   event.preventDefault();
 
+   if (event.type === "drop"){
+      let data = event.dataTransfer.getData("text");
+      event.target.appendChild(document.getElementById(data));
+      imageplaceholder.push(data);
+      dropzoneThree.innerText = imageplaceholder;
+   }
 
-
-
-
-
-/////
-//     Image Factory
-////
-class Imagefactory {
-    constructor(animal, classname, i) {
-      this.animal = animal;
-      this.classname = classname;
-      this.i = i;
-    }
-
-    attribute(){
-      let newimg = document.createElement("img");
-      newimg.setAttribute("src", "images/" + this.animal.id + ".png");  
-      newimg.setAttribute("class", this.classname);
-      newimg.setAttribute("id", this.animal.id + this.i++);
-      text1.appendChild(newimg);
-      imagesarray.push(newimg);
-      console.log(newimg.id);
-  
-         newimg.addEventListener('mousedown', mouseDown, false);
-        
-     
-    }   
-    
 }
 
-let monkey1 = new Imagefactory(monkey, "animal", 1);
-let sheep1 = new Imagefactory(sheep, "animal", 1);
-let frog1 = new Imagefactory(frog, "fish", 1);
+
+function dropzone2(event) {
+  
+   event.preventDefault();
+  
+   if (event.type === "drop"){
+      let data = event.dataTransfer.getData("text");
+      event.target.appendChild(document.getElementById(data));
+   }
+
+}
+
+monkey.addEventListener('dragstart', monkeyActions, false);
+monkey.addEventListener('mousedown', monkeyActions, false);
+
+sheep.addEventListener('dragstart', sheepActions, false);
+sheep.addEventListener('mousedown', sheepActions, false);
+
+banana.addEventListener('dragstart', bananaActions, false);
 
 
+dropzoneOne.addEventListener('dragover', allowDrop, false);
+dropzoneOne.addEventListener('drop', dropzone1, false);
 
-monkeybtn.addEventListener('click', function(){
-    monkey1.attribute();
-}, false)
-
-sheepbtn.addEventListener('click', function(){
-    sheep1.attribute();
- 
-}, false)
-
-frogbtn.addEventListener('click', function(){
-    frog1.attribute();
-}, false)
+dropzoneTwo.addEventListener('dragover', allowDrop, false);
+dropzoneTwo.addEventListener('drop', dropzone2, false);

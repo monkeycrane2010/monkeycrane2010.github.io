@@ -19,6 +19,7 @@ let frogbtn = document.getElementById("frogbtn");
 
 
 let text1 = document.getElementById("text1"); 
+let dropzoneOne = document.getElementById("dropzone1"); 
 
 
 
@@ -26,32 +27,61 @@ let text1 = document.getElementById("text1");
 //    Mouse Down
 ////
 
-imagesarray.forEach(mouseDown)
+//imagesarray.forEach(mouseDown)
 
+imagesarray.forEach(dragStart);
+imagesarray.forEach(allowDrop);
+imagesarray.forEach(drop);
+
+function dragStart(event){
+  event.dataTransfer.setData("text", event.target.id);
+}
+
+
+function allowDrop(event){
+  event.preventDefault();
+}
+
+function drop(event){
+  event.preventDefault();
+  var data = event.dataTransfer.getData("text");
+  event.target.appendChild(document.getElementById(data));
+}
+
+
+
+
+dropzoneOne.addEventListener('drop', function(){
+  allowDrop();
+  drop();
+}, false);
+
+
+/*
 function mouseDown(event){
-  
-   console.log(this);
-   console.log(this + " " + "I am free");
+
    this.style.border = "2px solid red";
+   let ball = this.getBoundingClientRect();
+  
 
 
-  /*
-    let shiftX = event.clientX - document.getElementById(this).getBoundingClientRect().left;
-    let shiftY = event.clientY - document.getElementById(this).getBoundingClientRect().top;
+  
+    let shiftX = event.clientX - ball.left;
+    let shiftY = event.clientY - ball.top;
     
 
-    document.getElementById(this).style.position = 'absolute';
-    document.getElementById(this).style.zIndex = 1000;
+    this.style.position = 'absolute';
+    this.style.zIndex = 1000;
    
-    document.body.append(document.getElementById(this));
+    document.body.append(this);
   
     moveAt(event.pageX, event.pageY);
   
      // moves the MONKEY at (pageX, pageY) coordinates
     // taking initial shifts into account
     function moveAt(pageX, pageY) {
-      document.getElementById(this).style.left = pageX - shiftX + 'px';
-      document.getElementById(this).style.top = pageY - shiftY + 'px';
+      this.style.left = pageX - shiftX + 'px';
+      this.style.top = pageY - shiftY + 'px';
     }
   
   
@@ -63,12 +93,11 @@ function mouseDown(event){
     document.addEventListener('mousemove', onMouseMove);
   
     // drop the ball, remove unneeded handlers
-    document.getElementById(this).onmouseup = function() {
+    this.onmouseup = function() {
       document.removeEventListener('mousemove', onMouseMove);
-      document.getElementById(this).onmouseup = null;
+      this.onmouseup = null;
     };
 
-  */
   
 }
 
@@ -83,6 +112,8 @@ sheep.ondragstart = function() {
 frog.ondragstart = function() {
   return false;
 }
+
+*/
 
 
 /////
@@ -106,6 +137,7 @@ class Imagefactory {
     }
 
     attribute(){
+
       let newimg = document.createElement("img");
       newimg.setAttribute("src", "images/" + this.animal.id + ".png");  
       newimg.setAttribute("class", this.classname);
@@ -113,13 +145,13 @@ class Imagefactory {
       text1.appendChild(newimg);
       imagesarray.push(newimg);
       console.log(newimg.id);
-  
-         newimg.addEventListener('mousedown', mouseDown, false);
-        
-     
+     // newimg.addEventListener('mousedown', mouseDown, false);
+     // newimg.addEventListener('dragstart', dragStart, false);
+   
     }   
     
 }
+
 
 let monkey1 = new Imagefactory(monkey, "animal", 1);
 let sheep1 = new Imagefactory(sheep, "animal", 1);

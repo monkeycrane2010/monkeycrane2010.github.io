@@ -1,104 +1,150 @@
+let imageplaceholder = [];
+
+let monkey = document.getElementById('monkey');
+let sheep = document.getElementById('sheep');
+let banana = document.getElementById('banana');
+let dropzoneOne = document.getElementById('dropzone1');
+let dropzoneTwo = document.getElementById('dropzone2');
+let dropzoneThree = document.getElementById('dropzone3');
 
 
-let animalCollection = document.querySelectorAll("img"); // NodeList
-//console.log(animalCollection);
+///////
+////   SOUND EFFECT
+///////
+let drum = document.querySelectorAll('.drum');  // this is just for visual
 
-let animals = Array.from(animalCollection); // convert to ARRAY
-//console.log(animals);
+for (let i = 0; i < drum.length; i++){
+   drum[i].style.border = "2px solid orange";
+ 
+   drum[i].addEventListener('mouseover', function(){
+      drum[i].setAttribute('title', i);
+   }, false);
 
-let monkey = document.getElementById("monkey");  
-let sheep = document.getElementById("sheep"); 
-let frog = document.getElementById("frog");
-
-
-let monkeybtn = document.getElementById("monkeybtn"); 
-let sheepbtn = document.getElementById("sheepbtn"); 
-let frogbtn = document.getElementById("frogbtn"); 
-
-let text1 = document.getElementById("text1"); 
-let firststage = document.getElementById("firststage"); 
-
-/////
-//     Image Factory
-////
-class Imagefactory {
-    constructor(animal, classname, i) {
-      this.animal = animal;
-      this.classname = classname;
-      this.i = i;
-    }
-
-    attribute(){
-        let newimg = document.createElement("IMG");
-        newimg.setAttribute("src", "images/" + this.animal.id + ".png");  
-        newimg.setAttribute("class", this.classname);
-        newimg.setAttribute("id", this.animal.id + this.i++);
-        text1.appendChild(newimg);
-    }
-    
 }
 
-let monkey1 = new Imagefactory(monkey, "animal", 1);
-let sheep1 = new Imagefactory(sheep, "animal", 1);
-let frog1 = new Imagefactory(frog, "fish", 1);
 
 
+//real code starts here
+function playSound(){
 
-monkeybtn.addEventListener('click', function(){
-    monkey1.attribute();
-}, false)
+   let drumsound1 = new Audio('sounds/freesound-org_ajubamusic_1.mp3');
+   let drumsound2 = new Audio('sounds/freesound-org_ajubamusic_2.mp3');
+   let drumsound3 = new Audio('sounds/freesound-org_Tropical_Musical_sound_3.mp3');
 
-sheepbtn.addEventListener('click', function(){
-    sheep1.attribute();
-}, false)
-
-frogbtn.addEventListener('click', function(){
-    frog1.attribute();
-}, false)
-
-
-
-/////
-//    Monkey , actions
-////
-monkey.onmousedown = function(event) {
-
-    let shiftX = event.clientX - monkey.getBoundingClientRect().left;
-    let shiftY = event.clientY - monkey.getBoundingClientRect().top;
+   if(this.id === "D"){
+        letterD.style.background = "yellow";
+        drumsound1.play();
+   } else if(this.id === "R"){
+        letterR.style.background = "blue";
+        drumsound2.play();
+   } else if(this.id === "U"){
+      letterU.style.background = "pink";
+      drumsound3.play();
+   } else {
+      console.log("please click on a LETTER");
+   }
+    
   
-    monkey.style.position = 'absolute';
-    monkey.style.zIndex = 1000;
-                         // JUST checking  console.log(this);  SUCCESS -this- refers to image
-    document.body.append(monkey);
   
-    moveAt(event.pageX, event.pageY);
- 
-    // moves the MONKEY at (pageX, pageY) coordinates
-    // taking initial shifts into account
-    function moveAt(pageX, pageY) {
-      monkey.style.left = pageX - shiftX + 'px';
-      monkey.style.top = pageY - shiftY + 'px';
-                            /// JUST check  NOO -  -this- refers to WINDOW
-    }
+}
+
+let letterD = document.querySelector('#D');
+letterD.addEventListener('click', playSound, false);
+let letterR = document.querySelector('#R');
+letterR.addEventListener('click', playSound, false);
+let letterU = document.querySelector('#U');
+letterU.addEventListener('click', playSound, false);
+
+
+///////
+////   DRAG 
+///////
+
+function monkeyActions(event) {
+   console.log(event.target.id);
   
-    function onMouseMove(event) {
-      moveAt(event.pageX, event.pageY);
-                           /// JUST check  NOO -  -this- refers to WINDOW
-    }
+   if (event.type === "dragstart"){
+      event.dataTransfer.setData("text", event.target.id);
+
+   } else if(event.type === "mousedown"){
+     monkey.classList.add("imageSelected");
+   } 
+
+}
+
+
+
+function sheepActions(event) {
+   console.log(event.target.id);
   
-    // move the ball on mousemove
-    document.addEventListener('mousemove', onMouseMove);
-  
-    // drop the ball, remove unneeded handlers
-    monkey.onmouseup = function() {
-      document.removeEventListener('mousemove', onMouseMove);
-      monkey.onmouseup = null;
+   if (event.type === "dragstart"){
+      event.dataTransfer.setData("text", event.target.id);
+
+   } else if(event.type === "mousedown"){
+      sheep.classList.add("imageSelected");
+   } 
+
    
-    };
+ }
+
+
+
+ function bananaActions(event) {
+  console.log(event.target.id);
   
-  };
+   if (event.type === "dragstart"){
+      event.dataTransfer.setData("text", event.target.id);
+
+   }
+
+ }
+
+
+///////
+////   DROP ZONE
+///////
+function allowDrop(event) {
+   event.preventDefault();
+}
+
+
+
+function dropzone1(event) {
+   
+   event.preventDefault();
+
+   if (event.type === "drop"){
+      let data = event.dataTransfer.getData("text");
+      event.target.appendChild(document.getElementById(data));
+      imageplaceholder.push(data);
+      dropzoneThree.innerText = imageplaceholder;
+   }
+
+}
+
+
+function dropzone2(event) {
   
-  monkey.ondragstart = function() {
-                         /// JUST checking  console.log(this);  SUCCESS -this- refers to image
-    return false;
-  }
+   event.preventDefault();
+  
+   if (event.type === "drop"){
+      let data = event.dataTransfer.getData("text");
+      event.target.appendChild(document.getElementById(data));
+   }
+
+}
+
+monkey.addEventListener('dragstart', monkeyActions, false);
+monkey.addEventListener('mousedown', monkeyActions, false);
+
+sheep.addEventListener('dragstart', sheepActions, false);
+sheep.addEventListener('mousedown', sheepActions, false);
+
+banana.addEventListener('dragstart', bananaActions, false);
+
+
+dropzoneOne.addEventListener('dragover', allowDrop, false);
+dropzoneOne.addEventListener('drop', dropzone1, false);
+
+dropzoneTwo.addEventListener('dragover', allowDrop, false);
+dropzoneTwo.addEventListener('drop', dropzone2, false);

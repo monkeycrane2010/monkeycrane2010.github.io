@@ -1,17 +1,30 @@
 
-h1{
-    text-align: center;
-    color:blue;
-    border: solid brown;
-    border-radius: 100px;
-    padding:0;
-}
-
-#toptext{
-  font-size: 18px;
-}
-
-
 div > img {
-    cursor: grab;
+  cursor:grab;    /* CHANGES CURSOR TYPE */
+}
+
+.main { 
+  width: 500px;
+  height: 500px;
+  border: 2px solid purple;
+  display:grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "dropzone1 dropzone2 dropzone3";
+}
+
+#dropzone1 {
+  background-color: rgb(247, 214, 107);
+  grid-area: dropzone1;
+}
+
+#dropzone2 {
+  background-color: rgb(100, 75, 243);
+  grid-area: dropzone2;
+}
+
+#dropzone3 {
+  background-color: rgb(94, 240, 113);
+  grid-area: dropzone3;
 }

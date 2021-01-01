@@ -2,23 +2,35 @@
 <html>
 <head>
     <link rel="stylesheet" href="draggable.css">
+    <title>Draggable HTML</title>
 </head>
 <body>
 
-<h1>Whiteboard APP </h1>
-<p id="text1"></p>
-
-<button id="monkeybtn">Monkey</button>
-<button id="sheepbtn">Sheep</button>
-<button id="frogbtn">Frog</button>
-
-
-<div class="library">
-    <img src="images/monkey.png" class="animal"  id="monkey"> <!--ID must be applied to <img> -->
-    <img src="images/sheep.png"  class="animal"  id="sheep">
-    <img src="images/frog.png"   class="fish"    id="frog">
+<div class="animals">
+    <img src="images/monkey.png" id="monkey"> <!--ID must be applied to <img> -->
+    <img src="images/sheep.png"  id="sheep">
+    <img src="images/banana.png" id="banana">
 </div>
 
+<div class="main">
+    <div id="dropzone1"></div>
+    <div id="dropzone2"></div>
+    <div id="dropzone3"></div>
+</div>
+
+<div class="drumset">
+    <p class="drum" id="D">D</p>
+    <p class="drum" id="R">R</p>
+    <p class="drum" id="U">U</p>
+    <p class="drum" id="M">M</p>
+    <p class="drum" id="S">S</p>
+    <p class="drum" id="!">!</p>
+</div>
+
+<div class="soundlibrary">
+    <a href="https://freesound.org/people/ajubamusic/sounds/320806/" target="_blank">https://freesound.org/people/ajubamusic/sounds/320806/</a>
+    <a href="https://freesound.org/people/Soughtaftersounds/sounds/145464/" target="_blank">https://freesound.org/people/Soughtaftersounds/sounds/145464/</a>
+</div>
 
 <script src="draggable.js"></script> <!--MUST BE AT END -->
 </body>
