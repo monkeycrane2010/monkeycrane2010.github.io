@@ -12,13 +12,13 @@ let animals = Array.from(animalCollection); // convert to ARRAY
 //console.log(animals);
 
 let monkey = document.getElementById("monkey");  
-let sheep = document.getElementById("sheep"); 
-let frog = document.getElementById("frog");
+let cheep = document.getElementById("cheep"); 
+let chomp = document.getElementById("chomp");
 
 
 let monkeybtn = document.getElementById("monkeybtn"); 
-let sheepbtn = document.getElementById("sheepbtn"); 
-let frogbtn = document.getElementById("frogbtn"); 
+let cheepbtn = document.getElementById("cheepbtn"); 
+let chompbtn = document.getElementById("chompbtn"); 
 
 let tester = document.getElementById("tester"); 
 let text1 = document.getElementById("text1"); 
@@ -131,8 +131,8 @@ class Imagefactory {
 
 
 let monkey1 = new Imagefactory(monkey, "animal", 1);
-let sheep1 = new Imagefactory(sheep, "animal", 1);
-let frog1 = new Imagefactory(frog, "fish", 1);
+let cheep1 = new Imagefactory(cheep, "fish", 1);
+let chomp1 = new Imagefactory(chomp, "animal", 1);
 
 
 
@@ -140,11 +140,11 @@ monkeybtn.addEventListener('click', function(){
     monkey1.attribute();
 }, false)
 
-sheepbtn.addEventListener('click', function(){
-    sheep1.attribute();
+cheeppbtn.addEventListener('click', function(){
+    cheep1.attribute();
  
 }, false)
 
-frogbtn.addEventListener('click', function(){
-    frog1.attribute();
+chompbtn.addEventListener('click', function(){
+    chomp1.attribute();
 }, false)
