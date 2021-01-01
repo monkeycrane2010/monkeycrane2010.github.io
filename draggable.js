@@ -140,7 +140,7 @@ monkeybtn.addEventListener('click', function(){
     monkey1.attribute();
 }, false)
 
-cheeppbtn.addEventListener('click', function(){
+cheepbtn.addEventListener('click', function(){
     cheep1.attribute();
  
 }, false)
