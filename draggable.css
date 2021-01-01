@@ -5,106 +5,12 @@ h1{
     border: solid brown;
     border-radius: 100px;
     padding:0;
-  
 }
 
-/* 
-////    MENU (TOP)
-////  
-*/
-
-.menu{
-    padding-bottom: 25px;
-    display:grid;
-    grid-template-columns: 10% 10% 10% 10%;
-    grid-template-areas: 
-    "menu1-1 menu1-2 menu1-3 . . menu2-1";
+img {
+    cursor: grab;
 }
 
-#addbtn {
-    grid-area: menu1-1;
-}
-
-#savebtn {
-    grid-area: menu1-2;
-}
-
-#helpbtn {
-    grid-area: menu1-3;
-}
-
-#deletebtn {
-    grid-area: menu2-1;
-}
-
-/* 
-////    NEW
-////  
-*/
-
-.new{
-   display:flex;
-   flex-wrap:wrap;
-   align-content:flex-start;
-}
-
-.animal, .fish{
+.library{
     display:none;
-}
-
-
-
-/* 
-////  Workspace
-////  
-*/
-.workspace {
-    background-color:gainsboro;
-    height: 200px;
-    width: 390px;
-}
-
-.workspacecounter{
-    font-size: 25px;
-    color:darkblue;
-}
-
-/* 
-////  CSS for DROP ZONE
-////  
-*/
-
-div > img {
-    cursor:grab; 
-}
-
-.main { 
-    width: 700px;
-    height: 800px;
-    border: 2px solid purple;
-    display:grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-template-areas: 
-    "dropzone1 dropzone2 dropzone3";
-}
-
-#dropzone1 {
-    background-color: rgb(247, 214, 107);
-    grid-area: dropzone1;
-}
-
-#dropzone2 {
-    background-color: rgb(100, 75, 243);
-    grid-area: dropzone2;
-}
-
-#dropzone3 {
-    background-color: rgb(94, 240, 113);
-    grid-area: dropzone3;
-}
-
-.imageSelected {
-    border: 3px dotted rgb(66, 66, 66);
-    background-color: rgb(192, 243, 116);
 }

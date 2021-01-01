@@ -7,11 +7,10 @@ h1{
     padding:0;
 }
 
-#toptext{
-  font-size: 18px;
+img {
+    cursor: grab;
 }
 
-
-div > img {
-    cursor: grab;
+.library{
+    display:none;
 }

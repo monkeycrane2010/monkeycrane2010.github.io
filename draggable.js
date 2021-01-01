@@ -1,202 +1,141 @@
-let imageplaceholder = [];
-let workspaceList = [];
 
-let addbtn = document.getElementById('addbtn');
-let projectbtn = document.getElementById('projectbtn');
+let imagesarray = [];
 
 
-let boxforNew = document.getElementsByClassName("new");
-let workspace = document.querySelector(".workspace");
-let workspacecounter = document.querySelector(".workspacecounter");
+let animalCollection = document.querySelectorAll("img"); // NodeList
+//console.log(animalCollection);
 
-let animalCollection = document.querySelectorAll(".animal");
-let fishCollection = document.querySelectorAll(".fish");
+let animals = Array.from(animalCollection); // convert to ARRAY
+//console.log(animals);
 
-let monkey = document.getElementById('monkey');
-let sheep = document.getElementById('sheep');
-let banana = document.getElementById('banana');
-
-let dropzoneOne = document.getElementById('dropzone1');
-let dropzoneTwo = document.getElementById('dropzone2');
-let dropzoneThree = document.getElementById('dropzone3');
+let monkey = document.getElementById("monkey");  
+let sheep = document.getElementById("sheep"); 
+let frog = document.getElementById("frog");
 
 
-///////
-////   Workspace COUNTER
-///////
-function workspacecounterActions(){
-   workspacecounter.innerHTML = "Workspace Counter: " + workspaceList.length;
-}
+let monkeybtn = document.getElementById("monkeybtn"); 
+let sheepbtn = document.getElementById("sheepbtn"); 
+let frogbtn = document.getElementById("frogbtn"); 
 
-///////
-////   ADD BTN
-///////
-let animalList = Array.from(animalCollection);  // converts NodeList to Array
-let fishList = Array.from(fishCollection);
 
-function imagelibrary(){
+let text1 = document.getElementById("text1"); 
+
+
+
+/////
+//    Mouse Down
+////
+
+imagesarray.forEach(mouseDown)
+
+function mouseDown(event){
   
-   for(animal of animalList){
-     
-      if(animal.style.display == "none"){
-         animal.style.display = "block";
-      } else {
-         animal.style.display = "none";
-      }
-
-   }
-   for(fish of fishList){
-      if(fish.style.display == "none"){
-         fish.style.display = "block";
-      } else {
-         fish.style.display = "none";
-      }
-
-   }
-
-}
-
-addbtn.addEventListener('mousedown', imagelibrary, false);
-
-///////
-////   PROJECT BTN
-///////
-function projectbtnActions(){
-   let x = 0;
-   x++;
-   let usercolor = prompt('Background color: (choose blue, gray, green, orange, purple, red, yellow)');
-   if(!workspace.hasChildNodes()){
-      let workspacenew = document.createElement("div");
-      workspacenew.setAttribute("class", "workspace");
-      workspacenew.setAttribute("id", "workspace" + x)
-      workspacenew.setAttribute("style", "background-color: " + usercolor)
-      workspace.appendChild(workspacenew);
-      workspaceList.push(workspacenew);
-      workspacecounterActions();
-   } 
-}
-
-projectbtn.addEventListener('click', projectbtnActions, false);
+   console.log(this);
+   console.log(this + " " + "I am free");
+   this.style.border = "2px solid red";
 
 
-
-///////
-////   DELETE BTN
-///////
-
-function deletebtnActions(){
-   let x = 0;
-   if (workspace.hasChildNodes()) {
-      alert("removing.... " + workspace.firstElementChild);
-      workspace.removeChild(workspace.firstElementChild);
-      workspaceList.pop();
-      workspacecounterActions();
-   }
-}
-
-deletebtn.addEventListener('click', deletebtnActions, false);
-
-
-///////
-////   DRAG 
-///////
-
-function monkeyActions(event) {
-   console.log(event.target.id);
-  
-   if (event.type === "dragstart"){
-      event.dataTransfer.setData("text", event.target.id);
-
-   } else if(event.type === "mousedown"){
-     monkey.classList.add("imageSelected");
-   } 
-
-}
-
-
-
-function sheepActions(event) {
-   console.log(event.target.id);
-  
-   if (event.type === "dragstart"){
-      event.dataTransfer.setData("text", event.target.id);
-
-   } else if(event.type === "mousedown"){
-      sheep.classList.add("imageSelected");
-   } 
-
-   
- }
-
-
-
- function bananaActions(event) {
-  console.log(event.target.id);
-  
-   if (event.type === "dragstart"){
-      event.dataTransfer.setData("text", event.target.id);
-
-   }
-
- }
-
-
-///////
-////   DROP ZONE
-///////
-function allowDrop(event) {
-   event.preventDefault();
-}
-
-
-
-function dropzone1(event) {
-   
-   event.preventDefault();
-  
-   if (event.type === "drop"){
-      let data = event.dataTransfer.getData("text");
-      var nodeCopy = document.getElementById(data).cloneNode(true); // COPY THE ITEM
-      nodeCopy.id = "newId"; // COPY THE ITEM
-      event.target.appendChild(nodeCopy);
-
+  /*
+    let shiftX = event.clientX - document.getElementById(this).getBoundingClientRect().left;
+    let shiftY = event.clientY - document.getElementById(this).getBoundingClientRect().top;
     
-      imageplaceholder.push(data);
-      dropzoneThree.innerText = imageplaceholder;
-   }
 
+    document.getElementById(this).style.position = 'absolute';
+    document.getElementById(this).style.zIndex = 1000;
+   
+    document.body.append(document.getElementById(this));
+  
+    moveAt(event.pageX, event.pageY);
+  
+     // moves the MONKEY at (pageX, pageY) coordinates
+    // taking initial shifts into account
+    function moveAt(pageX, pageY) {
+      document.getElementById(this).style.left = pageX - shiftX + 'px';
+      document.getElementById(this).style.top = pageY - shiftY + 'px';
+    }
+  
+  
+    function onMouseMove(event) {
+      moveAt(event.pageX, event.pageY);
+    }
+  
+    // move the ball on mousemove
+    document.addEventListener('mousemove', onMouseMove);
+  
+    // drop the ball, remove unneeded handlers
+    document.getElementById(this).onmouseup = function() {
+      document.removeEventListener('mousemove', onMouseMove);
+      document.getElementById(this).onmouseup = null;
+    };
 
+  */
+  
+}
+
+monkey.ondragstart = function() {
+  return false;
+}
+
+sheep.ondragstart = function() {
+  return false;
+}
+
+frog.ondragstart = function() {
+  return false;
 }
 
 
-function dropzone2(event) {
-  
-   event.preventDefault();
-  
-   if (event.type === "drop"){
-      let data = event.dataTransfer.getData("text");
-      event.target.appendChild(document.getElementById(data));
-   }
+/////
+//     DRAG start
+////
 
+
+
+
+
+
+
+/////
+//     Image Factory
+////
+class Imagefactory {
+    constructor(animal, classname, i) {
+      this.animal = animal;
+      this.classname = classname;
+      this.i = i;
+    }
+
+    attribute(){
+      let newimg = document.createElement("img");
+      newimg.setAttribute("src", "images/" + this.animal.id + ".png");  
+      newimg.setAttribute("class", this.classname);
+      newimg.setAttribute("id", this.animal.id + this.i++);
+      text1.appendChild(newimg);
+      imagesarray.push(newimg);
+      console.log(newimg.id);
+  
+         newimg.addEventListener('mousedown', mouseDown, false);
+        
+     
+    }   
+    
 }
 
-monkey.addEventListener('dragstart', monkeyActions, false);
-monkey.addEventListener('mousedown', monkeyActions, false);
-
-sheep.addEventListener('dragstart', sheepActions, false);
-sheep.addEventListener('mousedown', sheepActions, false);
-
-banana.addEventListener('dragstart', bananaActions, false);
+let monkey1 = new Imagefactory(monkey, "animal", 1);
+let sheep1 = new Imagefactory(sheep, "animal", 1);
+let frog1 = new Imagefactory(frog, "fish", 1);
 
 
-dropzoneOne.addEventListener('dragover', allowDrop, false);
-dropzoneOne.addEventListener('drop', dropzone1, false);
 
-dropzoneTwo.addEventListener('dragover', allowDrop, false);
-dropzoneTwo.addEventListener('drop', dropzone2, false);
+monkeybtn.addEventListener('click', function(){
+    monkey1.attribute();
+}, false)
 
+sheepbtn.addEventListener('click', function(){
+    sheep1.attribute();
+ 
+}, false)
 
-///////
-////   WORK SPACE 
-///////
-
+frogbtn.addEventListener('click', function(){
+    frog1.attribute();
+}, false)
