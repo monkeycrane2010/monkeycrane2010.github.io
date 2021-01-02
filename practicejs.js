@@ -19,59 +19,11 @@ let octopus = document.getElementById("octopus");
 let frogbtn = document.getElementById("frogbtn"); 
 let penguinbtn = document.getElementById("penguinbtn"); 
 let octopusbtn = document.getElementById("octopusbtn"); 
+let deletebtn = document.getElementById("deletebtn"); 
 
 let tester = document.getElementById("tester"); 
-let text1 = document.getElementById("text1"); 
-let dropzoneOne = document.getElementById("dropzone1"); 
-
-
-///////
-////   SOUND EFFECT
-///////
-let drum = document.querySelectorAll('.drum');  // this is just for visual
-
-for (let i = 0; i < drum.length; i++){
-   drum[i].style.border = "2px solid orange";
- 
-   drum[i].addEventListener('mouseover', function(){
-      drum[i].setAttribute('title', i);
-   }, false);
-
-}
-
-
-
-//real code starts here
-function playSound(){
-
-   let drumsound1 = new Audio('sounds/freesound-org_ajubamusic_1.mp3');
-   let drumsound2 = new Audio('sounds/freesound-org_ajubamusic_2.mp3');
-   let drumsound3 = new Audio('sounds/freesound-org_Tropical_Musical_sound_3.mp3');
-
-   if(this.id === "D"){
-        letterD.style.background = "yellow";
-        drumsound1.play();
-   } else if(this.id === "R"){
-        letterR.style.background = "blue";
-        drumsound2.play();
-   } else if(this.id === "U"){
-      letterU.style.background = "pink";
-      drumsound3.play();
-   } else {
-      console.log("please click on a LETTER");
-   }
-    
-  
-  
-}
-
-let letterD = document.querySelector('#D');
-letterD.addEventListener('click', playSound, false);
-let letterR = document.querySelector('#R');
-letterR.addEventListener('click', playSound, false);
-let letterU = document.querySelector('#U');
-letterU.addEventListener('click', playSound, false);
-
+let librarybox = document.getElementById("librarybox"); 
+let deletequeue = document.getElementById("deletequeue"); 
 
 /////
 //     Image Factory
@@ -89,7 +41,7 @@ class Imagefactory {
       newimg.setAttribute("src", "images/" + this.animal.id + ".png");  
       newimg.setAttribute("class", this.classname);
       newimg.setAttribute("id", this.animal.id + this.i++);
-      text1.appendChild(newimg);
+      librarybox.appendChild(newimg);
       imagesarray.push(newimg);
       
 
@@ -132,12 +84,29 @@ class Imagefactory {
        
       }, false);
 
-
       newimg.ondragstart = function() {
+        tester.innerText = newimg.id; // TANIA testing
+        newimg.classList.add("selected"); // TANIA testing
+        
         return false;
       };
 
+
+      function deleteON(){
+        if(newimg.classList.contains("selected")){
+          deletequeue.appendChild(newimg); 
+          deletequeue.remove();
+        }
+      }
+
+      deletebtn.addEventListener('mousedown', deleteON, false);
+     
+     
   }
+
+
+
+
 
 }
 
@@ -158,5 +127,4 @@ penguinbtn.addEventListener('click', function(){
 octopusbtn.addEventListener('click', function(){
     octopus1.attribute();
 }, false)
-
 

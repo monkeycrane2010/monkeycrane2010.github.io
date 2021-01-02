@@ -19,10 +19,11 @@ let octopus = document.getElementById("octopus");
 let frogbtn = document.getElementById("frogbtn"); 
 let penguinbtn = document.getElementById("penguinbtn"); 
 let octopusbtn = document.getElementById("octopusbtn"); 
+let deletebtn = document.getElementById("deletebtn"); 
 
 let tester = document.getElementById("tester"); 
-let text1 = document.getElementById("text1"); 
-let dropzoneOne = document.getElementById("dropzone1"); 
+let librarybox = document.getElementById("librarybox"); 
+let deletequeue = document.getElementById("deletequeue"); 
 
 
 ///////
@@ -89,7 +90,7 @@ class Imagefactory {
       newimg.setAttribute("src", "images/" + this.animal.id + ".png");  
       newimg.setAttribute("class", this.classname);
       newimg.setAttribute("id", this.animal.id + this.i++);
-      text1.appendChild(newimg);
+      librarybox.appendChild(newimg);
       imagesarray.push(newimg);
       
 
@@ -133,11 +134,22 @@ class Imagefactory {
        
       }, false);
 
-
       newimg.ondragstart = function() {
+        tester.innerText = newimg.id; // TANIA testing
+        newimg.classList.add("selected"); // TANIA testing
+        
         return false;
       };
 
+
+      function deleteON(){
+        if(newimg.classList.contains("selected")){
+          deletequeue.appendChild(newimg); 
+          deletequeue.remove();
+        }
+      }
+
+      deletebtn.addEventListener('mousedown', deleteON, false);
   }
 
 }
