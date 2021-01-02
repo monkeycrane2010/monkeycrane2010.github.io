@@ -11,20 +11,18 @@ let animalCollection = document.querySelectorAll("img"); // NodeList
 let animals = Array.from(animalCollection); // convert to ARRAY
 //console.log(animals);
 
-let monkey = document.getElementById("monkey");  
-let cheep = document.getElementById("cheep"); 
-let chomp = document.getElementById("chomp");
+let frog = document.getElementById("frog");  
+let penguin = document.getElementById("penguin"); 
+let octopus = document.getElementById("octopus");
 
 
-let monkeybtn = document.getElementById("monkeybtn"); 
-let cheepbtn = document.getElementById("cheepbtn"); 
-let chompbtn = document.getElementById("chompbtn"); 
+let frogbtn = document.getElementById("frogbtn"); 
+let penguinbtn = document.getElementById("penguinbtn"); 
+let octopusbtn = document.getElementById("octopusbtn"); 
 
 let tester = document.getElementById("tester"); 
 let text1 = document.getElementById("text1"); 
 let dropzoneOne = document.getElementById("dropzone1"); 
-
-
 
 
 ///////
@@ -74,6 +72,8 @@ letterR.addEventListener('click', playSound, false);
 let letterU = document.querySelector('#U');
 letterU.addEventListener('click', playSound, false);
 
+
+
 /////
 //    DRAG START & DROP ZONE
 ////
@@ -99,9 +99,6 @@ function dropzone1(event) {
   }
 }
 
-
-
-
 /////
 //     Image Factory
 ////
@@ -121,7 +118,7 @@ class Imagefactory {
       text1.appendChild(newimg);
       imagesarray.push(newimg);
       console.log(newimg.id);
-     // newimg.addEventListener('mousedown', mouseDown, false);
+    //  newimg.addEventListener('mousedown', mouseDown, false);
       newimg.addEventListener('dragstart', dragStart, false);
       dropzoneOne.addEventListener('dragover', allowDrop, false);
       dropzoneOne.addEventListener('drop', dropzone1, false);
@@ -130,21 +127,22 @@ class Imagefactory {
 }
 
 
-let monkey1 = new Imagefactory(monkey, "animal", 1);
-let cheep1 = new Imagefactory(cheep, "fish", 1);
-let chomp1 = new Imagefactory(chomp, "animal", 1);
+let frog1 = new Imagefactory(frog, "fish", 1);
+let penguin1 = new Imagefactory(penguin, "animal", 1);
+let octopus1 = new Imagefactory(octopus, "fish", 1);
 
 
 
-monkeybtn.addEventListener('click', function(){
-    monkey1.attribute();
+frogbtn.addEventListener('click', function(){
+    frog1.attribute();
 }, false)
 
-cheepbtn.addEventListener('click', function(){
-    cheep1.attribute();
- 
+penguinbtn.addEventListener('click', function(){
+    penguin1.attribute();
 }, false)
 
-chompbtn.addEventListener('click', function(){
-    chomp1.attribute();
+octopusbtn.addEventListener('click', function(){
+    octopus1.attribute();
 }, false)
+
+
