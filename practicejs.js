@@ -73,32 +73,6 @@ let letterU = document.querySelector('#U');
 letterU.addEventListener('click', playSound, false);
 
 
-
-/////
-//    DRAG START & DROP ZONE
-////
-
-function dragStart(event){
-  event.dataTransfer.setData("text", event.target.id);
-}
-
-
-function allowDrop(event){
-  event.preventDefault();
-}
-
-
-function dropzone1(event) {
-  event.preventDefault();
-  if (event.type === "drop"){
- 
-    let data = event.dataTransfer.getData("text");
-     event.target.appendChild(document.getElementById(data));
-     tester.innerHTML = data; //// SANITY CHECK, remove afterwards
-
-  }
-}
-
 /////
 //     Image Factory
 ////
@@ -117,15 +91,34 @@ class Imagefactory {
       newimg.setAttribute("id", this.animal.id + this.i++);
       text1.appendChild(newimg);
       imagesarray.push(newimg);
-      console.log(newimg.id);
-    //  newimg.addEventListener('mousedown', mouseDown, false);
-      newimg.addEventListener('dragstart', dragStart, false);
-      dropzoneOne.addEventListener('dragover', allowDrop, false);
-      dropzoneOne.addEventListener('drop', dropzone1, false);
-    }   
-    
-}
+      
 
+      console.log(newimg);
+    //  newimg.addEventListener('mousedown', mouseDown, false);
+     
+      
+
+
+      newimg.addEventListener('dragstart', function(event){
+        event.dataTransfer.setData("text", event.target.id);
+        tester.innerHTML = event.target.id;
+      }, false);
+
+
+      dropzoneOne.addEventListener('dragover', function(event){
+        event.preventDefault();
+      }, false);
+
+
+      dropzoneOne.addEventListener('drop', function(event){
+        event.preventDefault();
+        let data = event.dataTransfer.getData("text");
+        event.target.appendChild(document.getElementById(data));
+      }, false);
+
+    }   
+
+}
 
 let frog1 = new Imagefactory(frog, "fish", 1);
 let penguin1 = new Imagefactory(penguin, "animal", 1);
