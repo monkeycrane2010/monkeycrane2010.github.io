@@ -119,6 +119,7 @@ class Imagefactory {
 
         function onMouseMove(event) {
           moveAt(event.pageX, event.pageY);
+          tester.innerHTML = "id: " + newimg.id + " event.pageX is:"+ event.pageX + " event.pageY is:  " + event.pageY; /// this just prints TEXT
         }
 
         // (2) move the ball on mousemove
