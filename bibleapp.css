@@ -69,11 +69,8 @@ nav {
 ///////   CSS STYLE -   whiteboard
 */
 #tester{
-    font-size: 18px;
-}
-
-#tester1{
-    color:blue;
+    font-size: 22px;
+    color:rgb(151, 101, 8);
 }
 
 img {
