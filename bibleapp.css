@@ -1,12 +1,73 @@
+nav {
+    background-color:peachpuff;
+    overflow-wrap: break-word;
+  }
+  
+  nav > ol > li {
+    float:left;
+    margin: 10px;
+  }
+  
+  body {
+    padding: 5px 20px 5px 20px;
+    font-family: 'Open Sans', sans-serif;
+    
+  }
+  
+  h2.name{
+    text-transform: uppercase;
+    text-align:center;
+    font-size: 32px;
+    font-family: 'Open Sans',sans-serif;
+    color:rgb(255, 255, 255);
+    background-color:blueviolet;
+  }
+  
+  hr {
+   clear:both;
+   border-radius: 20px;
+   background-color:whitesmoke;
+   height: 10px;
+   border: none;
+  }
 
-h1{
-    text-align: center;
-    color:blue;
-    border: solid brown;
-    border-radius: 100px;
-    padding:0;
-}
+  
+  div.card{
+    float:left;
+    background-color:whitesmoke;
+    margin: 0px 50px 10px 50px;
+    width: 50em;
+  }
+  
+  div.card > H3{
+    background-color:blueviolet;
+    color:white;
+    text-transform: uppercase;
+    padding-left: 10px;
+  }
+  
+  ol li{
+    list-style-type:none;
+  }
+  
+  ol.card-list > li{
+    float:left;
+    background-color:whitesmoke;
+    margin: 0px 10px 5px 10px;
+    overflow-wrap: break-word; 
+    width:200px;
+    height: 200px;
+    
+  }
+  
+  ol.card-list > h3.orange {
+    background-color:orange;
+  }
+  
 
+/*
+///////   CSS STYLE -   whiteboard
+*/
 #tester{
     font-size: 18px;
 }
