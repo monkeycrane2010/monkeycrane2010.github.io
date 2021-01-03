@@ -25,6 +25,18 @@ let tester = document.getElementById("tester");
 let librarybox = document.getElementById("librarybox"); 
 let deletequeue = document.getElementById("deletequeue"); 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /////
 //     Image Factory
 ////
