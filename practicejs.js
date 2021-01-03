@@ -28,15 +28,6 @@ let deletequeue = document.getElementById("deletequeue");
 
 
 
-
-
-
-
-
-
-
-
-
 /////
 //     Image Factory
 ////
