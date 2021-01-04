@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns10111100101" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns10111101101" textdirection="ltr" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
   <layouts>
-    <layout name="npnxnanbsnfns10111100101" font="Open Sans" controllayout="npnxnanbsnfns10111100101" colorscheme="pxabnsnfns10111100101" string_table="pxabnsnfns10111100101" />
-    <layout name="pxabnsnfns10111100101" font="Open Sans" controllayout="pxabnsnfns10111100101" colorscheme="pxabnsnfns10111100101" string_table="pxabnsnfns10111100101" />
-    <layout name="npxnabnsnfns10111100101" font="Open Sans" controllayout="npxnabnsnfns10111100101" colorscheme="pxabnsnfns10111100101" string_table="pxabnsnfns10111100101" />
-    <layout name="npnxnanbnsnfns10111100101" font="Open Sans" controllayout="npnxnanbnsnfns10111100101" colorscheme="pxabnsnfns10111100101" string_table="pxabnsnfns10111100101" />
-    <layout name="pxabnsnfns10111100100" font="Open Sans" controllayout="pxabnsnfns10111100100" colorscheme="pxabnsnfns10111100101" string_table="pxabnsnfns10111100101" />
+    <layout name="npnxnanbsnfns10111101101" font="Open Sans" controllayout="npnxnanbsnfns10111101101" colorscheme="pxabnsnfns10111101101" string_table="pxabnsnfns10111101101" />
+    <layout name="pxabnsnfns10111101101" font="Open Sans" controllayout="pxabnsnfns10111101101" colorscheme="pxabnsnfns10111101101" string_table="pxabnsnfns10111101101" />
+    <layout name="npxnabnsnfns10111101101" font="Open Sans" controllayout="npxnabnsnfns10111101101" colorscheme="pxabnsnfns10111101101" string_table="pxabnsnfns10111101101" />
+    <layout name="npnxnanbnsnfns10111101101" font="Open Sans" controllayout="npnxnanbnsnfns10111101101" colorscheme="pxabnsnfns10111101101" string_table="pxabnsnfns10111101101" />
+    <layout name="pxabnsnfns10111101100" font="Open Sans" controllayout="pxabnsnfns10111101100" colorscheme="pxabnsnfns10111101101" string_table="pxabnsnfns10111101101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -28,9 +28,9 @@
           <optionlist name="tabs">
             <listitems>
               <listitem name="resources" value="true" group="linkright" />
+              <listitem name="transcript" value="true" group="sidebar" />
               <listitem name="outline" value="true" group="sidebar" />
               <listitem name="glossary" value="false" group="sidebar" />
-              <listitem name="transcript" value="false" group="sidebar" />
             </listitems>
           </optionlist>
           <option name="time_enabled" value="false">
@@ -82,7 +82,7 @@
     </optiongroups>
   </control_options>
   <control_layouts>
-    <control_layout name="npnxnanbsnfns10111100101">
+    <control_layout name="npnxnanbsnfns10111101101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -97,7 +97,7 @@
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="true" />
       <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
+      <control name="transcript" enabled="true" />
       <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
@@ -105,7 +105,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns10111100101">
+    <control_layout name="pxabnsnfns10111101101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -120,7 +120,7 @@
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="true" />
       <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
+      <control name="transcript" enabled="true" />
       <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
@@ -128,7 +128,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npxnabnsnfns10111100101">
+    <control_layout name="npxnabnsnfns10111101101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -143,7 +143,7 @@
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="true" />
       <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
+      <control name="transcript" enabled="true" />
       <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
@@ -151,7 +151,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npnxnanbnsnfns10111100101">
+    <control_layout name="npnxnanbnsnfns10111101101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -166,7 +166,7 @@
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="true" />
       <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
+      <control name="transcript" enabled="true" />
       <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
@@ -174,7 +174,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns10111100100">
+    <control_layout name="pxabnsnfns10111101100">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -189,7 +189,7 @@
       <control name="submitall" enabled="false" />
       <control name="resources" enabled="true" />
       <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
+      <control name="transcript" enabled="true" />
       <control name="outline" enabled="true">
         <controls>
           <control name="search" enabled="false" />
@@ -199,7 +199,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="pxabnsnfns10111100101">
+    <colorscheme name="pxabnsnfns10111101101">
       <color_group name="infopanel">
         <group_colors>
           <color name="link_text">
@@ -1103,7 +1103,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="pxabnsnfns10111100101">
+    <string_table name="pxabnsnfns10111101101">
       <string id="acc_active">active</string>
       <string id="check_include">Check to include</string>
       <string id="clear">Clear and return to menu</string>
@@ -1173,8 +1173,7 @@
             <slidelink slideid="_player.6H4zMbBfOOb.5WCnLFa57TI" displaytext="Variables - lesson" expand="false" type="slide" />
             <slidelink slideid="_player.6H4zMbBfOOb.69JDFxp9HTs" displaytext="Try these examples" expand="false" type="slide" />
             <slidelink slideid="_player.6H4zMbBfOOb.6X4NYoh536b" displaytext="Variables - (review)" expand="false" type="slide" />
-            <slidelink slideid="_player.6H4zMbBfOOb.5iNKLvo6Fky" displaytext="Variables - activity 1.1" expand="false" type="slide" />
-            <slidelink slideid="_player.6H4zMbBfOOb.6BFPHwdAqqM" displaytext="Activity1.1" expand="false" type="slide" />
+            <slidelink slideid="_player.6H4zMbBfOOb.6BFPHwdAqqM" displaytext="Variables - exercise" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
@@ -1183,8 +1182,69 @@
   <resource_data description="&lt;p align='left'&gt;&lt;font face='Open Sans' style='font-size: 11px;' size='11' color='#FFFFFF'&gt;Here are some useful links and documents:&lt;/font&gt;&lt;/p&gt;">
     <resources>
       <resource url="https://www.w3schools.com/jsref/jsref_obj_array.asp" image="story_content/url.png" title="W3schools.com" />
+      <resource url="https://www.w3schools.com/js/js_assignment.asp" image="story_content/url.png" title="Assignment Operators" />
     </resources>
   </resource_data>
-  <transcript_data />
+  <transcript_data>
+    <slidetranscripts>
+      <slidetranscript slideid="6H4zMbBfOOb.5or0bfbGC5f" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="0">&lt;Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Content&gt;
+    &lt;Block&gt;
+      &lt;Span Text="Hello and welcome to this beginners Javascript tutorial. We’re so glad you’re here. Get ready for some hands on exploration with Javascript. "&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+  &lt;/Content&gt;
+&lt;/Document&gt;</slidetranscript>
+      <slidetranscript slideid="6H4zMbBfOOb.5i0eKSzX0ad" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="1">&lt;Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Content&gt;
+    &lt;Block&gt;
+      &lt;Span Text="(no audio)" /&gt;
+    &lt;/Block&gt;
+  &lt;/Content&gt;
+&lt;/Document&gt;</slidetranscript>
+      <slidetranscript slideid="6H4zMbBfOOb.5iwTJleakef" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="2">&lt;Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Content&gt;
+    &lt;Block&gt;
+      &lt;Span Text="Let's say, for example, we want to make this button on the website do something. Maybe play a song, or go to a website.&amp;#xD;&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="To control the button's action's, we need to make a variable. A variable is the connector from our html file to the javascript file. A variable can switch something on or off. It can hold a numeric value. Or it can hold a sentence or phrase. You can call the variable anything you’d like to and pass in any value you’d like to too."&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+  &lt;/Content&gt;
+&lt;/Document&gt;</slidetranscript>
+      <slidetranscript slideid="6H4zMbBfOOb.5vhAaKlc1Ap" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="3">&lt;Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Content&gt;
+    &lt;Block&gt;
+      &lt;Span Text="To assign a value to a variable, you do so from right, to left. For example, this is read as assign 2 to the value of x.&amp;#xD;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+  &lt;/Content&gt;
+&lt;/Document&gt;</slidetranscript>
+      <slidetranscript slideid="6H4zMbBfOOb.5WCnLFa57TI" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="4">&lt;Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Content&gt;
+    &lt;Block&gt;
+      &lt;Span Text="In Javascript, you can write basic math functions like addition, subtraction, multiplication, and division to update and change the value of variables. For example, if you wanted to count the total number of squares and triangles on this page. You could create 1 variable to hold triangles. And then create another variable to hold squares. What would you do next to find the total? You’re probably thinking, ah ha, all I need to do is add them up. But the problem is, we need a new container to hold that value. Can you guess what’s next? We’ll need to create a new variable. Then assign the total of triangles and squares to it. "&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+  &lt;/Content&gt;
+&lt;/Document&gt;</slidetranscript>
+      <slidetranscript slideid="6H4zMbBfOOb.69JDFxp9HTs" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="5">&lt;Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Content&gt;
+    &lt;Block&gt;
+      &lt;Span Text="Addition is just one of the basic calculations you can perform inside Javascript. Check out this website to explore other types."&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+  &lt;/Content&gt;
+&lt;/Document&gt;</slidetranscript>
+    </slidetranscripts>
+  </transcript_data>
   <glossary_data />
 </bwFrame>
