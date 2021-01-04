@@ -41,11 +41,20 @@ table tr:nth-child(1) {
   font-family: 'Open Sans',sans-serif;
 }
 
+.card-demo{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  align-content: flex-start;
+
+}
+
 div.card{
-  float:left;
+  display:flex;
+  flex-direction: column;
   background-color:whitesmoke;
-  margin: 0px 50px 10px 50px;
-  width: 50em;
+  margin-left: 20px;
+  
 }
 
 div.card > H3{
@@ -54,6 +63,8 @@ div.card > H3{
   text-transform: uppercase;
   padding-left: 10px;
 }
+
+
 
 ol li{
   list-style-type:none;
