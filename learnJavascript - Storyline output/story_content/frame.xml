@@ -6,6 +6,7 @@
     <layout name="npxnabnsnfns10111101101" font="Open Sans" controllayout="npxnabnsnfns10111101101" colorscheme="pxabnsnfns10111101101" string_table="pxabnsnfns10111101101" />
     <layout name="npnxnanbnsnfns10111101101" font="Open Sans" controllayout="npnxnanbnsnfns10111101101" colorscheme="pxabnsnfns10111101101" string_table="pxabnsnfns10111101101" />
     <layout name="pxabnsnfns10111101100" font="Open Sans" controllayout="pxabnsnfns10111101100" colorscheme="pxabnsnfns10111101101" string_table="pxabnsnfns10111101101" />
+    <layout name="pxabnsnfns00001000101" font="Open Sans" controllayout="pxabnsnfns00001000101" colorscheme="pxabnsnfns10111101101" string_table="pxabnsnfns10111101101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -28,8 +29,8 @@
           <optionlist name="tabs">
             <listitems>
               <listitem name="resources" value="true" group="linkright" />
-              <listitem name="transcript" value="true" group="sidebar" />
               <listitem name="outline" value="true" group="sidebar" />
+              <listitem name="transcript" value="true" group="sidebar" />
               <listitem name="glossary" value="false" group="sidebar" />
             </listitems>
           </optionlist>
@@ -196,6 +197,29 @@
         </controls>
       </control>
       <control name="close_btn" enabled="false" />
+    </control_layout>
+    <control_layout name="pxabnsnfns00001000101">
+      <control name="volume" enabled="true" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="true" />
+      <control name="swipeleft" enabled="true" />
+      <control name="swiperight" enabled="true" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
     </control_layout>
   </control_layouts>
   <colorschemes>
@@ -1169,11 +1193,17 @@
             <slidelink slideid="_player.6H4zMbBfOOb.5or0bfbGC5f" displaytext="Introduction" expand="false" type="slide" />
             <slidelink slideid="_player.6H4zMbBfOOb.5i0eKSzX0ad" displaytext="Try these examples" expand="false" type="slide" />
             <slidelink slideid="_player.6H4zMbBfOOb.5iwTJleakef" displaytext="Variables - lesson" expand="false" type="slide" />
-            <slidelink slideid="_player.6H4zMbBfOOb.5vhAaKlc1Ap" displaytext="Variables - lesson" expand="false" type="slide" />
-            <slidelink slideid="_player.6H4zMbBfOOb.5WCnLFa57TI" displaytext="Variables - lesson" expand="false" type="slide" />
+            <slidelink slideid="_player.6H4zMbBfOOb.5vhAaKlc1Ap" displaytext="Variables -  how to create variable" expand="false" type="slide" />
+            <slidelink slideid="_player.6H4zMbBfOOb.5WCnLFa57TI" displaytext="Variables - math calculation" expand="false" type="slide" />
             <slidelink slideid="_player.6H4zMbBfOOb.69JDFxp9HTs" displaytext="Try these examples" expand="false" type="slide" />
             <slidelink slideid="_player.6H4zMbBfOOb.6X4NYoh536b" displaytext="Variables - (review)" expand="false" type="slide" />
             <slidelink slideid="_player.6H4zMbBfOOb.6BFPHwdAqqM" displaytext="Variables - exercise" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.5XWH0bWTzOv" displaytext="Untitled Scene" expand="true" type="slide">
+          <links>
+            <slidelink slideid="_player.5XWH0bWTzOv.6Hkf0msm2nn" displaytext="Introduction" expand="false" type="slide" />
+            <slidelink slideid="_player.5XWH0bWTzOv.5odbMWyfMYW" displaytext="Function - lesson" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
@@ -1239,6 +1269,124 @@
   &lt;Content&gt;
     &lt;Block&gt;
       &lt;Span Text="Addition is just one of the basic calculations you can perform inside Javascript. Check out this website to explore other types."&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+  &lt;/Content&gt;
+&lt;/Document&gt;</slidetranscript>
+      <slidetranscript slideid="5XWH0bWTzOv.6Hkf0msm2nn" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="6">&lt;Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Content&gt;
+    &lt;Block&gt;
+      &lt;Span Text="Welcome back. In this section, you’ll learn about functions."&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+  &lt;/Content&gt;
+&lt;/Document&gt;</slidetranscript>
+      <slidetranscript slideid="5XWH0bWTzOv.5odbMWyfMYW" slidebank="false" type="slide" noteswf="" notespng="" pathlib="Lib" pathindex="7">&lt;Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Content&gt;
+    &lt;Block&gt;
+      &lt;Span Text="scene 0&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="Back to our website button example. But this time, let’s make it so that clicking the button. Creates ice cream. To create new content each time, we would need to write a function.  You can think of functions of a miniature program. It only runs if you tell it to.&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="scene 1&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="It would look like this. Our mini program is called “make ice cream”. It is surrounded by brackets. Inside the brackets is the instructions we write. Let’s go through this more, step by step.&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="scene 2&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="First, like we did before, let’s create a variable and assign a value to it. How about we create a variable called ice cream and assign zero. For, zero ice creams to start with. Then, let’s increase ice cream, each time you press the button on the page.&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="scene 3&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="We wrap this code in a function, so that it only runs each time this particular button is clicked on.&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="scene 4&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="All together it looks like this. &amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="scene 5&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="In Javascript, this won’t run yet. You need to tell the program to run, by calling the function in this final line. It is the name of the function.&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="scene 6&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text="Ok, now you’ve written the code. Let’s run it. Go ahead, click the button to make the ice cream and run the code.&amp;#xA;"&gt;
+        &lt;Style FontSize="14" /&gt;
+      &lt;/Span&gt;
+    &lt;/Block&gt;
+    &lt;Block&gt;
+      &lt;Span Text=""&gt;
         &lt;Style FontSize="14" /&gt;
       &lt;/Span&gt;
     &lt;/Block&gt;
