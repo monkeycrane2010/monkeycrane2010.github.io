@@ -1,5 +1,4 @@
 canvas{
     background-color: rgb(204, 217, 241);
-    width: 800px;
-    height: 400px;
+    border: 2px solid black;
 }

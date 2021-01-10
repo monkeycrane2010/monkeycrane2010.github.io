@@ -1,0 +1,19 @@
+.right{
+    display:none;
+    border-radius:3px solid rgb(123, 123, 247);
+}
+
+.left{
+    display:none;
+    border-radius:3px solid greenyellow;
+}
+
+.up{
+    display:none;
+    border-radius:3px solid hotpink;
+}
+
+.down{
+    display: none;
+    border-radius:3px solid rgb(214, 153, 73)
+}

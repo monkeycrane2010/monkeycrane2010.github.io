@@ -1,6 +1,4 @@
 let box = document.getElementById('box');
-
-
 window.addEventListener('keydown', whichKey, false);
 
 function whichKey(event){
@@ -19,15 +17,30 @@ function whichKey(event){
       // code block
       document.getElementById("box").innerHTML = "UP keyboard " + event.keyCode;
       break;
+    case 98:
+    // code block
+    document.getElementById("box").innerHTML = "DOWN keyboard " + event.keyCode;
+    break;
+    case 65:
+      // code block
+    document.getElementById("box").innerHTML = "A keyboard " + event.keyCode;
+    break;
+    case 83:
+      // code block
+    document.getElementById("box").innerHTML = "S keyboard " + event.keyCode;
+    break;
+    case 32:
+      // code block
+    document.getElementById("box").innerHTML = "SPACEBAR keyboard " + event.keyCode;
+    break;
+    case 13:
+    // code block
+    document.getElementById("box").innerHTML = "ENTER keyboard " + event.keyCode;
+    break;
   default:
     // code block
     document.getElementById("box").innerHTML = "keyboard " + event.keyCode;
    }
+
+  
 };
-
-/////
-//     Image Factory
-////
-
-
-
