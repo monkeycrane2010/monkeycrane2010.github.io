@@ -7,18 +7,22 @@ function whichKey(event){
    switch(event.keyCode){
     case 102:
     // code block
+    document.querySelector(".right").style.display = "block";
     document.getElementById("box").innerHTML = "RIGHT keyboard " + event.keyCode;
     break;
     case 100:
     // code block
+    document.querySelector(".left").style.display = "block";
     document.getElementById("box").innerHTML = "LEFT keyboard " + event.keyCode;
     break;
     case 104:
       // code block
+      document.querySelector(".up").style.display = "block";
       document.getElementById("box").innerHTML = "UP keyboard " + event.keyCode;
       break;
     case 98:
     // code block
+    document.querySelector(".down").style.display = "block";
     document.getElementById("box").innerHTML = "DOWN keyboard " + event.keyCode;
     break;
     case 65:
