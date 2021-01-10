@@ -9,7 +9,6 @@ function whichKey(event){
     // code block
     document.querySelector(".right").style.display = "block";
     document.getElementById("box").innerHTML = "RIGHT keyboard " + event.keyCode;
-    document.querySelector(".right").style.display = "none";
     break;
     case 100:
     // code block
