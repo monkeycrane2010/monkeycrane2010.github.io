@@ -1,19 +1,27 @@
 .right{
     display:none;
+    font-size: larger;
+    font-weight: bold;
     border-radius:3px solid rgb(123, 123, 247);
 }
 
 .left{
     display:none;
+    font-size: larger;
+    font-weight: bold;
     border-radius:3px solid greenyellow;
 }
 
 .up{
     display:none;
+    font-size: larger;
+    font-weight: bold;
     border-radius:3px solid hotpink;
 }
 
 .down{
     display: none;
+    font-size: larger;
+    font-weight: bold;
     border-radius:3px solid rgb(214, 153, 73)
 }
