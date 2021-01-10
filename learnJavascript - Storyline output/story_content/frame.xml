@@ -1164,7 +1164,7 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.6H4zMbBfOOb" displaytext="Untitled Scene" expand="true" type="slide">
+        <slidelink slideid="_player.6H4zMbBfOOb" displaytext="Intro to Javascript" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6H4zMbBfOOb.5or0bfbGC5f" displaytext="Introduction" expand="false" type="slide" />
             <slidelink slideid="_player.6H4zMbBfOOb.5i0eKSzX0ad" displaytext="Try these examples" expand="false" type="slide" />
@@ -1176,7 +1176,7 @@
             <slidelink slideid="_player.6H4zMbBfOOb.6BFPHwdAqqM" displaytext="Variables - exercise" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5XWH0bWTzOv" displaytext="Untitled Scene" expand="true" type="slide">
+        <slidelink slideid="_player.5XWH0bWTzOv" displaytext="Functions" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.5XWH0bWTzOv.6Hkf0msm2nn" displaytext="Functions" expand="false" type="slide" />
             <slidelink slideid="_player.5XWH0bWTzOv.5odbMWyfMYW" displaytext="Function - lesson" expand="false" type="slide" />
