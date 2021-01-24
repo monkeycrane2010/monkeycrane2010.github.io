@@ -2,6 +2,6 @@
      width: 150px; height: 150px; padding: 0.5em; 
 };
 
-img.selected {
+.selected {
   border: 10px dotted orange;
 };

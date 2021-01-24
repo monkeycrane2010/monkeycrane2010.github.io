@@ -18,7 +18,7 @@ $( function() {
       
     $("img").mousedown(function(event) {
       $('h1').html(this.id);
-      $(this).addClass("selected").css("border", "5px dotted green");
+      $(this).addClass("selected");   // ADD CLASS
 
     });
   
@@ -29,7 +29,7 @@ $( function() {
   
   
   
-  
+   
   $("#deletebtn").on( "click", function() {
   
     $('h1').html("you just clicked" + ", " + this.id);
