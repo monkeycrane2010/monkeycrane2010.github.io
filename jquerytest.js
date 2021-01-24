@@ -18,7 +18,8 @@ $( function() {
       
     $("img").on("click", function(event) {
       $('h1').html(this.id);
-      $(this).toggleClass("selected");   // ADD CLASS
+      $(this).toggleClass("selected").css("background-color", "yellow");   // ADD CLASS
+      
 
     });
   
