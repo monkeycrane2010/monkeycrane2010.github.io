@@ -1,1 +1,7 @@
-#draggable { width: 150px; height: 150px; padding: 0.5em; }
+#draggable {
+     width: 150px; height: 150px; padding: 0.5em; 
+};
+
+img.selected {
+  border: 10px dotted orange;
+};
