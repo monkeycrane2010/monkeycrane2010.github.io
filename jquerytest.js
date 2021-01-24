@@ -16,7 +16,7 @@ $( function() {
      
   
       
-    $("img").mousedown(function(event) {
+    $("img").on("click", function(event) {
       $('h1').html(this.id);
       $(this).toggleClass("selected");   // ADD CLASS
 
