@@ -16,14 +16,13 @@ $( function() {
      
   
       
-    $("img").on("click", function(event) {
+    $("img").on("click", function(event) {   // NON-TECH
       $('h1').html(this.id);
       $(this).toggleClass("selected");
+  
     });
   
- 
-  
-  
+
   });
   
   
