@@ -16,7 +16,7 @@ $( function() {
      
   
       
-    $("img").on("click", function(event) {   // NON-TECH
+    $("img").on("click", function(event) {   // CLASS
       $('h1').html(this.id);
       $(this).toggleClass("selected");
   
@@ -26,6 +26,16 @@ $( function() {
   });
   
   
+
+
+  $("#newtextbtn").on( "click", function() {
+   
+    $("#one").append($("<p>Edit this</p>").css("color", "green").css("font-size", "20px").attr("contentEditable", true).draggable());   // CREATE TEXT
+
+});
+
+
+
   
    
   $("#deletebtn").on( "click", function() {
