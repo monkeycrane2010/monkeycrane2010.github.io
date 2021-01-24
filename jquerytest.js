@@ -1,26 +1,22 @@
 $( function() {
-    $( "#draggable" ).draggable();
-    $( "img" ).resizable();
+    $("#draggable").draggable();
+    $("#draggable").resizable();
   });
 
 
 
   $("button").on( "click", function() {
-    let counter;
-    counter = 2;
-    for(x=0; x <= counter; x++){
-       $("#one").append($("<img>").attr("src", "images/sheep.png").attr("id", x).draggable());
-    }
+   
+    $("#one").append($("<img>").attr("src", "images/sheep.png").draggable());   // CREATE NEW
+   
 
+    $( "img" ).each(function( index ) {    // EACH
+      $(this).attr("id", "sheep"  + index);
+      console.log( index + ": " + $( this ).text() );
+    });
+
+    $("#sheep2").css("border", "10px dotted orange");
   });
 
-  $("button").on( "click", function() {
-    let counter;
-    counter = 2;
-    for(x=0; x <= counter; x++){
-       $("#one").append($("<img>").attr("src", "images/sheep.png").attr("id", x).draggable());
-    }
-
-  });
 
  
