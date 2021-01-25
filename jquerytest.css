@@ -1,7 +1,8 @@
 #draggable {
      width: 150px; height: 150px; padding: 0.5em; 
-};
+}
 
-.selected {
-  border: 10px dotted orange;
-};
+.dot {
+  background-color: rgb(248, 144, 26);
+  border:10px dotted blue;
+}
