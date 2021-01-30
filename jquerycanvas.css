@@ -1,0 +1,27 @@
+.canvas-parent{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   list-style: none;
+}
+
+.canvas-child1{
+   width: 300px;
+   height: 200px;
+   background-color: purple;
+}
+
+
+.canvas-child2{
+   width: 300px;
+   height: 200px;
+   background-color: greenyellow;
+}
+
+
+.canvas-child3{
+   width: 300px;
+   height: 200px;
+   background-color: orange;
+}
