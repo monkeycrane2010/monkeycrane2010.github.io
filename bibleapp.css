@@ -103,7 +103,7 @@ h1{
 }
 
 .cloneditems p{
-   border: 3px dotted green;
+   border: 3px solid black;
    z-index: 5;
 }
 
