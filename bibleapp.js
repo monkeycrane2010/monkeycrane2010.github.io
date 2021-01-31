@@ -18,7 +18,7 @@ $( document ).ready(function() {
   });
   
 
-
+  
   $( ".text" ).click(function() {
     $( ".cloneditems" ).append( "<p>Click to EDIT</p>" );
     $(".cloneditems > p").draggable();
