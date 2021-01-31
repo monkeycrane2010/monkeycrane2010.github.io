@@ -20,7 +20,7 @@ $( document ).ready(function() {
 
 
   $( ".text" ).click(function() {
-    $( ".cloneditems" ).append( "<p>New Text</p>" );
+    $( ".cloneditems" ).append( "<p>Click to EDIT</p>" );
     $(".cloneditems > p").draggable();
     $(".cloneditems > p").attr("contenteditable", true);
   });
