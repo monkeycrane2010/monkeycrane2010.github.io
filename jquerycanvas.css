@@ -56,11 +56,13 @@ h1{
 */
 .stamp-main{
    display: flex;
-   flex-direction: column; 
+   flex-direction: row; 
    flex-wrap: wrap;
 }
 
 .stamp-parent1, .stamp-parent2, .stamp-parent3{
-  display:block;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
   list-style: none;
 }
