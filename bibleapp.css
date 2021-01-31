@@ -1,90 +1,108 @@
-nav {
-    background-color:peachpuff;
-    overflow-wrap: break-word;
-  }
-  
-  nav > ol > li {
-    float:left;
-    margin: 10px;
-  }
-  
-  body {
-    padding: 5px 20px 5px 20px;
-    font-family: 'Open Sans', sans-serif;
-    
-  }
-  
-  h2.name{
-    text-transform: uppercase;
-    text-align:center;
-    font-size: 32px;
-    font-family: 'Open Sans',sans-serif;
-    color:rgb(255, 255, 255);
-    background-color:blueviolet;
-  }
-  
-  hr {
-   clear:both;
-   border-radius: 20px;
-   background-color:whitesmoke;
-   height: 10px;
-   border: none;
-  }
+/*
+///////   CSS STYLE -   header
+*/
 
-  
-  div.card{
-    float:left;
-    background-color:whitesmoke;
-    margin: 0px 50px 10px 50px;
-    width: 50em;
-  }
-  
-  div.card > H3{
-    background-color:blueviolet;
-    color:white;
-    text-transform: uppercase;
-    padding-left: 10px;
-  }
-  
-  ol li{
-    list-style-type:none;
-  }
-  
-  ol.card-list > li{
-    float:left;
-    background-color:whitesmoke;
-    margin: 0px 10px 5px 10px;
-    overflow-wrap: break-word; 
-    width:200px;
-    height: 200px;
-    
-  }
-  
-  ol.card-list > h3.orange {
-    background-color:orange;
-  }
-  
+.header-main{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+h1{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bold;
+   background-color: purple;
+   color:white;
+   text-align: center;
+}
+.select{
+   border: 5px dotted black;
+}
 
 /*
-///////   CSS STYLE -   whiteboard
+///////   CSS STYLE -   toolbar
 */
-#tester{
-    font-size: 22px;
-    color:rgb(151, 101, 8);
+
+.toolbar img{
+   width: 50px;
+   height: 50px;
+   background-color: black;
 }
 
-img {
-    cursor: grab;
+.toolbar p{
+   font-size: 14px;
+   font-weight: bold;
 }
 
-.library{
-  display:none;
+.toolbar:hover{
+   background-color: yellow;
+   box-shadow: 6px 0px 6px 0px cadetblue;
 }
 
-.selected{
-  border: 2px dotted gray;
+.toolbar-main{   
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   list-style: none;
 }
 
-.drumset{
-    border: 3px solid indianred;
+.toolbar-parent1, .toolbar-parent2, .toolbar-parent3{
+   border: 4px solid black;
+   display: flex;
+   flex-direction: row;
+   padding: 0;
+   margin:0;
+   list-style: none;
+   text-align: center;
+}
+
+.toolbar-parent2{
+   border: 4px solid rgb(233, 10, 10);
+}
+
+.toolbar-parent3{
+   border: 4px solid rgb(5, 90, 5);
+}
+
+
+/*
+///////   CSS STYLE -  stamp
+*/
+.stamp-main{
+   display: flex;  /* TOGGLE On /Off */
+   flex-direction: row; 
+   flex-wrap: wrap;
+   background-color: coral;
+}
+
+.stamp-parent1, .stamp-parent2, .stamp-parent3{
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+/*
+///////   CSS STYLE -   my workspace
+*/
+.myworkspace{
+   display: flex;
+   flex-direction: row; 
+   flex-wrap: wrap;
+}
+
+.myworkspace li{
+   list-style:none;
+}
+
+
+/*
+///////   CSS STYLE -   my caption
+*/
+.mycaption{
+   font-size: 18px;
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
 }

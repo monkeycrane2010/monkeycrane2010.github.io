@@ -1,66 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="bibleapp.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet"> 
-        
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
-</head>
+    <head>
+        <title>Bible Storytime APP</title>        
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="bibleapp.css">
+    </head>
 <body>
-   
-    <h2 class="name">Tania</h2> 
-  
-    <nav>
-    <ol>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="programming.html">Class Projects</a></li>
-            <li><a href="bibleapp.html" style="background-color:rgb(233, 221, 221)" target="_blank">Work in Progress</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="snippet.html">Examples</a></li>
-    </ol>
-    </nav>
-    <hr />
-    <img src="images/girl-pic.png" style="float:right;" width= "150px;">
-   
-
-<div class = "card">
-    <h3 >Whitebaord App</h3>
-    <p>Try it out below!</p>
-    <p id="tester"><strong></strong></p>
-</div>
-<br style="clear:both"/>
-
-<p id="librarybox"></p>
-
-<button id="frogbtn">Frog</button>
-<button id="penguinbtn">Penguin</button>
-<button id="octopusbtn">Octopus</button>
-<button id="deletebtn">Delete</button>
-
-<div class="library">
-    <img src="images/frog.png" class="fish"  id="frog"> <!--ID must be applied to <img> -->
-    <img src="images/penguin.png"  class="animal"  id="penguin">
-    <img src="images/octopus.png"   class="fish"    id="octopus">
+<div class="header-main">
+    <img src="images/monkey.png" width="50px" height="50px">  
+    <h1>Bible Storytime Whiteboard</h1>
+    <img src="images/monkey_sleepy_02.png" width="50px" height="50px">  
 </div>
 
-<div id="deletequeue"></div>
-
-<div class="drumset">
-    <p class="drum" id="D">D</p>
-    <p class="drum" id="R">R</p>
-    <p class="drum" id="U">U</p>
-    <p class="drum" id="M">M</p>
-    <p class="drum" id="S">S</p>
-    <p class="drum" id="!">!</p>
+<div class="toolbar-main">
+    <ul class="toolbar-parent1">
+        <li class="toolbar scene"><img src="images/field_2.png" style="background-color: white;"width="40px" height="40px"><p>+SCENE</p></li>
+        <li class="toolbar animal"><img src="images/sheepwhite.png" style="background-color: white;"width="40px" height="40px"><p>+ANIMAL</p></li>
+        <li class="toolbar people"><img src="images/3wise.png" width="40px" height="40px"><p>+PEOPLE</p></li>
+        <li class="toolbar"></li>
+    </ul>
+    <ul class="toolbar-parent2">
+        <li class="toolbar"><img src="edit_icons/color.png"><p>PEN</p></li>
+        <li class="toolbar"><img src="edit_icons/colors.png"><p>COLORS</p></li>
+    </ul>
+    <ul class="toolbar-parent3">
+        <li class="toolbar delete"><img src="edit_icons/delete.png"><p>DELETE</p></li>
+        <li class="toolbar"><img src="edit_icons/erase.png"><p>??</p></li>
+        <li class="toolbar save"><img src="edit_icons/save.png"><p>SAVE</p></li>
+    </ul>
 </div>
 
-<div class="soundlibrary">
-    <a href="https://freesound.org/people/ajubamusic/sounds/320806/" target="_blank">https://freesound.org/people/ajubamusic/sounds/320806/</a>
-    <a href="https://freesound.org/people/Soughtaftersounds/sounds/145464/" target="_blank">https://freesound.org/people/Soughtaftersounds/sounds/145464/</a>
+
+
+<div class="stamp-main">
+    <h2>STAMPS</h2>
+    <ul class="stamp-parent1">
+        <li class="stampscene"><img src="images/field_2.png" width="50px" height="50px"><p>Scene 1</p></li>
+        <li class="stampscene"><img src="images/field_2.png" width="50px" height="50px"><p>Scene 2</p></li>
+        <li class="stampscene"><img src="images/field_2.png" width="50px" height="50px"><p>Scene 3</p></li>
+    </ul>
+    <ul class="stamp-parent2">
+        <li class="stampanimal"><img src="images/sheepwhite.png" width="50px" height="50px"><p>Animal 1</p></li>
+        <li class="stampanimal"><img src="images/sheepwhite.png" width="50px" height="50px"><p>Animal 2</p></li>
+    </ul>
+    <ul class="stamp-parent3">
+        <li class="stamppeople"><img src="images/3wise.png" width="50px" height="50px"><p>People 1</p></li>
+        <li class="stamppeople"><img src="images/3wise.png" width="50px" height="50px"><p>People 2</p></li>
+        <li class="stamppeople"><img src="images/3wise.png" width="50px" height="50px"><p>People 3</p></li>
+    </ul>
 </div>
 
-<script src="bibleapp.js"></script> <!--MUST BE AT END -->
+
+<div class="myworkspace">My Workspace</div>
+<div><strong>CAPTION</strong></div>
+<div class="mycaption">[EDIT TEXT, double click]</div>
+
+
+     <!--MUST BE AT END --->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="bibleapp.js"></script>
 </body>
 </html>
