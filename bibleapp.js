@@ -1,27 +1,31 @@
 $( document ).ready(function() {
  
+
   $( ".stamp" ).click(function() {
     $(".stamp-main").toggle();
   });
 
   $(".stamp-parent1 > li").click(function() {
-    $(this).clone().appendTo(".myworkspace").draggable();
+    $(this).clone().appendTo(".cloneditems").draggable();
   });
 
   $(".stamp-parent2 > li").click(function() {
-    $(this).clone().appendTo(".myworkspace").draggable();
+    $(this).clone().appendTo(".cloneditems").draggable();
   });
 
   $(".stamp-parent3 > li").click(function() {
-    $(this).clone().appendTo(".myworkspace").draggable();
+    $(this).clone().appendTo(".cloneditems").draggable();
   });
   
 
 
-
-  $( ".mycaption" ).attr("contenteditable", true);
-
-
+  $( ".text" ).click(function() {
+    $( ".cloneditems" ).append( "<p>New Text</p>" );
+    $(".cloneditems > p").draggable();
+    $(".cloneditems > p").attr("contenteditable", true);
+  });
+ 
+ 
 
 
 });

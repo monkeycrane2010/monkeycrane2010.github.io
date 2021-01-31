@@ -82,22 +82,30 @@ h1{
   display: flex;
   flex-direction: row; 
   flex-wrap: wrap;
+  justify-content: space-evenly;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*
 ///////   CSS STYLE -   my workspace
 */
-.myworkspace{
+.cloneditems{
    display: flex;
    flex-direction: row; 
    flex-wrap: wrap;
+   border: 3px solid gray;
 }
 
-.myworkspace li{
+.cloneditems li{
    list-style:none;
 }
 
+.cloneditems p{
+   border: 3px dotted green;
+   z-index: 5;
+}
 
 /*
 ///////   CSS STYLE -   my caption
