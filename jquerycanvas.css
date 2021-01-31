@@ -71,9 +71,10 @@ h1{
 ///////   CSS STYLE -  stamp
 */
 .stamp-main{
-   display: flex;
+   display: flex;  /* TOGGLE On /Off */
    flex-direction: row; 
    flex-wrap: wrap;
+   background-color: coral;
 }
 
 .stamp-parent1, .stamp-parent2, .stamp-parent3{
@@ -81,4 +82,27 @@ h1{
   flex-direction: row; 
   flex-wrap: wrap;
   list-style: none;
+}
+
+/*
+///////   CSS STYLE -   my workspace
+*/
+.myworkspace{
+   display: flex;
+   flex-direction: row; 
+   flex-wrap: wrap;
+}
+
+.myworkspace li{
+   list-style:none;
+}
+
+
+/*
+///////   CSS STYLE -   my caption
+*/
+.mycaption{
+   font-size: 18px;
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
 }

@@ -21,10 +21,18 @@ $( document ).ready(function() {
   $( ".people" ).click(function() {
     $(".stamp-parent3").toggle();
     $(".stamp-parent3 > li").each(function() {
-      $(this).draggable();
+      $(this).click(function() {
+        $(this).clone().appendTo(".myworkspace").draggable();
+      });
     });
-
   });
+
+
+
+  $( ".mycaption" ).dblclick(function() {
+    $(this).attr("contenteditable", true);
+  });
+
 
 
 
