@@ -50,3 +50,17 @@ h1{
 .toolbar-parent3{
    border: 4px solid rgb(5, 90, 5);
 }
+
+/*
+///////   CSS STYLE -   whiteboard
+*/
+.stamp-main{
+   display: flex;
+   flex-direction: column; 
+   flex-wrap: wrap;
+}
+
+.stamp-parent1, .stamp-parent2, .stamp-parent3{
+  display:block;
+  list-style: none;
+}
