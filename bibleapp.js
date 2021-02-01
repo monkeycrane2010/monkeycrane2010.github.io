@@ -49,10 +49,10 @@ $( document ).ready(function() {
 
   $( ".addslide" ).click(function() {
    alert("yay you clicked me");
+   $( ".replaceme" ).replaceWith( $( "h1" ) );
    $(".singleslide").clone().insertAfter(this);
   });
-
-
+  
 
 
  
