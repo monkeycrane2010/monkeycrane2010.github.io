@@ -89,7 +89,7 @@ h1{
 }
 
 /*
-///////   CSS STYLE -   my workspace
+///////   CSS STYLE -   cloned items
 */
 .cloneditems{
    display: flex;
@@ -108,6 +108,20 @@ h1{
 }
 
 /*
+///////   CSS STYLE -   my workspace
+*/
+.myworkspace{
+   display: flex;
+   flex-direction: row; 
+   flex-wrap: wrap;
+   border: 3px solid gray;
+   width: 98%;
+   height: 500px;
+}
+
+
+
+/*
 ///////   CSS STYLE -   my caption
 */
 .mycaption{
@@ -116,4 +130,27 @@ h1{
    border: 3px solid black;
    width: 98%;
    height: 100px;
+}
+
+
+/*
+///////   CSS STYLE -   slides
+*/
+.slide-main{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly; 
+   flex-wrap: wrap;  /*    DO NOT WRAP   */
+   border: 3px solid black;
+   width: 98%;
+}
+
+.singleslide{
+   background-color:rgba(236, 223, 223, 0.918);
+   border: 3px dotted rgb(168, 165, 165);
+   margin: 10px 0px 10px 0px;
+   width: 150px;
+   height: 90px;
+   text-align: center;
+   font-weight: bold;
 }

@@ -47,6 +47,10 @@ $( document ).ready(function() {
   });
 
 
+  $( "#start" ).click(function() {
+   alert("yay you clicked me");
+   $("#0").clone().attr("id", "1").insertAfter("#start");
+  });
 
 
  
