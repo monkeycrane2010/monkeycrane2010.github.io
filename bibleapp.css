@@ -17,7 +17,7 @@ h1{
    text-align: center;
 }
 
-.select{
+.selected{
    border: 5px dotted red;
 }
 
