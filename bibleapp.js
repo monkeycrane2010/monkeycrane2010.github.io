@@ -5,6 +5,7 @@ $( document ).ready(function() {
     $(".stamp-main").toggle();
   });
 
+
   $(".stamp-parent1 > li").click(function() {
     $(this).addClass("sceneclone");
     $(this).clone().appendTo(".cloneditems").draggable();
@@ -22,8 +23,7 @@ $( document ).ready(function() {
   });
 
   $(".stamp-parent3 > li").click(function() {
-    $(this).addClass("sceneclone");
-    $(this).clone().appendTo(".cloneditems").draggable();
+    $(this).addClass("sceneclone").clone().appendTo(".cloneditems").draggable();
     $(".sceneclone").click(function(){
       $(this).toggleClass("selected");
     });
