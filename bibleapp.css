@@ -145,7 +145,7 @@ h1{
    width: 98%;
 }
 
-.singleslide{
+.addslide, .singleslide{
    background-color:rgba(236, 223, 223, 0.918);
    border: 3px dotted rgb(168, 165, 165);
    margin: 10px 0px 10px 0px;
