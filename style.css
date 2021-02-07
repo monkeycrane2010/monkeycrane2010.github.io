@@ -33,12 +33,20 @@
    flex-direction: row;
    justify-content: space-between;
    flex-wrap: wrap;  
-   
 }
 
+#help {
+    box-shadow: 5px 4px gainsboro;
+    margin: 3px 3px 3px 3px;
+    font-family: 'Pangolin', cursive;
+    font-size: 18px;
+ }
+
 #login {
-   box-shadow: 5px 4px 4px black;
+   box-shadow: 5px 4px gainsboro;
    margin: 3px 3px 3px 3px;
+   font-family: 'Pangolin', cursive;
+   font-size: 18px;
 }
 
 .footer-box1{

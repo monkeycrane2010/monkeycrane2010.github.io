@@ -14,7 +14,7 @@
         <li><img src="images/monkey.png" width="100px" height="100px"><span id="logo">MonkeyBros</span></li>
     </ol>
     <ol class="box2">
-        <li><img src="images/banana.png" width="30px" height="30px"><span>HELP</span>&nbsp; &nbsp;
+        <li><img src="images/banana.png" width="30px" height="30px"><span id="help">HELP</span>&nbsp; &nbsp;
             <img src="images/monkey.png" width="30px" height="30px"><span id="login">LOGIN</span>
         </li>
     </ol>
@@ -52,8 +52,8 @@
 <script>
 $( document ).ready(function() {
    $( "#login" ).click(function() {
-      let response = prompt("Username");
-      alert(response);
+      let response = prompt("Enter Password");
+      alert("You entered:" + " " + response);
    });
   
 
