@@ -5,23 +5,47 @@
 #logo{
     font-family: 'Pangolin', cursive; 
     font-weight: bold;
-    font-size: 20px;
+    font-size: 50px;
 }
 
 .navigation-parent, .footer-parent{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap; 
-    list-style: none;
+   display: grid;
+   grid-template-columns: 3fr 1fr ;
+   grid-template-rows: 1fr;
+   padding: 0;
+   margin: 0;
+}
+
+ .navigation-parent > ol, .footer-parent > ol{
+   list-style: none;
  }
 
- .navigation-parent > li{
-    font-family: 'Rubik', sans-serif;
-    border: 3px solid black;
-    padding: 10px 10px 10px 10px; 
- }
+.nav-box1{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap; 
+}
 
- .footer-parent{
+.nav-box2{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;  
+}
+
+.footer-box1{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;  
+}
+
+
+/* MAIN CONTENT */
+.main-content{
+    background-color:rgb(248, 248, 157);
+    max-width: 90%;
+    margin: 10px 10px 10px 10px;
     font-family: 'Rubik', sans-serif;
- }
+}
