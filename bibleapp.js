@@ -54,6 +54,13 @@ $( document ).ready(function() {
   });
   
 
+  $('body').keypress("keydown", function(event){
+      event.preventDefault();
+      if(event.key === "a"){
+        alert(event.key);
+        $("#box").style.bottom += "8px";
+      }
 
+  });
  
 });

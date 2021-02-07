@@ -1,121 +1,27 @@
-nav {
-  background-color:peachpuff;
-  overflow-wrap: break-word;
+/*  GOOGLE font  traditional  font-family: 'Rubik', sans-serif;  */
+
+/* comic style   font-family: 'Pangolin', cursive;   */
+
+#logo{
+    font-family: 'Pangolin', cursive; 
+    font-weight: bold;
+    font-size: 20px;
 }
 
-nav > ol > li {
-  float:left;
-  margin: 10px;
-}
+.navigation-parent, .footer-parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; 
+    list-style: none;
+ }
 
-body {
-  padding: 5px 20px 5px 20px;
-  font-family: 'Open Sans', sans-serif;
-  
-}
+ .navigation-parent > li{
+    font-family: 'Rubik', sans-serif;
+    border: 3px solid black;
+    padding: 10px 10px 10px 10px; 
+ }
 
-h2.name{
-  text-transform: uppercase;
-  text-align:center;
-  font-size: 32px;
-  font-family: 'Open Sans',sans-serif;
-  color:rgb(255, 255, 255);
-  background-color:blueviolet;
-}
-
-hr {
- clear:both;
- border-radius: 20px;
- background-color:whitesmoke;
- height: 10px;
- border: none;
-}
-
-table{
-  margin: 0px 50px 10px 50px;
-}
-
-table tr:nth-child(1) {
-  background-color:rgb(224, 222, 217);
-  font-weight: bold;
-  font-family: 'Open Sans',sans-serif;
-}
-
-.card-demo{
-  display:grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  align-content: flex-start;
-}
-
-div.card{
-  display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color:whitesmoke;
-  margin-left: 20px;
-  
-}
-
-div.card > H3{
-  background-color:blueviolet;
-  color:white;
-  text-transform: uppercase;
-  padding-left: 10px;
-}
-
-
-
-ol li{
-  list-style-type:none;
-}
-
-ol.card-list > li{
-  float:left;
-  background-color:whitesmoke;
-  margin: 0px 10px 5px 10px;
-  overflow-wrap: break-word; 
-  width:200px;
-  height: 200px;
-  
-}
-
-ol.card-list > h3.orange {
-  background-color:orange;
-}
-
-p#cuckoo{
-  font-family: 'Pangolin', cursive;
-  font-size: 16px;
-}
-
-h4#cuckoo {
-  font-family: 'Pangolin', cursive;
-  color:rgb(204, 124, 19);
-  text-transform:uppercase;
-}
-
-#whiteboard{
-  border: 5px solid black;
-  float:left;
-}
-
-button.threebuttons {
-  border-radius: 40%;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  background-color:greenyellow;
-  width: 120px;
-  height: 75px;
-  float:left;
-  margin: 0px 5px 0px 5px;
-}
-
-button.threebuttons:nth-last-child(3){
-  background-color:rgb(144, 165, 233);
-}
-
-button.threebuttons:hover{
-  background-color: white;
-}
+ .footer-parent{
+    font-family: 'Rubik', sans-serif;
+ }
