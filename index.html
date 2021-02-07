@@ -2,16 +2,16 @@
 <html>
     <head>
         <title>Index.html</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="indexstyle.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet"> 
 </head>
 <body>
    
- <nav class="navigation-parent" >
+<nav class="navigation-parent" >
     <ol class="box1">
-        <li><img src="images/monkey.png" width="100px" height="100px"><span id="logo">KING Georgie Porgie</span></li>
+        <li><img src="images/monkey.png" width="100px" height="100px"><span id="logo">Monkey Bros</span></li>
     </ol>
     <ol class="box2">
         <li><img src="images/banana.png" width="30px" height="30px"><span id="help">HELP</span>&nbsp; &nbsp;
@@ -19,48 +19,55 @@
         </li>
     </ol>
 </nav>
-<hr style="border: 10px solid red; box-shadow: 5px 10px 10px yellow;"/>
+<hr class="spacer-horizontal-rule"/>
+
+
+
 <div class="main-content">
 
-    <div style="text-align: center;">
-        <img src="images/monkcg.jpeg" width="400px" height="300">
-        <br/>
-        <button class="home-btn">+ NEW</button>
-        <button class="home-btn">Demo</button>
-    </div>
-    <br/>
-   
+<div class="container">
+   <div id="card1">
+   <h1>Hello</h1>
+   <p>Join the app experience</p> 
+   <button>PLAY</button>
+   <button>DEMO</button>
+   </div>
+
+   <div id="card2">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/U9t-slLl30E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
+<div>    
+
+
 
 
 
 </div>
-<hr style="border: 10px solid red; box-shadow: 5px 10px 10px yellow;"/>
-<footer  class="footer-parent">
-    <ol class="footer-box1">
-    <img src="images/monkey_sleepy_02.png" width="60px" height="60px"><img src="images/monkey.png" width="60px" height="60px">
-    <li><strong>MonkBros</strong>
-        <p>500 Boylston St, Boston, MA</p>
-        <p><strong>Email:</strong> monkeycrane@monkeycrane.com</p>
-    </li> &nbsp;  &nbsp; 
-    <li>Button2</li> &nbsp;  &nbsp; 
-    <li>Button3</li>
-    </ol>
-</footer>
+<br/>
 
+
+
+
+
+
+
+<hr class="spacer-horizontal-rule"/>
+<div class="footer-parent">
+<ol id="footer-list1">
+   <img src="images/monkey.png" width="80px" height="80px">
+   <li>Monkey Bros <br/> Email: Monkeycranebros@123.com </li>
+</ol>
+<ol id="footer-list2">
+    <li><strong>Home</strong></li>
+    <li>Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+ </ol>
+</div>
 
  <!--MUST BE AT END --->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script>
-$( document ).ready(function() {
-   $( "#login" ).click(function() {
-      let response = prompt("Enter Password");
-      alert("You entered:" + " " + response);
-   });
-  
-
-});
-
-</script>
+<script src="indexscript.js"></script>
 </body>
 </html>
