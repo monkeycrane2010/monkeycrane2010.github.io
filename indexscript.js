@@ -52,7 +52,15 @@ $( document ).ready(function() {
      $( ".replaceme" ).replaceWith( $( "h1" ) );
      $(".singleslide").clone().insertAfter(this);
     });
-    
 
+    $( "#commentsubmit" ).click(function() {
+      let email = $("#email").val();
+      let comment = $("#comment").val();    
+      alert( "EMAIL: " + " " + email + " , "+ "YOUR COMMENT: " + comment);
+    });
+  
+  
    
   });
+
+    
