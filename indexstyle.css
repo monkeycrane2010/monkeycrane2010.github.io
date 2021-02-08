@@ -90,6 +90,13 @@ ol{
 }
 
 
+/*
+///////   CSS STYLE -  feedback form
+*/
+#email, #comment{
+   border: 2px solid black;
+   
+}
 
 
 
