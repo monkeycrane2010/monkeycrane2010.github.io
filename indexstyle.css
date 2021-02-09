@@ -101,6 +101,32 @@ ol{
 
 
 /*
+///////   CSS STYLE -   create
+*/
+.create-container{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: 
+   "createlist1"
+   "createlist2"
+   "createlist3";
+}
+
+.createlist1{
+  grid-area: createlist1;
+}
+
+.createlist2{
+   grid-area: createlist2;
+}
+
+.createlist3{
+   grid-area: createlist3;
+}
+
+
+/*
 ///////   CSS STYLE -   toolbar
 */
 
