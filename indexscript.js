@@ -1,5 +1,5 @@
 $( document ).ready(function() {
- 
+   let slidenumber = 1;
 
     $( ".stamp" ).click(function() {
       $(".stamp-main").toggle();
@@ -48,10 +48,15 @@ $( document ).ready(function() {
   
   
     $( ".addslide" ).click(function() {
-     alert("yay you clicked me");
-     $( ".replaceme" ).replaceWith( $( "h1" ) );
-     $(".singleslide").clone().insertAfter(this);
+     alert("+New Slide created");
+     $(".addslide").after('<div class="singleslide"></div>');
     });
+
+    $('.singleslide').each(function(index){
+      alert("hello " + index);
+
+    });
+
 
     $( "#commentsubmit" ).click(function() {
       let email = $("#email").val();
