@@ -57,13 +57,6 @@ $( document ).ready(function() {
 
     });
 
-
-    $( "#commentsubmit" ).click(function() {
-      let email = $("#email").val();
-      let comment = $("#comment").val();    
-      alert( "EMAIL: " + " " + email + " , "+ "YOUR COMMENT: " + comment);
-    });
-  
   
    
   });
