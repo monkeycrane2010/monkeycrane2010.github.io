@@ -6,17 +6,16 @@ $( document ).ready(function() {
     });
   
   
-    $(".stamp-parent1 > li").click(function() {
-      $(this).addClass("sceneclone");
-      $(this).clone().appendTo(".cloneditems").draggable();
+    $(".stamp-parent1 > li").click(function() {    // SCENE images
+      $(this).addClass("sceneclone").clone().appendTo(".cloneditems").draggable();
       $(".sceneclone").click(function(){
         $(this).toggleClass("selected");
       });
+      
     });
   
     $(".stamp-parent2 > li").click(function() {
-      $(this).addClass("sceneclone");
-      $(this).clone().appendTo(".cloneditems").draggable();
+      $(this).addClass("sceneclone").clone().appendTo(".cloneditems").draggable();
       $(".sceneclone").click(function(){
         $(this).toggleClass("selected");
       });
