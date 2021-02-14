@@ -229,7 +229,8 @@ ol{
    border: 3px solid gray;
    width: 98%;
    height: 500px;
-   background: url('images/lakitu.jpg') no-repeat;
+   background: url('images/tree.png') no-repeat;
+   background-size: contain;
    
 }
 
