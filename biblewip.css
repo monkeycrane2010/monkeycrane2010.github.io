@@ -1,0 +1,31 @@
+.math{
+    width: 90px;
+    height: 20px;
+}
+
+#delete{
+    background-color:pink;
+
+}
+
+.box{
+    background-color: cornflowerblue;
+    width: 90px;
+    height: 100px;
+}
+
+.box2{
+    background-color: darkorange;
+    width: 90px;
+    height: 100px;
+}
+
+.selected{
+    border: 4px dotted crimson;
+}
+
+.printCounter{
+    color:darkmagenta;
+    font-weight: bold;
+    font-size: 20px;
+}

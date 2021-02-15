@@ -1,6 +1,5 @@
 $( document ).ready(function() {
-   let slidenumber = 1;
-
+ 
     $( ".stamp" ).click(function() {
       $(".stamp-main").toggle();
     });
