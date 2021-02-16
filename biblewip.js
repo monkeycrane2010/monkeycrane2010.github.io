@@ -27,15 +27,40 @@ $( document ).ready(function() {
   
 
   $( "#add" ).click(function() {
-    counter +=1;
+    if(counter >= 0){
+      counter +=1;
+    } else if (counter < 0){
+      counter = 0;
+    }
     $('.printCounter').html(counter);
       
   });
 
 
   $( "#minus" ).click(function() {
-    counter -=1;
+    if(counter >= 0){
+      counter -=1;
+    } else if (counter < 0){
+      counter = 0;
+    }
     $('.printCounter').html(counter);
+      
+  });
+
+
+  let position = 50;
+  $( "#right" ).click(function() {
+     position +=5;
+     console.log(position);
+     $('.frame').css('left', position + "px");
+      
+  });
+
+
+  $( "#left" ).click(function() {
+    position -=5;
+    console.log(position);
+    $('.frame').css('left', position + "px");
       
   });
 
