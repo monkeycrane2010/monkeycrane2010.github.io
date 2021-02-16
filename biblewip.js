@@ -49,20 +49,30 @@ $( document ).ready(function() {
 
 
   let position = 50;
-  $( "#right" ).click(function() {
-     position +=5;
-     console.log(position);
-     $('.frame').css('left', position + "px");
-      
-  });
+  
+  $( "body" ).keydown(function() {
+   console.log(event.key);
 
-
-  $( "#left" ).click(function() {
-    position -=5;
-    console.log(position);
-    $('.frame').css('left', position + "px");
+    if(event.key === "ArrowRight"){
+      position +=5;
+      console.log(position);
+      $('.frame').css('left', position + "px");
       
-  });
+    } else if(event.key === "ArrowLeft"){
+      position -=5;
+      console.log(position);
+      $('.frame').css('left', position + "px");
+    } else if (event.key ==="ArrowUp"){
+      position -=5;
+      console.log(position);
+      $('.frame').css('top', position + "px");
+    } else if (event.key ==="ArrowDown"){
+      position +=5;
+      console.log(position);
+      $('.frame').css('top', position + "px");
+    }
+    
+ });
 
 
 });
