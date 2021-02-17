@@ -40,4 +40,28 @@
 }
 
 
+.fish{
+    display: grid;
+    grid-template-columns: 5% 5%;
+    grid-template-rows: 5%;
+    column-gap: 50px;
+    list-style: none;
+    border: 2px solid black;
+}
 
+
+.animal{
+    display: grid;
+    grid-template-columns: 5% 5%;
+    grid-template-rows: 5%;
+    column-gap: 50px;
+    list-style: none;
+    border: 2px solid black;
+}
+
+
+.fish img, .animal img{
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+}

@@ -52,7 +52,7 @@ $( document ).ready(function() {
   
   $( "body" ).keydown(function() {
    console.log(event.key);
-
+   
     if(event.key === "ArrowRight"){
       position +=5;
       console.log(position);
@@ -73,6 +73,5 @@ $( document ).ready(function() {
     }
     
  });
-
 
 });
