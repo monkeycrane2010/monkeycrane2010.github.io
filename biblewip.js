@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+
+  
   $( ".arrow" ).click(function() {
    alert("+New Slide created");
    $(".addslide").after('<div class="singleslide"></div>');
@@ -47,31 +49,31 @@ $( document ).ready(function() {
       
   });
 
+  
+
+$(".animal p").draggable();
+
+$(".animal img").resizable();
+
 
   let position = 50;
   
-  $( "body" ).keydown(function() {
-   console.log(event.key);
-   
-    if(event.key === "ArrowRight"){
-      position +=5;
-      console.log(position);
-      $('.frame').css('left', position + "px");
-      
-    } else if(event.key === "ArrowLeft"){
-      position -=5;
-      console.log(position);
-      $('.frame').css('left', position + "px");
-    } else if (event.key ==="ArrowUp"){
-      position -=5;
-      console.log(position);
-      $('.frame').css('top', position + "px");
-    } else if (event.key ==="ArrowDown"){
-      position +=5;
-      console.log(position);
-      $('.frame').css('top', position + "px");
-    }
+
+$( "#left" ).click(function() {
+  position -=5;
+  console.log(position);
+  $('.frame').css('left', position + "px");
     
- });
+});
+
+
+$( "#right" ).click(function() {
+  position +=5;
+  console.log(position);
+  $('.frame').css('left', position + "px");
+    
+});
+ 
+
 
 });

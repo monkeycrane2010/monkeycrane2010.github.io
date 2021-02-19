@@ -33,6 +33,7 @@
 }
 
 
+
 .printCounter{
     color:darkmagenta;
     font-weight: bold;
@@ -59,8 +60,8 @@
     border: 2px solid black;
 }
 
-
 .fish img, .animal img{
+    display:block;
     width: 80px;
     height: 80px;
     border: 2px solid black;
