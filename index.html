@@ -4,20 +4,65 @@
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="techplanner.css">
+    <link rel="stylesheet" href="indexstyle.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="d-flex" style="background-color: #ee7524;">
-        <div class="me-auto"><img src="/images/techimages/logo.svg" width="160px" height="50px" alt="logo"></div>
-        <div class="p-2 bg-color-fushia" style="color:white"><a href="#" class="btn" style="background-color: #ee7524; color:white">About</a></div>
-        <div class="p-2" ><a href="#" class="btn" style="background-color: #ee7524; color:white">Events</a></div>
-        <div class="p-2"><img src="/images/cart_white.svg" width="30px" height="30px" alt="shopping cart"><a href="#" class="btn" style="background-color: #ee7524; color:white; font-weight: bold;">Cart</a></div>
+    <div class="d-flex" style="background-color: orange">
+        <div class="me-auto"><img src="/images/techimages/logo_orange.png"  width="200px" alt="logo"></div>
+        <div class="p-2 bg-color-fushia" style="color:white"><a href="#" class="btn" style="color:white">About</a></div>
+        <div class="p-2" ><a href="#" class="btn" style="color:white">Events</a></div>
+        <div class="p-2"><img src="/images/cart_white.svg" width="30px" height="30px" alt="shopping cart"><a href="#" class="btn" style="color:white; font-weight: bold;">Cart</a></div>
     </div>
-    <div class="d-flex" style="background-color: #ee7524;">
-        <div class="p-2 bg-primary" style="color:white"><a href="#" class="btn btn-primary">Single</a></div>
-        <div class="p-2 bg-primary" style="color:white"><a href="#" class="btn btn-primary">2-People</a></div>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+        <div class="card col-sm-6 col-md-12 col-lg-12">
+            <img src="/images/pexels-julia-m-cameron-4145153.jpg" alt="">
+        </div>
+        </div>
     </div>
+
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" style="background-color: orange;color:white;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+
 
 
     <div class="container">
@@ -59,25 +104,53 @@
             <a href="#" class="btn btn-warning stretched-link">See Profile</a></div>
         </div>
         <div class="card col-sm-6 col-md-4 col-lg-4" style="width:200px">
-            <img class="card-img-top" src="/images/techimages/zoom.png" alt="Card image">
+            <img class="card-img-top" src="/images/techimages/poll.png" alt="Card image">
             <div class="card-body">
             <h4 class="card-title">Zoom Polling</h4>
             <p class="card-text">Some example text.</p>
             <a href="#" class="btn btn-success stretched-link">See Profile</a></div>
         </div>
         <div class="card col-sm-6 col-md-4 col-lg-4" style="width:200px">
-            <img class="card-img-top" src="/images/techimages/zoom.png" alt="Card image">
+            <img class="card-img-top" src="/images/techimages/poll.png" alt="Card image">
             <div class="card-body">
             <h4 class="card-title">Canvas LMS Polling</h4>
             <p class="card-text">Some example text.</p>
             <a href="#" class="btn btn-success stretched-link">See Profile</a></div>
         </div>
         <div class="card col-sm-6 col-md-4 col-lg-4" style="width:200px">
-            <img class="card-img-top" src="/images/techimages/zoom.png" alt="Card image">
+            <img class="card-img-top" src="/images/techimages/poll.png" alt="Card image">
             <div class="card-body">
-            <h4 class="card-title">Zoom Polling</h4>
+            <h4 class="card-title">Poll Everywhere</h4>
             <p class="card-text">Some example text.</p>
             <a href="#" class="btn btn-success stretched-link">See Profile</a></div>
+        </div>
+        <div class="card col-sm-6 col-md-4 col-lg-4" style="width:200px">
+            <img class="card-img-top" src="/images/techimages/poll.png" alt="Card image">
+            <div class="card-body">
+            <h4 class="card-title">Kahoot!</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-success stretched-link">See Profile</a></div>
+        </div>
+        <div class="card col-sm-6 col-md-4 col-lg-4" style="width:200px">
+            <img class="card-img-top" src="/images/techimages/write.png" alt="Card image">
+            <div class="card-body">
+            <h4 class="card-title">Microsoft Whiteboard</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-info stretched-link">See Profile</a></div>
+        </div>
+        <div class="card col-sm-6 col-md-4 col-lg-4" style="width:200px">
+            <img class="card-img-top" src="/images/techimages/write.png" alt="Card image">
+            <div class="card-body">
+            <h4 class="card-title">OneNote</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-info stretched-link">See Profile</a></div>
+        </div>
+        <div class="card col-sm-6 col-md-4 col-lg-4" style="width:200px">
+            <img class="card-img-top" src="/images/techimages/write.png" alt="Card image">
+            <div class="card-body">
+            <h4 class="card-title">PowerPoint Web App</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-info stretched-link">See Profile</a></div>
         </div>
         </div>
     </div>
