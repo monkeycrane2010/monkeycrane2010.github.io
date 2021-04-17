@@ -7,6 +7,7 @@
     <layout name="npnxnanbnsnfns10111000101" font="Open Sans" controllayout="npnxnanbnsnfns10111000101" colorscheme="npnxabnsnfns10111000101" string_table="npnxabnsnfns10111000101" />
     <layout name="pxabnsnfns10111000100" font="Open Sans" controllayout="pxabnsnfns10111000100" colorscheme="npnxabnsnfns10111000101" string_table="npnxabnsnfns10111000101" />
     <layout name="npnxabnsnfns10111000101" font="Open Sans" controllayout="npnxabnsnfns10111000101" colorscheme="npnxabnsnfns10111000101" string_table="npnxabnsnfns10111000101" />
+    <layout name="pxabnsnfns00001000101" font="Open Sans" controllayout="pxabnsnfns00001000101" colorscheme="npnxabnsnfns10111000101" string_table="npnxabnsnfns10111000101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -36,7 +37,7 @@
           </optionlist>
           <option name="time_enabled" value="false">
             <options>
-              <option name="time_format" value="" />
+              <option name="time_format" value="elapsed" />
             </options>
           </option>
           <option name="video_enabled" value="false">
@@ -207,6 +208,29 @@
       <control name="logo" enabled="false" />
       <control name="previous" enabled="false" />
       <control name="next" enabled="false" />
+      <control name="swipeleft" enabled="true" />
+      <control name="swiperight" enabled="true" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
+    </control_layout>
+    <control_layout name="pxabnsnfns00001000101">
+      <control name="volume" enabled="true" />
+      <control name="seekbar" enabled="false" />
+      <control name="replay" enabled="false" />
+      <control name="pauseplay" enabled="false" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="true" />
       <control name="swipeleft" enabled="true" />
       <control name="swiperight" enabled="true" />
       <control name="submit" enabled="false" />
