@@ -1,2 +1,2 @@
 const cb = document.getElementById('accept');
-console.log(cb.checked);
+console.log(cb.value);
