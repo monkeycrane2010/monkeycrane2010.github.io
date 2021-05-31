@@ -1,8 +1,5 @@
-
+console.log("who is that?");
 $( document ).ready(function() {
-// Change heading:
-
-
-
-  
+    // Handler for .ready() called.
+ console.log('hello');
 });
