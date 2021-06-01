@@ -9,16 +9,14 @@ $('#basic-addon1').on('click', function(){
 
 // Clicks on gray buttons
 $('input.btn-secondary').on("click", function(){
-    let test = $(this).prev().css({"border": "2px solid green"});
-    let datafield = $(this).prev().data('topic');
-    console.log('you clicked ' + test );
-    console.log('DATA: ' + datafield );
-    datafield.append()
+   
+    let datafield = $(this).prev().prev().data('topic');
+    let listTemplate = '<p><span class="p-2">'+ datafield +'</span> <button class="btn btn-warning">Remove</button></p>';
+    $('#listitem').append(listTemplate);
 
 });
 
-
-
+// Remove Selected Items
 
 
 
