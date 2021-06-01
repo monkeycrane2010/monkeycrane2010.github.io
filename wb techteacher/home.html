@@ -17,7 +17,7 @@
 <div class="col-md-12 col-lg-12">
 
     <div class="input-group mb-3">
-        <input type="text" id="searchbox" class="form-control" placeholder="Search keyword..." aria-label="Search" aria-describedby="basic-addon1"> <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i>Search</span>
+        <input type="text" id="searchbox" class="form-control" placeholder="Search keyword..." aria-label="Search" aria-describedby="basic-addon1"> <span class="btn btn-outline-primary input-group-text" id="basic-addon1"><i class="bi bi-search"></i>Search</span>
     </div>  
 
 </div>
@@ -36,12 +36,16 @@
 
 <div class="container-fluid">
 <div class="row">        
-<div class="col-md-6 col-lg-6">
+<div class="col-md-8 col-lg-8">
    
     <div class="container-fluid">
     <div class="row">        
     <div class="col-md-6 col-lg-4">
-    <img class="card-img-top" src="images/question.png" alt="Card image" data-topic="poll"><input type="submit" value="+Add" class="btn btn-secondary" id="questionbtn">
+    <img class="card-img-top" src="images/question.png" alt="Card image" data-topic="poll"><div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div><input type="submit" value="+Add" class="btn btn-secondary" id="questionbtn">
     </div>
     <div class="col-md-6 col-lg-4">
     <img class="card-img-top" src="images/touch.png" alt="Card image" data-topic="mobile device"><input type="submit" value="+Add" class="btn btn-secondary">
@@ -58,10 +62,14 @@
 </div>
 
 
-<div class="col-md-6 col-lg-6">
+<div class="col-md-4 col-lg-4">
+    <div id="rightpanel">
     <h4 class="bg-warning p-2"><i class="bi bi-cart-plus-fill"></i> SELECTED ITEMS:</h4>
+    <div class="p-2">
     <p>Some content goes here</p>
-    <h4 class="p-2">PRINT</h4>
+    <h4>PRINT</h4>
+    </div>
+    </div>
 </div>
 </div>
 </div>
