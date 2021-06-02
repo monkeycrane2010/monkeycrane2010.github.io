@@ -11,7 +11,7 @@ $('#basic-addon1').on('click', function(){
 $('input.btn-secondary').on("click", function(){
    
     let datafield = $(this).prev().prev().data('topic');
-    let listTemplate = '<p><span class="p-2">'+ datafield +'</span> <button class="btn btn-warning">Remove</button></p>';
+    let listTemplate = '<tr><td>' + datafield + '</td><td><button class="btn btn-warning">Remove</button></td></tr>';
     $('#listitem').append(listTemplate);
 
 });

@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<h2 class="m-2 p-2" style="color:white; background-color: #4068eb;">Welcome Aboard</h2>
+<h2 class="m-2 p-2" style="color:white; background-color: #4068eb;"><img src="images/monkey_happy.png" alt="" width="150px"> My Digital Toolkit</h2>
 <!--DO NOT WRITE ABOVE THIS LINE-->
 
 <div class="container-fluid">
@@ -36,7 +36,7 @@
 
 <div class="container-fluid">
 <div class="row">        
-<div class="col-md-8 col-lg-8">
+<div class="col-sm-6 col-md-8 col-lg-8">
    
     <div class="container-fluid">
     <div class="row">        
@@ -49,10 +49,13 @@
     <img class="card-img-top" src="images/touch.png" alt="Card image" data-topic="mobile device"><h5>Mobile Device</h5><input type="submit" value="+Add" class="btn btn-secondary">
     </div>
     <div class="col-md-6 col-lg-4"> 
-    <img class="card-img-top" src="images/walk.png" alt="Card image" data-topic="classroom walk"><h5>Wlk-in Classroom</h5><input type="submit" value="+Add" class="btn btn-secondary">
+    <img class="card-img-top" src="images/walk.png" alt="Card image" data-topic="classroom walk"><h5>Classroom</h5><input type="submit" value="+Add" class="btn btn-secondary">
     </div>
     <div class="col-md-6 col-lg-4">
     <img class="card-img-top" src="images/zoom.png" alt="Card image" data-topic="zoom"><h5>Zoom</h5><input type="submit" value="+Add" class="btn btn-secondary">
+    </div>
+    <div class="col-md-6 col-lg-4">
+    <img class="card-img-top" src="images/lecture.png" alt="Card image" data-topic="lecture"><h5>Lecture</h5><input type="submit" value="+Add" class="btn btn-secondary">
     </div>
     </div>
     </div>
@@ -60,14 +63,20 @@
 </div>
 
 
-<div class="col-md-4 col-lg-4">
+<div class="col-sm-6 col-md-4 col-lg-4">
     <div id="rightpanel">
     <h4 class="bg-warning p-2"><i class="bi bi-cart-plus-fill"></i> SELECTED ITEMS:</h4>
-        <div class="p-2" id="listitem">
-        <p><span class="p-2">Some content goes here</span> <button class="btn btn-warning">Remove</button></p>
-        </div>
-        <button class="btn btn-secondary">Print This</button>
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">Item</th>
+        <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody id="listitem">
     
+    </tbody>
+    </table>
     </div>
 </div>
 </div>
