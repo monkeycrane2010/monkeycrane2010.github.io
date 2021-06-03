@@ -15,7 +15,7 @@ $('input.btn-secondary').on("click", function(){
     $('#listitem').append(listTemplate);
     // Remove Selected Items
     $('button.remove').on("click", function(){
-        $(this).parent().parent().css("border", "red solid 4px").remove();
+        $(this).parent().parent().remove();
     });
 
 });
