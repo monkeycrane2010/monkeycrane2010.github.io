@@ -11,12 +11,16 @@ $('#basic-addon1').on('click', function(){
 $('input.btn-secondary').on("click", function(){
    
     let datafield = $(this).prev().prev().data('topic');
-    let listTemplate = '<tr><td>' + datafield + '</td><td><button class="btn btn-warning">Remove</button></td></tr>';
+    let listTemplate = '<tr><td>' + datafield + '</td><td><button class="btn btn-warning remove">Remove</button></td></tr> ';
     $('#listitem').append(listTemplate);
+    // Remove Selected Items
+    $('button.remove').on("click", function(){
+        $(this).parent().parent().css("border", "red solid 4px").remove();
+    });
 
 });
 
-// Remove Selected Items
+
 
 
 
