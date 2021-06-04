@@ -20,8 +20,26 @@ $('input.btn-secondary').on("click", function(){
 
 });
 
+let newvalue = 0;
+let newdisplay = $('#display1').css('font-size', '30px').html(newvalue);
+$('#testadd').on('click', function(){
+    if( newvalue < "30"){
+        newvalue +=1;
+        newdisplay.html(newvalue);
+       
+    } else {
+        alert('stop for ADD')
+    }
+});
+$('#testminus').on('click', function(){
+    if( newvalue > "30"){
+        newvalue -=1;
+        newdisplay.css('font-color','red').html(newvalue);
+    } else{
+        alert('stop for minuS')
 
-
+    };
+});
 
 
 
