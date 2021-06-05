@@ -1,6 +1,19 @@
 $( document ).ready(function() {
     // Handler for .ready() called.
 
+
+// Goal 
+$('#goalsave').on('click', function(){
+    let goalinput = $('#goalinput').val();
+    let goaloutput = '<li> ' + goalinput + ' </li>';
+    if( $('#goaloutput li').length == 2){
+        alert('List limit reached. You must delete an item')
+    } else{
+        $('#goaloutput').append(goaloutput); 
+    };
+    
+});
+
 // Search 
 $('#basic-addon1').on('click', function(){
     let str = $('#searchbox').val();
