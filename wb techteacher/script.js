@@ -12,14 +12,18 @@ $('input.btn-secondary').on("click", function(){
    
     let datafield = $(this).prev().prev().data('topic');
     let listTemplate = '<tr><td>' + datafield + '</td><td><button class="btn btn-warning remove">Remove</button></td></tr> ';
+    let paragraphTemplate = '<p>' + datafield + '</p>'; 
     $('#listitem').append(listTemplate);
+    console.log(listTemplate);
+    $('#coin1').append(paragraphTemplate); //// ERROR , help please???
+    console.log(paragraphTemplate);
     // Remove Selected Items
     $('button.remove').on("click", function(){
         $(this).parent().parent().remove();
     });
+  
 
 });
-
 let newvalue = 0;
 let newdisplay = $('#display1').css('font-size', '30px').html(newvalue);
 $('#testadd').on('click', function(){
