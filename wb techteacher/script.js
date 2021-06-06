@@ -57,14 +57,40 @@ $('#testminus').on('click', function(){
 
 // Worksheet
 $('#pollsearch').on('click', function(){
-    let array = [];
-    
- 
+    $( "img[data-topic*='poll']" ).css("background-color", "green");
 });
 
 $('#classroomsearch').on('click', function(){
-    $( "img[data-topic*='classroom']" ).css("background-color", "orange").toggle();
- 
+    $( "img[data-topic*='classroom']" ).css("background-color", "orange");
+});
+
+// ////
+let array = [];
+$('.soundmusicorig li').each(function(){
+    let print = $(this).html();
+    array.push(print);
+    return array
+});
+
+
+$('button#alpha').on('click', function(){
+    array.sort();
+    console.log(array);
+});
+
+$('button#next').on('click', function(){
+    $('.outline').children().next().addClass("outline");
+    
+    console.log($('.outline').next().addClass("outline"));
+    
+});
+
+$('button#previous').on('click', function(){
+    if($('.outline').children().prev().hasClass("outline")){
+        $('.outline').children().prev().text();
+    }
+    
+    console.log( $('.outline').prev().hasClass("outline"));
 });
 
 

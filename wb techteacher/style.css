@@ -11,3 +11,7 @@ background-color: rgb(219, 218, 212);
 img.card-img-top{
     width:75%;
 }
+
+.outline{
+    border: 5px dotted red;
+}
