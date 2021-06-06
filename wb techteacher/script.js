@@ -6,7 +6,7 @@ $( document ).ready(function() {
 $('#goalsave').on('click', function(){
     let goalinput = $('#goalinput').val();
     let goaloutput = '<li> ' + goalinput + ' </li>';
-    if( $('#goaloutput li').length == 2){
+    if( $('#goaloutput li').length == 3){
         alert('List limit reached. You must delete an item')
     } else{
         $('#goaloutput').append(goaloutput); 
@@ -25,11 +25,7 @@ $('input.btn-secondary').on("click", function(){
    
     let datafield = $(this).prev().prev().data('topic');
     let listTemplate = '<tr><td>' + datafield + '</td><td><button class="btn btn-warning remove">Remove</button></td></tr> ';
-    let paragraphTemplate = '<p>' + datafield + '</p>'; 
     $('#listitem').append(listTemplate);
-    console.log(listTemplate);
-    $('#coin1').append(paragraphTemplate); //// ERROR , help please???
-    console.log(paragraphTemplate);
     // Remove Selected Items
     $('button.remove').on("click", function(){
         $(this).parent().parent().remove();
@@ -58,6 +54,18 @@ $('#testminus').on('click', function(){
     };
 });
 
+
+// Worksheet
+$('#pollsearch').on('click', function(){
+    let array = [];
+    
+ 
+});
+
+$('#classroomsearch').on('click', function(){
+    $( "img[data-topic*='classroom']" ).css("background-color", "orange").toggle();
+ 
+});
 
 
 
