@@ -35,24 +35,23 @@ $('input.btn-secondary').on("click", function(){
 });
 let newvalue = 0;
 let newdisplay = $('#display1').css('font-size', '30px').html(newvalue);
-let numberinput = $("#numberinput").val();
 
 
 $('#testadd').on('click', function(){
-    if( newvalue === "0" || newvalue < numberinput){
+    if( newvalue === "0" || newvalue < "12"){
         newvalue +=1;
         newdisplay.html(newvalue);
        
     } else {
-        alert('Limit reached ' + numberinput)
+        alert('Limit reached ' + "12")
     }
 });
 $('#testminus').on('click', function(){
-    if( newvalue > "0" || newvalue === numberinput){
+    if( newvalue > "0" || newvalue === "12"){
         newvalue -=1;
         newdisplay.css('font-color','red').html(newvalue);
     } else{
-        alert('stop for MINUS' + "numberInput is: " + numberinput)
+        alert('stop for MINUS' + "numberInput is: " + "12")
 
     };
 });
