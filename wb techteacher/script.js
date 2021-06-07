@@ -66,32 +66,27 @@ $('#classroomsearch').on('click', function(){
 
 // ////
 let array = [];
-$('.soundmusicorig li').each(function(){
+$('#wordlist li').each(function(){
     let print = $(this).html();
     array.push(print);
     return array
 });
-
+console.log(array);
 
 $('button#alpha').on('click', function(){
-    array.sort();
-    console.log(array);
+    let newArray = array.sort();
+    console.log(array)
+
+    let item = array[2]
+    $('h2#test').append(item);
+    
+    $('#wordlist li').each(function(){
+        $(this).html(newArray);
+    });
+    return array
 });
 
-$('button#next').on('click', function(){
-    $('.outline').children().next().addClass("outline");
-    
-    console.log($('.outline').next().addClass("outline"));
-    
-});
-
-$('button#previous').on('click', function(){
-    if($('.outline').children().prev().hasClass("outline")){
-        $('.outline').children().prev().text();
-    }
-    
-    console.log( $('.outline').prev().hasClass("outline"));
-});
+console.log(array);
 
 
 
