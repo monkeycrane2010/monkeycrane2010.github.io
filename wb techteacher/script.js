@@ -51,7 +51,7 @@ $('#testminus').on('click', function(){
         newvalue -=1;
         newdisplay.css('font-color','red').html(newvalue);
     } else{
-        alert('stop for MINUS' + "numberInput is: " + "12")
+        alert('stop for MINUS')
 
     };
 });
@@ -75,21 +75,18 @@ $('#wordlist li').each(function(){
 });
 console.log(array);
 
+
+
+
 $('button#alpha').on('click', function(){
-    let newArray = array.sort();
-    console.log(array)
-
-    let item = array[2]
-    $('h2#test').append(item);
-    
-    $('#wordlist li').each(function(){
-        $(this).html(newArray);
+    array = array.sort();
+    let newArray = $.map( array, function(index, item){
+        return item + " " + index
     });
-    return array
+    $("#wordlist li").html("<li>" + newArray + "</li>")
+    
 });
-
 console.log(array);
-
 
 
 
