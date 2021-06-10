@@ -58,35 +58,6 @@ $('#testminus').on('click', function(){
 
 
 // Worksheet
-$('#pollsearch').on('click', function(){
-    $( "img[data-topic*='poll']" ).css("background-color", "green");
-});
-
-$('#classroomsearch').on('click', function(){
-    $( "img[data-topic*='classroom']" ).css("background-color", "orange");
-});
-
-// ////
-let array = [];
-$('#wordlist li').each(function(){
-    let print = $(this).html();
-    array.push(print);
-    return array
-});
-console.log(array);
-
-
-
-
-$('button#alpha').on('click', function(){
-    array = array.sort();
-    let newArray = $.map( array, function(index, item){
-        return item + " " + index
-    });
-    $("#wordlist li").html("<li>" + newArray + "</li>")
-    
-});
-console.log(array);
 
 
 
