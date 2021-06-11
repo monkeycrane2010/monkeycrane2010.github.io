@@ -58,7 +58,21 @@ $('#testminus').on('click', function(){
 
 
 // Worksheet
-
+$('#searchbtn').on('click', function(){
+    let searchtext = $('#searchbox').val();
+    alert(searchtext);
+   if(searchtext.toLowerCase().includes('poll') || searchtext.toLowerCase().includes('everywhere') || searchtext.toLowerCase().includes('poll everywhere')){
+     console.log('success')
+     console.log(searchtext.toLowerCase());
+     $('h5:contains(Poll Everywhere)').css('color', 'blue');
+   } else{
+     console.log('no match')
+   }
+ });
+ 
+ $('.bytopic input').on('click', function(){
+   console.log($(this).attr('value'));
+ });
 
 
 });

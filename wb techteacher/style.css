@@ -12,3 +12,10 @@ img.card-img-top{
     width:75%;
 }
 
+.show-item{
+    display: block;
+  }
+  
+.hide-item{
+    display:none;
+  }
