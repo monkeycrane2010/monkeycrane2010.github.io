@@ -13,9 +13,9 @@ img.card-img-top{
 }
 
 .show-item{
-    display: block;
-  }
-  
+  border-left: 10px solid blue;
+}
+
 .hide-item{
-    display:none;
-  }
+  display:none;
+}

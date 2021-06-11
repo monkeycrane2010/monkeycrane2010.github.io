@@ -64,15 +64,30 @@ $('#searchbtn').on('click', function(){
    if(searchtext.toLowerCase().includes('poll') || searchtext.toLowerCase().includes('everywhere') || searchtext.toLowerCase().includes('poll everywhere')){
      console.log('success')
      console.log(searchtext.toLowerCase());
-     $('h5:contains(Poll Everywhere)').css('color', 'blue');
+     $('h5:contains(Poll Everywhere)').parent().addClass('show-item');
+ 
    } else{
      console.log('no match')
    }
  });
  
+ 
+ 
  $('.bytopic input').on('click', function(){
-   console.log($(this).attr('value'));
- });
+   
+   if($(this).attr('value') == "Car"){
+     $('h5:contains(Poll Everywhere)').parent().toggleClass('show-item');  
+     
+   } else if($(this).attr('value') == "Boat"){
+     
+   $('h5:contains(Mobile Device)').parent().toggleClass('show-item');
+     
+   }
+   // KEEP THIS TO CHECK 'value' of checkbox
+   // console.log($(this).attr('value'));
+ }); 
+ 
+ 
 
 
 });
