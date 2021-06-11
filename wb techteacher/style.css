@@ -1,5 +1,5 @@
 nav{
-  background-color:rgb(245, 113, 24);
+  background-color:rgb(158, 6, 158);
   display:grid;
   grid-template-columns:1fr;
   grid-template-rows: 1fr;
@@ -15,7 +15,9 @@ nav{
 #grid2{
   grid-area: grid2;
   background-color:white;
-  padding: 10px 10px 8px 8px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 20px;
 }
 
 
