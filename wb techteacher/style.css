@@ -1,8 +1,25 @@
-.infobox{
-background-color: rgb(219, 218, 212);
-
+nav{
+  background-color:rgb(245, 113, 24);
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "grid1 grid2";
 }
 
+
+#grid1{
+ grid-area:grid1;  
+}
+
+#grid2{
+  grid-area: grid2;
+  background-color:white;
+  padding: 10px 10px 8px 8px;
+}
+
+
+/* HOME */
 #rightpanel{
     border-radius: 6px;
     box-shadow:gray 5px 5px 15px;
@@ -19,3 +36,5 @@ img.card-img-top{
 .hide-item{
   display:none;
 }
+
+/* PAGE */
