@@ -35,6 +35,10 @@ img.card-img-top{
   border-left: 10px solid blue;
 }
 
+.highlight{
+  background-color:yellow;
+}
+
 .hide-item{
   display:none;
 }

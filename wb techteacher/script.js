@@ -15,12 +15,33 @@ $('#goalsave').on('click', function(){
 });
 
 // Search 
-$('#basic-addon1').on('click', function(){
-    let str = $('#searchbox').val();
-    alert(str);
-});
+$('#searchbtn').on('click', function(){
+    $('h5:contains(Poll Everywhere)').parent().removeClass('highlight');
+   let searchtext = $('#searchbox').val();
+   alert(searchtext);
+   if(searchtext.toLowerCase().includes('poll') || searchtext.toLowerCase().includes('everywhere')){
+     $('h5:contains(Poll Everywhere)').parent().addClass('highlight');
+   } else {
+     alert('no match');
+   }
 
-// Clicks on gray buttons
+ });
+ 
+ 
+// CHECKBOX
+ $('.bytopic input').on('click', function(){
+   
+   if($(this).attr('value') == "Car"){
+    $('h5:contains(Poll Everywhere)').parent().toggleClass('show-item');   
+   } else if($(this).attr('value') == "Boat"){
+    $('h5:contains(Mobile Device)').parent().toggleClass('show-item');
+     
+   }
+  
+}); 
+
+
+// GRAY BUTTON
 $('input.btn-secondary').on("click", function(){
    
     let datafield = $(this).prev().prev().data('topic');
@@ -33,59 +54,9 @@ $('input.btn-secondary').on("click", function(){
   
 
 });
-let newvalue = 0;
-let newdisplay = $('#display1').css('font-size', '30px').html(newvalue);
 
 
-$('#testadd').on('click', function(){
-    if( newvalue === "0" || newvalue < "12"){
-        newvalue +=1;
-        newdisplay.html(newvalue);
-       
-    } else {
-        alert('Limit reached ' + "12")
-    }
-});
-$('#testminus').on('click', function(){
-    if( newvalue > "0" || newvalue === "12"){
-        newvalue -=1;
-        newdisplay.css('font-color','red').html(newvalue);
-    } else{
-        alert('stop for MINUS')
 
-    };
-});
-
-
-// Worksheet
-$('#searchbtn').on('click', function(){
-    let searchtext = $('#searchbox').val();
-    alert(searchtext);
-   if(searchtext.toLowerCase().includes('poll') || searchtext.toLowerCase().includes('everywhere') || searchtext.toLowerCase().includes('poll everywhere')){
-     console.log('success')
-     console.log(searchtext.toLowerCase());
-     $('h5:contains(Poll Everywhere)').parent().addClass('show-item');
- 
-   } else{
-     console.log('no match')
-   }
- });
- 
- 
- 
- $('.bytopic input').on('click', function(){
-   
-   if($(this).attr('value') == "Car"){
-     $('h5:contains(Poll Everywhere)').parent().toggleClass('show-item');  
-     
-   } else if($(this).attr('value') == "Boat"){
-     
-   $('h5:contains(Mobile Device)').parent().toggleClass('show-item');
-     
-   }
-   // KEEP THIS TO CHECK 'value' of checkbox
-   // console.log($(this).attr('value'));
- }); 
  
  
 
