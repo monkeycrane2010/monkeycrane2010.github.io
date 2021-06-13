@@ -5,14 +5,20 @@ $( document ).ready(function() {
 // Goal 
 $('#goalsave').on('click', function(){
     let goalinput = $('#goalinput').val();
-    let goaloutput = '<li> ' + goalinput + ' </li>';
+    let goaloutput = '<li> ' + goalinput + '<button class="btn btn-warning removegoal">Remove</button></li>';
+     // Remove previous goals
+     $('button.removegoal').on("click", function(){
+        alert('delete');
+        $(this).parent().parent().remove();
+    });
     if( $('#goaloutput li').length == 3){
         alert('List limit reached. You must delete an item')
     } else{
         $('#goaloutput').append(goaloutput); 
     };
-    
 });
+   
+
 
 // Search 
 $('#searchbtn').on('click', function(){
@@ -42,6 +48,17 @@ $('#searchbtn').on('click', function(){
 
 
 // GRAY BUTTON
+
+/*
+function alphabetize(){
+    $("#list1 .notecard").sort(function(a, b) {
+        var aText = $(a).text(), bText = $(b).text();
+        return aText < bText ? -1 : aText > bText ? 1 : 0;
+    }).appendTo('h4');
+}
+alphabetize();
+*/
+
 $('input.btn-secondary').on("click", function(){
    
     let datafield = $(this).prev().prev().data('topic');
