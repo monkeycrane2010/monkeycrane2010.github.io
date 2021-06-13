@@ -1,0 +1,19 @@
+nav{
+    background-color:rgb(158, 6, 158);
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "grid1 grid2";
+  }
+  
+  
+  #nav1{
+   grid-area:grid1;  
+  }
+  
+  #nav2{
+    grid-area: grid2;
+    background-color:white;
+  }
+  
