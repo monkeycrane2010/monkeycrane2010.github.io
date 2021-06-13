@@ -18,8 +18,7 @@ $('#goalsave').on('click', function(){
   // Remove previous goals
 $('button.removegoal').on("click", function(){
     alert('delete');
-    alert($(this).parent());
-    $(this).parent().remove();
+    $(this).css('border', '2px dotted red');
 });
 
 // Search 
