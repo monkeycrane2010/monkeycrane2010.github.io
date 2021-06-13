@@ -5,17 +5,17 @@ $( document ).ready(function() {
 // Goal 
 $('#goalsave').on('click', function(){
     let goalinput = $('#goalinput').val();
-    let goaloutput = '<li> ' + goalinput + '</li><button class="btn btn-warning removegoal">Remove</button>';
-     // Remove previous goals
+    let goaloutput = '<li> ' + goalinput + '<button class="btn btn-warning removegoal">Remove</button></li>';
+    $('#goaloutput').append(goaloutput); 
+  
     $('button.removegoal').on("click", function(){
-     $(this).parent().parent().remove();
-     alert('delete');
+        $(this).parent().css('border', '3px solid brown');
+        // Remove previous goals
+        $(this).parent().remove();
+        if($('button.removegoal') == 3){
+            alert('max limit of 3 goals reached. REQUIRED: delete some')
+        }
     });
-    /*if( $('#goaloutput li').length == 3){
-        alert('List limit reached. You must delete an item')
-    } else{
-        $('#goaloutput').append(goaloutput); 
-    };*/
 });
 
 
