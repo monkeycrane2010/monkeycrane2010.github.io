@@ -35,29 +35,31 @@ nav{
   grid-area:grid2;  
 }
 
-#rightpanel{
-    border-radius: 6px;
-    box-shadow:gray 5px 5px 15px;
-}
 
-.notecard{
-  box-shadow:gray 5px 5px 10px;
-}
-
-img.card-img-top{
-    width:75%;
-}
-
-.show-item{
-  border-left: 10px solid blue;
-}
-
-.highlight{
-  background-color:yellow;
+/* PAGE */
+.card-img-top{
+    width:85%;
 }
 
 .hide-item{
   display:none;
 }
 
-/* PAGE */
+.highlight{
+  background-color:yellow;
+}
+
+#rightpanel{
+  border-radius: 6px;
+  box-shadow:gray 5px 5px 15px;
+}
+
+.show-item-poll{
+  border-left: 10px solid blue;
+}
+
+.show-item-video{
+  border-left: 10px solid red;
+}
+
+

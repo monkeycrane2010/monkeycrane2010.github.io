@@ -5,7 +5,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>wb techteacher</title>
-    <style>
+<style>
 nav{
   background-color:rgb(158, 6, 158);
   display:grid;
@@ -43,29 +43,34 @@ nav{
   grid-area:grid2;  
 }
 
-#rightpanel{
-    border-radius: 6px;
-    box-shadow:gray 5px 5px 15px;
-}
 
-img.card-img-top{
-    width:75%;
-}
-
-.show-item{
-  border-left: 10px solid blue;
-}
-
-.highlight{
-  background-color:yellow;
+/* PAGE */
+.card-img-top{
+    width:85%;
 }
 
 .hide-item{
   display:none;
 }
 
-/* PAGE */
-    </style>
+.highlight{
+  background-color:yellow;
+}
+
+#rightpanel{
+  border-radius: 6px;
+  box-shadow:gray 5px 5px 15px;
+}
+
+.show-item-poll{
+  border-left: 10px solid blue;
+}
+
+.show-item-video{
+  border-left: 10px solid red;
+}
+
+</style>
 </head>
 <body>
 
@@ -73,7 +78,7 @@ img.card-img-top{
     <img id="nav1" src="images/logo_orange_square.png" width="110px" alt="logo">
     <ol id="nav2" class="breadcrumb">
         <li class="breadcrumb-item active" aria-current="page"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Build IT</a></li>
+        <li class="breadcrumb-item"><a href="/wb techteacher/pages/tool-template.html" target="_blank">Build IT</a></li>
         <li class="breadcrumb-item">Help</li>
     </ol>
     </nav>
@@ -94,7 +99,6 @@ img.card-img-top{
 </div>
 </div>
         
-
 
     <div class="bytopic">
     <h4>Filter:  <span style="font-size: 16px;">by Category</span></h4>
@@ -149,40 +153,41 @@ img.card-img-top{
 </div>
 
 
-<!--DO NOT WRITE ABOVE THIS LINE-->
+<!---------MAIN CONTENT---------->
 
 <div class="contentbox1">
 
-<h4>Browse Tools</h4>
+<h4 id="browsetools">Browse Tools</h4>
 <div class="container-fluid">
 <div class="row">        
-<div class="col-sm-8 col-md-8 col-lg-8">
-   
-    <div class="container-fluid" id="list1">
+<div class="col-sm-12 col-md-12 col-lg-12">
+    
+    <div class="container-fluid">
     <div class="row">        
-    <div class="col-md-6 col-lg-4 notecard">
-    <img class="card-img-top" src="images/question.png" alt="Card image" data-topic="poll"><h5>Poll Everywhere <span><a href="/wb techteacher/worksheet.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span> </h5><input type="submit" value="+Add" class="btn btn-secondary" id="questionbtn">
+    <div class="col-sm-4 col-md-4 col-lg-4">
+    <img class="card-img-top" src="images/chat.png" alt="Card image" data-topic="chat"><h5>Chat<span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
     </div>
-    <div class="col-md-6 col-lg-4 notecard">
-    <img class="card-img-top" src="images/touch.png" alt="Card image" data-topic="mobile device"><h5>Mobile Device<span><a href="/wb techteacher/worksheet.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
+    <div class="col-sm-4 col-md-4 col-lg-4">
+    <img class="card-img-top" src="images/walk.png" alt="Card image" data-topic="classroom walk"><h5>Classroom<span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
     </div>
-    <div class="col-md-6 col-lg-4 notecard"> 
-    <img class="card-img-top" src="images/walk.png" alt="Card image" data-topic="classroom walk"><h5>Classroom<span><a href="/wb techteacher/worksheet.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
+    <div class="col-sm-4 col-md-4 col-lg-4">
+    <img class="card-img-top" src="images/touch.png" alt="Card image" data-topic="mobile device"><h5>Mobile Device<span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
     </div>
-    <div class="col-md-6 col-lg-4 notecard">
-    <img class="card-img-top" src="images/zoom.png" alt="Card image" data-topic="zoom"><h5>Zoom<span><a href="/wb techteacher/worksheet.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
+    <div class="col-sm-4 col-md-4 col-lg-4">
+    <img class="card-img-top" src="images/lecture.png" alt="Card image" data-topic="lecture"><h5>Lecture<span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
     </div>
-    <div class="col-md-6 col-lg-4 notecard">
-    <img class="card-img-top" src="images/lecture.png" alt="Card image" data-topic="lecture"><h5>Lecture<span><a href="/wb techteacher/worksheet.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
+    <div class="col-sm-4 col-md-4 col-lg-4">
+    <img class="card-img-top" src="images/paper.png" alt="Card image" data-topic="paper"><h5>Paper<span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
     </div>
-    <div class="col-md-6 col-lg-4 notecard">
-    <img class="card-img-top" src="images/chat.png" alt="Card image" data-topic="chat"><h5>Chat<span><a href="/wb techteacher/worksheet.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
+    <div class="col-sm-4 col-md-4 col-lg-4">
+    <img class="card-img-top" src="images/question.png" alt="Card image" data-topic="poll"><h5>Poll Everywhere <span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span> </h5><input type="submit" value="+Add" class="btn btn-secondary" id="questionbtn">
     </div>
-    <div class="col-md-6 col-lg-4 notecard">
-    <img class="card-img-top" src="images/paper.png" alt="Card image" data-topic="paper"><h5>Paper<span><a href="/wb techteacher/worksheet.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
+    <div class="col-sm-4 col-md-4 col-lg-4">
+    <img class="card-img-top" src="images/zoom.png" alt="Card image" data-topic="zoom"><h5>Zoom<span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
     </div>
     </div>
     </div>
+    
   
 </div>
 </div>
@@ -238,12 +243,12 @@ $('#searchbtn').on('click', function(){
  
  
 // CHECKBOX
-$('.bytopic input').on('click', function(){
+ $('.bytopic input').on('click', function(){
    
    if($(this).attr('value') == "Poll"){
-    $('h5:contains(Poll Everywhere)').parent().toggleClass('show-item');   
+    $('h5:contains(Poll Everywhere)').parent().toggleClass('show-item-poll');   
    } else if($(this).attr('value') == "Video"){
-    $('h5:contains(Mobile Device)').parent().toggleClass('show-item');
+    $('h5:contains(Mobile Device)').parent().toggleClass('show-item-video');
      
    }
   
@@ -251,16 +256,15 @@ $('.bytopic input').on('click', function(){
 
 
 // GRAY BUTTON
-
-/*
-function alphabetize(){
-    $("#list1 .notecard").sort(function(a, b) {
+/*function alphabetize(){
+    $("#list1 li").sort(function(a, b) {
         var aText = $(a).text(), bText = $(b).text();
         return aText < bText ? -1 : aText > bText ? 1 : 0;
-    }).appendTo('h4');
+    }).appendTo('#browsetools');
 }
-alphabetize();
-*/
+alphabetize(); */
+
+
 
 $('input.btn-secondary').on("click", function(){
    
@@ -276,13 +280,8 @@ $('input.btn-secondary').on("click", function(){
 });
 
 
-
- 
- 
-
-
 });
 
-</script>
+</script> 
 </body>
 </html>

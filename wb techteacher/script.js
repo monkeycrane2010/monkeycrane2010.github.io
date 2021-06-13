@@ -43,9 +43,9 @@ $('#searchbtn').on('click', function(){
  $('.bytopic input').on('click', function(){
    
    if($(this).attr('value') == "Poll"){
-    $('h5:contains(Poll Everywhere)').parent().toggleClass('show-item');   
+    $('h5:contains(Poll Everywhere)').parent().toggleClass('show-item-poll');   
    } else if($(this).attr('value') == "Video"){
-    $('h5:contains(Mobile Device)').parent().toggleClass('show-item');
+    $('h5:contains(Mobile Device)').parent().toggleClass('show-item-video');
      
    }
   
@@ -53,16 +53,15 @@ $('#searchbtn').on('click', function(){
 
 
 // GRAY BUTTON
-
-/*
-function alphabetize(){
-    $("#list1 .notecard").sort(function(a, b) {
+/*function alphabetize(){
+    $("#list1 li").sort(function(a, b) {
         var aText = $(a).text(), bText = $(b).text();
         return aText < bText ? -1 : aText > bText ? 1 : 0;
-    }).appendTo('h4');
+    }).appendTo('#browsetools');
 }
-alphabetize();
-*/
+alphabetize(); */
+
+
 
 $('input.btn-secondary').on("click", function(){
    
