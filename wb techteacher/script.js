@@ -7,11 +7,10 @@ $('#goalsave').on('click', function(){
     let goalinput = $('#goalinput').val();
     let goaloutput = '<li> ' + goalinput + '<button class="btn btn-warning removegoal">Remove</button></li>';
      // Remove previous goals
-$('button.removegoal').on("click", function(){
-    alert('delete');
-    $(this).paremt().remove();
-});
-   
+    $('button.removegoal').on("click", function(){
+     alert.log('delete');
+     $(this).parent().remove();
+    });
     if( $('#goaloutput li').length == 3){
         alert('List limit reached. You must delete an item')
     } else{
