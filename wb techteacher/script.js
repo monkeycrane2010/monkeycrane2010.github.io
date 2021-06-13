@@ -42,9 +42,9 @@ $('#searchbtn').on('click', function(){
 // CHECKBOX
  $('.bytopic input').on('click', function(){
    
-   if($(this).attr('value') == "Car"){
+   if($(this).attr('value') == "Poll"){
     $('h5:contains(Poll Everywhere)').parent().toggleClass('show-item');   
-   } else if($(this).attr('value') == "Boat"){
+   } else if($(this).attr('value') == "Video"){
     $('h5:contains(Mobile Device)').parent().toggleClass('show-item');
      
    }
