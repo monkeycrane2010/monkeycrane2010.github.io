@@ -6,19 +6,20 @@ $( document ).ready(function() {
 $('#goalsave').on('click', function(){
     let goalinput = $('#goalinput').val();
     let goaloutput = '<li> ' + goalinput + '<button class="btn btn-warning removegoal">Remove</button></li>';
-     // Remove previous goals
-     $('button.removegoal').on("click", function(){
-        alert('delete');
-        $(this).parent().parent().remove();
-    });
+   
+   
     if( $('#goaloutput li').length == 3){
         alert('List limit reached. You must delete an item')
     } else{
         $('#goaloutput').append(goaloutput); 
     };
 });
-   
 
+  // Remove previous goals
+$('button.removegoal').on("click", function(){
+    alert('delete');
+    $(this).parent().remove();
+});
 
 // Search 
 $('#searchbtn').on('click', function(){
