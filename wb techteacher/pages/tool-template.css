@@ -17,8 +17,13 @@ nav{
     background-color:white;
   }
   
+  img.card-img-top{
+    width: 65%;
+  }
+
   .card-title{
     background-color:rgb(224, 223, 222);
     height:100%;
     padding: 10px 5px 5px 10px;
   }
+
