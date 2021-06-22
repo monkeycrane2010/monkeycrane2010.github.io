@@ -20,6 +20,12 @@ nav{
 
 
 /* HOME */
+.homewelcome{
+  width: 100%;
+  background-color:rgb(13, 133, 180);
+  font-size:20px;
+}
+
 .bodycontent{
   display:grid;
   grid-template-columns:2fr 1fr;
@@ -27,6 +33,7 @@ nav{
   grid-template-areas: 
   "grid1 grid2";
 }
+
 
 .contentbox1{
   grid-area:grid1;  
