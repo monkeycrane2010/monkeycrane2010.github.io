@@ -21,10 +21,20 @@ nav{
 
 /* HOME */
 .homewelcome{
-  height: 65vh;
+  height: 85vh;
   background-color:rgb(218, 217, 216);
   font-size:20px;
 }
+
+.homewelcome > .container-fluid > .row {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: 65vh;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+
 
 .bodycontent{
   display:grid;
