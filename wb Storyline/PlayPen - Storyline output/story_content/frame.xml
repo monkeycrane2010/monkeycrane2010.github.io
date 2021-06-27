@@ -1219,7 +1219,7 @@
       <links>
         <slidelink slideid="_player.6ffV6Bhs8ul" displaytext="Overview" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6ffV6Bhs8ul.6eF3RLaBdGS" displaytext="Untitled Slide" expand="false" type="slide" />
+            <slidelink slideid="_player.6ffV6Bhs8ul.6GzNtkFXhID" displaytext="Whiteboard" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.5aZRl3jUSIi" displaytext="PowerPoint" expand="true" type="slide">
@@ -1231,12 +1231,16 @@
         </slidelink>
         <slidelink slideid="_player.63JpKb8jigQ" displaytext="Jamboard" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.63JpKb8jigQ.5vYFdLRs6b2" displaytext="Untitled Slide" expand="false" type="slide" />
+            <slidelink slideid="_player.63JpKb8jigQ.6OwaLmcddA5" displaytext="Google Jamboard" expand="false" type="slide" />
+            <slidelink slideid="_player.63JpKb8jigQ.6PpxGPIhH78" displaytext="Google Jamboard" expand="false" type="slide" />
+            <slidelink slideid="_player.63JpKb8jigQ.5xGt8ucGmDp" displaytext="Quick Reference" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.6UZFWHilqoh" displaytext="Microsoft Whiteboard" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6UZFWHilqoh.6cJnkJoRGGA" displaytext="Untitled Slide" expand="false" type="slide" />
+            <slidelink slideid="_player.6UZFWHilqoh.5qtO3SAESDd" displaytext="Microsoft Whiteboard" expand="false" type="slide" />
+            <slidelink slideid="_player.6UZFWHilqoh.5hupo5KGLMV" displaytext="Microsoft Whiteboard" expand="false" type="slide" />
+            <slidelink slideid="_player.6UZFWHilqoh.6oDsMwPK335" displaytext="Quick Reference" expand="false" type="slide" />
           </links>
         </slidelink>
         <slidelink slideid="_player.6L5OJrI6D8t" displaytext="Mobile Device (iPad, iPhone, Android)" expand="true" type="slide">
