@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="npnxabnsnfns10111000101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns10111000101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
   <layouts>
-    <layout name="npnxnanbsnfns10111000101" font="Open Sans" controllayout="npnxnanbsnfns10111000101" colorscheme="npnxabnsnfns10111000101" string_table="npnxabnsnfns10111000101" />
-    <layout name="pxabnsnfns10111000101" font="Open Sans" controllayout="pxabnsnfns10111000101" colorscheme="npnxabnsnfns10111000101" string_table="npnxabnsnfns10111000101" />
-    <layout name="npxnabnsnfns10111000101" font="Open Sans" controllayout="npxnabnsnfns10111000101" colorscheme="npnxabnsnfns10111000101" string_table="npnxabnsnfns10111000101" />
-    <layout name="npnxnanbnsnfns10111000101" font="Open Sans" controllayout="npnxnanbnsnfns10111000101" colorscheme="npnxabnsnfns10111000101" string_table="npnxabnsnfns10111000101" />
-    <layout name="pxabnsnfns10111000100" font="Open Sans" controllayout="pxabnsnfns10111000100" colorscheme="npnxabnsnfns10111000101" string_table="npnxabnsnfns10111000101" />
-    <layout name="npnxabnsnfns10111000101" font="Open Sans" controllayout="npnxabnsnfns10111000101" colorscheme="npnxabnsnfns10111000101" string_table="npnxabnsnfns10111000101" />
-    <layout name="pxabnsnfns00001000101" font="Open Sans" controllayout="pxabnsnfns00001000101" colorscheme="npnxabnsnfns10111000101" string_table="npnxabnsnfns10111000101" />
+    <layout name="npnxnanbsnfns10111000101" font="Open Sans" controllayout="npnxnanbsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
+    <layout name="pxabnsnfns10111000101" font="Open Sans" controllayout="pxabnsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
+    <layout name="npxnabnsnfns10111000101" font="Open Sans" controllayout="npxnabnsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
+    <layout name="npnxnanbnsnfns10111000101" font="Open Sans" controllayout="npnxnanbnsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
+    <layout name="pxabnsnfns10111000100" font="Open Sans" controllayout="pxabnsnfns10111000100" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -200,55 +198,9 @@
       </control>
       <control name="close_btn" enabled="false" />
     </control_layout>
-    <control_layout name="npnxabnsnfns10111000101">
-      <control name="volume" enabled="true" />
-      <control name="seekbar" enabled="true" />
-      <control name="replay" enabled="true" />
-      <control name="pauseplay" enabled="true" />
-      <control name="logo" enabled="false" />
-      <control name="previous" enabled="false" />
-      <control name="next" enabled="false" />
-      <control name="swipeleft" enabled="true" />
-      <control name="swiperight" enabled="true" />
-      <control name="submit" enabled="false" />
-      <control name="finish" enabled="false" />
-      <control name="submitall" enabled="false" />
-      <control name="resources" enabled="false" />
-      <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
-      <control name="outline" enabled="true">
-        <controls>
-          <control name="search" enabled="false" />
-        </controls>
-      </control>
-      <control name="close_btn" enabled="true" />
-    </control_layout>
-    <control_layout name="pxabnsnfns00001000101">
-      <control name="volume" enabled="true" />
-      <control name="seekbar" enabled="false" />
-      <control name="replay" enabled="false" />
-      <control name="pauseplay" enabled="false" />
-      <control name="logo" enabled="false" />
-      <control name="previous" enabled="true" />
-      <control name="next" enabled="true" />
-      <control name="swipeleft" enabled="true" />
-      <control name="swiperight" enabled="true" />
-      <control name="submit" enabled="false" />
-      <control name="finish" enabled="false" />
-      <control name="submitall" enabled="false" />
-      <control name="resources" enabled="false" />
-      <control name="glossary" enabled="false" />
-      <control name="transcript" enabled="false" />
-      <control name="outline" enabled="true">
-        <controls>
-          <control name="search" enabled="false" />
-        </controls>
-      </control>
-      <control name="close_btn" enabled="true" />
-    </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="npnxabnsnfns10111000101">
+    <colorscheme name="pxabnsnfns10111000101">
       <color_group name="accessibility">
         <group_colors>
           <color name="focus_rect">
@@ -1162,7 +1114,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="npnxabnsnfns10111000101">
+    <string_table name="pxabnsnfns10111000101">
       <string id="three_image_items">items</string>
       <string id="three_image_viewed">viewed</string>
       <string id="three_image_of">of</string>
@@ -1265,15 +1217,31 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.6OeQXaBOea6" displaytext="Introduction" expand="true" type="slide">
+        <slidelink slideid="_player.6ffV6Bhs8ul" displaytext="Overview" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6OeQXaBOea6.5Y1BNge15Um" displaytext="Welcome" expand="false" type="slide" />
-            <slidelink slideid="_player.6OeQXaBOea6.6avs9fuiBmR" displaytext="Lesson" expand="false" type="slide" />
-            <slidelink slideid="_player.6OeQXaBOea6.65A72JIH0Yp" displaytext="Meet Your Team" expand="false" type="slide" />
-            <slidelink slideid="_player.6OeQXaBOea6.5wS0yzqtyrh" displaytext="Meet Eddie" expand="false" type="slide" />
-            <slidelink slideid="_player.6OeQXaBOea6.654NXLBLlyA" displaytext="Meet Eddie" expand="false" type="slide" />
-            <slidelink slideid="_player.6OeQXaBOea6.6fshbcIzflh" displaytext="Enter question text" expand="false" type="slide" />
-            <slidelink slideid="_player.6OeQXaBOea6.6ltEyZO3pkT" displaytext="Response" expand="false" type="slide" />
+            <slidelink slideid="_player.6ffV6Bhs8ul.6eF3RLaBdGS" displaytext="Untitled Slide" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.5aZRl3jUSIi" displaytext="PowerPoint" expand="true" type="slide">
+          <links>
+            <slidelink slideid="_player.5aZRl3jUSIi.5aXaqfs7WsU" displaytext="Whiteboard options" expand="false" type="slide" />
+            <slidelink slideid="_player.5aZRl3jUSIi.5zFAHii2e9b" displaytext="PowerPoint (whiteboard)" expand="false" type="slide" />
+            <slidelink slideid="_player.5aZRl3jUSIi.5t6brheX5t2" displaytext="Quick Reference" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.63JpKb8jigQ" displaytext="Jamboard" expand="true" type="slide">
+          <links>
+            <slidelink slideid="_player.63JpKb8jigQ.5vYFdLRs6b2" displaytext="Untitled Slide" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.6UZFWHilqoh" displaytext="Microsoft Whiteboard" expand="true" type="slide">
+          <links>
+            <slidelink slideid="_player.6UZFWHilqoh.6cJnkJoRGGA" displaytext="Untitled Slide" expand="false" type="slide" />
+          </links>
+        </slidelink>
+        <slidelink slideid="_player.6L5OJrI6D8t" displaytext="Mobile Device (iPad, iPhone, Android)" expand="true" type="slide">
+          <links>
+            <slidelink slideid="_player.6L5OJrI6D8t.6FxDo9fQpYw" displaytext="Untitled Slide" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
