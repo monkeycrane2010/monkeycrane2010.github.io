@@ -1,173 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> 
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>wb techteacher</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MonkeyCrane</title>
 </head>
 <body>
+ <h1>Site Title</h1>
+  <!----This is the Navigation Bar-->
+  <nav>
+    <div class="nav-wrapper deep-purple">
+      <a href="#" class="brand-logo right">Logo</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="tools.html">Tools List</a></li>
+        <li><a href="#!">new page</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <nav aria-label="breadcrumb">
-    <img id="nav1" src="images/logo_orange_square.png" width="110px" alt="logo">
-    <ol id="nav2" class="breadcrumb">
-        <li class="breadcrumb-item active" aria-current="page"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="/wb techteacher/pages/tool-template.html" target="_blank">Template</a></li>
-        <li class="breadcrumb-item">Help</li>
-    </ol>
-    </nav>
+      
+ <!----This is the first main area-->
 
-
-<div class="homewelcome">
-<div class="homewelcome-img"></div>
-<div class="container-fluid">
-<div class="row">            
-    <div class="col-sm-12 col-md-4 col-lg-4">
-        <a href="/wb techteacher/pages/tool-template.html"><img src="/wb techteacher/images/1_blue.png" width="200px" height="200px" alt="">
-    <h2>Landing page</h2>
-    <p>test content goes here</p></a>
-    </div>
-    <div class="col-sm-12 col-md-4 col-lg-4">
-        <a href="/wb techteacher/pages/tool-template.html"><img src="/wb techteacher/images/2_blue.png" width="200px" height="200px" alt="">
-    <h2>Landing page</h2>
-    <p>test content goes here</p></a>
-    </div>
-    <div class="col-sm-12 col-md-4 col-lg-4">
-        <a href="/wb techteacher/pages/tool-template.html"><img src="/wb techteacher/images/3_blue.png" width="200px" height="200px" alt="">
-    <h2>Landing page</h2>
-    <p>test content goes here</p></a>
-    </div>
-    </div>
-    </div>
-
+<div class="container">
+<div class="row">
+  <div class="col s6">
+    <h2 class="blue accent-3">This is gray</h2>
+     <div class="input-field">
+      <i class="material-icons">search</i> <input type="search"><input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+     </div>
+  </div>
 </div>
-        
-
-
-<div class="container-fluid">
-<div class="row">        
-<div class="col-sm-12 col-md-12 col-lg-12">
-            
-    <h2 style="background-color:rgb(255, 255, 255)">Search Tool<h2>
-    <div class="input-group mb-3">
-        <input type="text" id="searchbox" class="form-control" placeholder="Search keyword..." aria-label="Search" aria-describedby="searchbtn"> <input type="submit" class="btn btn-secondary input-group-text" id="searchbtn">
-    </div>      
-               
-</div>
-</div>
-</div>
-        
-
-    <div class="bytopic">
-    <h4>Filter:  <span style="font-size: 16px;">by Category</span></h4>
-    <form action="/action_page.php">
-        <input type="checkbox" id="topic1" name="topic1"value="Poll">
-        <label for="topic1"> Poll</label><br>
-        <input type="checkbox" id="topic2" name="topic2" value="Video">
-        <label for="topic2"> Video</label><br><br>
-    </form>
+<!----This is the second main area-->
+<div class="row">
+  <a id="move" class="pink btn-large" href="#">Click me!</a>
+  <div class="col s12 m10">
+    <div class="card">
+      <div class="card-image">
+        <img src="http://lorempixel.com/400/200/sports/8">
+        <span class="card-title">Card Title</span>
+      </div>
+      <div class="card-content">
+        <p>I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
+      </div>
     </div>
-
-
-
-
-        
-<div class="bodycontent">
-<!--DO NOT WRITE ABOVE THIS LINE-->
-
-
-
-<div class="contentbox2">
-<div class="container-fluid">
-<div class="row">            
-<div class="col-sm-12 col-md-12 col-lg-12">
-    <div id="rightpanel">
-    <h4 class="bg-warning p-2"><i class="bi bi-cart-plus-fill"></i> SELECTED ITEMS:</h4>
-    <table class="table">
-    <thead>
-    <tr>
-    <th scope="col">Item</th>
-    <th scope="col"></th>
-    </tr>
-    </thead>
-    <tbody id="listitem">
-    </tbody>
-    </table>
-    </div>
+  </div>
 </div>
-</div>
-    
-<div class="row">        
-<div class="col-sm-12 col-md-12 col-lg-12">
-    <h2 style="background-color:whitesmoke">My Goal </h2>   
-    <div class="form-group">
-    <textarea class="form-control" id="goalinput" rows="3" placeholder="Type your goal..." aria-label="My Goal" aria-describedby="basic-addon1"></textarea> 
-    <div class="d-flex justify-content-end">
-    <button type="button" id="goalsave" class="btn btn-secondary"><i class="bi bi-cursor-fill"></i> Save & Continue</span></button>
+<div class="row">
+  <div class="col s4 m5">
+    <div class="card">
+      <div class="card-image">
+        <img src="http://lorempixel.com/350/200/sports/2">
+        <span class="card-title">Card Title</span>
+      </div>
+      <div class="card-content">
+        <p>I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
+      </div>
     </div>
+  </div>
+  <div class="col s4 m5">
+    <div class="card">
+      <div class="card-image">
+        <img src="http://lorempixel.com/350/200/sports/1">
+        <span class="card-title">Card Title</span>
+      </div>
+      <div class="card-content">
+        <p>I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
+      </div>
     </div>
-</div>
-<div class="col-sm-12 col-md-12 col-lg-12">
-    <h2 style="background-color:whitesmoke">Previous Saved Goals <br/><span style="font-size: 18px; font-weight: bold;">Limit 3</span></h2>
-    <div style="font-weight: bold;"><ol id="goaloutput"></ol></div>
-</div>
-</div>
-</div>
-
-</div>
-
-
-<!---------MAIN CONTENT---------->
-
-<div class="contentbox1">
-
-<h4 id="browsetools">Browse Tools</h4>
-<div class="container-fluid">
-<div class="row">        
-<div class="col-sm-12 col-md-12 col-lg-12">
-    
-    <div class="container-fluid">
-    <div class="row">        
-    <div class="col-sm-6 col-md-6 col-lg-4">
-    <img class="card-img-top" src="images/chat.png" alt="Card image" data-topic="chat"><h5>Chat<span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
+  </div>
+  <div class="col s4 m5">
+    <div class="card">
+      <div class="card-image">
+        <img src="http://lorempixel.com/350/200/food/8">
+        <span class="card-title">Card Title</span>
+      </div>
+      <div class="card-content">
+        <p>I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
+      </div>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-4">
-    <img class="card-img-top" src="images/walk.png" alt="Card image" data-topic="classroom walk"><h5>Classroom<span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
+  </div>
+  <div class="col s4 m5">
+    <div class="card">
+      <div class="card-image">
+        <img src="http://lorempixel.com/350/200/food/2">
+        <span class="card-title">Card Title</span>
+      </div>
+      <div class="card-content">
+        <p>I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
+      </div>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-4">
-    <img class="card-img-top" src="images/touch.png" alt="Card image" data-topic="mobile device"><h5>Mobile Device<span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
+  </div>
+  <div class="col s4 m5">
+    <div class="card">
+      <div class="card-image">
+        <img src="http://lorempixel.com/350/200/food/1">
+        <span class="card-title">Card Title</span>
+      </div>
+      <div class="card-content">
+        <p>I am a very simple card. I am good at containing small bits of information.
+        I am convenient because I require little markup to use effectively.</p>
+      </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
+      </div>
     </div>
-    <div class="col-sm-6 col-md-6 col-lg-4">
-    <img class="card-img-top" src="images/lecture.png" alt="Card image" data-topic="lecture"><h5>Lecture<span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
-    </div>
-    <div class="col-sm-6 col-md-6 col-lg-4">
-    <img class="card-img-top" src="images/paper.png" alt="Card image" data-topic="paper"><h5>Paper<span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
-    </div>
-    <div class="col-sm-6 col-md-6 col-lg-4">
-    <img class="card-img-top" src="images/question.png" alt="Card image" data-topic="poll"><h5>Poll Everywhere <span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span> </h5><input type="submit" value="+Add" class="btn btn-secondary" id="questionbtn">
-    </div>
-    <div class="col-sm-6 col-md-6 col-lg-4">
-    <img class="card-img-top" src="images/zoom.png" alt="Card image" data-topic="zoom"><h5>Zoom<span><a href="/wb techteacher/pages/tool-template.html" target="_blank"><i class="bi bi-box-arrow-in-up-right"></i></a></span></h5><input type="submit" value="+Add" class="btn btn-secondary">
-    </div>
-    </div>
-    </div>
-    
-  
-</div>
-</div>
-</div>
+  </div>
 </div>
 
+<!----This is the third main area-->
+<ul class="collapsible">
+  <li>
+    <div class="collapsible-header deep-purple"><i class="material-icons white-text ">filter_drama</i>First</div>
+    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+  </li>
+  <li>
+    <div class="collapsible-header green"><i class="material-icons white-text">place</i>Second</div>
+    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+  </li>
+  <li>
+    <div class="collapsible-header pink"><i class="material-icons white-text">whatshot</i>Third</div>
+    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+  </li>
+</ul>
 
-<!--DO NOT WRITE BELOW THIS LINE-->
-</div>
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="script.js"></script> 
+
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.collapsible').collapsible();
+    let array = [1,3,"orange"];
+    let count = 0;
+
+    $('#move').click(function(){
+      count += 1;
+      alert('you clicked ' + this.id + ' and count is ' + count);
+    })
+
+   
+
+
+});
+</script>
 </html>
