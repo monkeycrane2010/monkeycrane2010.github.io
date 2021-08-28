@@ -9,14 +9,7 @@
 </head>
 <body>
     <h2>Test</h2>
-<ul>
-    <li>Bananas</li>
-    <li>Monkey</li>
-    <li>California</li>
-    <li>Apple</li>
-    <li>Pear tree</li>
-</ul>
-<button class="green white-text" style="border-radius: 12px; margin: 2px 3px 3px 0px; font-size: 32px;">Sort!</button>
+
 
 </body>
 <sfcript src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -24,27 +17,7 @@
 <script>
 $(document).ready(function(){
 
-let array = [];
-$('button').on('click', function(){
-    alert('you clicked me!');
-    
-    $('li').each(function(index){
-        let entry = $(this).text();
-        array.push(entry);
-        array.sort();
-        console.log(array);
-        $('ul').append("<li class='red-text' style='font-size: 16px'>"+ array +"</li>");
-    });
 
-    /* 
-    *****
-    ****   Map function
-    *****
-    */
-
-
-    
-});    
 
 
 });
