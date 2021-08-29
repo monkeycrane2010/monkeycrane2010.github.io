@@ -1,1 +1,0 @@
-window.globalProvideData('caption', '{"data":"WEBVTT%0D%0AKind:%20captions%0D%0ASource:%20Articulate%20Closed%20Captions%20Editor%0D%0ASource%20Version:%206.12.24693.0%0D%0A%0D%0A00:00:00.160%20--%3E%2000:00:02.848%0D%0AIn%20this%20session,%20you%20will%20learn%20how%20to%20use%20the%20draw%20tab%0D%0A%0D%0A00:00:02.880%20--%3E%2000:00:04.096%0D%0Ain%20PowerPoint%0D%0A%0D%0A"}')
