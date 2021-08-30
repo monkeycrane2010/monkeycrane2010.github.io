@@ -46,7 +46,7 @@
 <div class="col s12">
  
   <ul id="filterbtns">
-   <li><button id="button1">Test 1</button></li>
+   <li><button id="button1">Test 1 Math</button></li>
    <li><button id="button2">Test 2</button></li>
    <li><button id="button3">Test 3</button></li>
    <li><button id="button4">Test 4</button></li>
@@ -63,7 +63,7 @@
           <img src="/wb techteacher/images/SPECIAL_icons/blue/hand_blue.png">
         <span class="card-title">Card Title</span>
         </div>
-        <div class="card-content">
+        <div class="card-content"  data-keyword="math">
         <span style="color:black; font-weight: bold;">Storyline # 1</span><br/>
         <strong>Tags:</strong>
         <p>Animation, Storyline, audio</p>
@@ -79,7 +79,7 @@
       <img src="/wb techteacher/images/SPECIAL_icons/blue/hand_blue.png">
       <span class="card-title">Card Title</span>
       </div>
-      <div class="card-content">
+      <div class="card-content" data-keyword="math">
       <span style="color:black; font-weight: bold;">Storyline # 2</span><br/>
       <strong>Tags:</strong>
       <p>Audio narration, Storyline</p>
@@ -126,7 +126,7 @@
       <img src="http://lorempixel.com/400/200/sports">
       <span class="card-title">Card Title</span>
       </div>
-      <div class="card-content">
+      <div class="card-content" >
       <strong>Tags:</strong>
       <p>Math, English</p>
       </div>
@@ -178,7 +178,8 @@ $('#search').on('click', function(){
 });  
   
 $('#button1').on('click', function(){
-  alert(this.id );
+  $(".card-content[data-keyword='math']").fadeToggle();
+  
 });
 
 $('#button2').on('click', function(){
