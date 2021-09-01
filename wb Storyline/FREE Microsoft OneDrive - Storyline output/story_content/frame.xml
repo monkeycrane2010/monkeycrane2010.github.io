@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns10111100101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="125" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
+<bwFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" default_layout="pxabnsnfns10111000101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="145" kbshortcuts="false" skip_nav_enabled="true" chromeless="false" outputtype="undefined" theme="classic">
   <layouts>
-    <layout name="npnxnanbsnfns10111100101" font="Calibri" controllayout="npnxnanbsnfns10111100101" colorscheme="pxabnsnfns10111100101" string_table="pxabnsnfns10111100101" />
-    <layout name="pxabnsnfns10111100101" font="Calibri" controllayout="pxabnsnfns10111100101" colorscheme="pxabnsnfns10111100101" string_table="pxabnsnfns10111100101" />
-    <layout name="npxnabnsnfns10111100101" font="Calibri" controllayout="npxnabnsnfns10111100101" colorscheme="pxabnsnfns10111100101" string_table="pxabnsnfns10111100101" />
-    <layout name="npnxnanbnsnfns10111100101" font="Calibri" controllayout="npnxnanbnsnfns10111100101" colorscheme="pxabnsnfns10111100101" string_table="pxabnsnfns10111100101" />
-    <layout name="pxabnsnfns10111100100" font="Calibri" controllayout="pxabnsnfns10111100100" colorscheme="pxabnsnfns10111100101" string_table="pxabnsnfns10111100101" />
+    <layout name="npnxnanbsnfns10111000101" font="Calibri" controllayout="npnxnanbsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
+    <layout name="pxabnsnfns10111000101" font="Calibri" controllayout="pxabnsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
+    <layout name="npxnabnsnfns10111000101" font="Calibri" controllayout="npxnabnsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
+    <layout name="npnxnanbnsnfns10111000101" font="Calibri" controllayout="npnxnanbnsnfns10111000101" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
+    <layout name="pxabnsnfns10111000100" font="Calibri" controllayout="pxabnsnfns10111000100" colorscheme="pxabnsnfns10111000101" string_table="pxabnsnfns10111000101" />
   </layouts>
   <control_options>
     <optiongroups>
@@ -19,16 +19,16 @@
           <option name="logo_enabled" value="false">
             <options />
           </option>
-          <option name="sidebar_enabled" value="true">
+          <option name="sidebar_enabled" value="false">
             <options>
-              <option name="sidebarpos" value="left" />
+              <option name="sidebarpos" value="right" />
               <option name="closed" value="false" />
             </options>
           </option>
           <optionlist name="tabs">
             <listitems>
-              <listitem name="resources" value="true" group="linkright" />
-              <listitem name="outline" value="true" group="sidebar" />
+              <listitem name="outline" value="true" group="linkright" />
+              <listitem name="resources" value="false" group="sidebar" />
               <listitem name="glossary" value="false" group="sidebar" />
               <listitem name="transcript" value="false" group="sidebar" />
             </listitems>
@@ -83,7 +83,7 @@
     </optiongroups>
   </control_options>
   <control_layouts>
-    <control_layout name="npnxnanbsnfns10111100101">
+    <control_layout name="npnxnanbsnfns10111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -96,7 +96,7 @@
       <control name="submit" enabled="true" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -106,7 +106,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns10111100101">
+    <control_layout name="pxabnsnfns10111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -119,7 +119,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -129,7 +129,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npxnabnsnfns10111100101">
+    <control_layout name="npxnabnsnfns10111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -142,7 +142,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -152,7 +152,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="npnxnanbnsnfns10111100101">
+    <control_layout name="npnxnanbnsnfns10111000101">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -165,7 +165,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -175,7 +175,7 @@
       </control>
       <control name="close_btn" enabled="true" />
     </control_layout>
-    <control_layout name="pxabnsnfns10111100100">
+    <control_layout name="pxabnsnfns10111000100">
       <control name="volume" enabled="true" />
       <control name="seekbar" enabled="true" />
       <control name="replay" enabled="true" />
@@ -188,7 +188,7 @@
       <control name="submit" enabled="false" />
       <control name="finish" enabled="false" />
       <control name="submitall" enabled="false" />
-      <control name="resources" enabled="true" />
+      <control name="resources" enabled="false" />
       <control name="glossary" enabled="false" />
       <control name="transcript" enabled="false" />
       <control name="outline" enabled="true">
@@ -200,7 +200,7 @@
     </control_layout>
   </control_layouts>
   <colorschemes>
-    <colorscheme name="pxabnsnfns10111100101">
+    <colorscheme name="pxabnsnfns10111000101">
       <color_group name="accessibility">
         <group_colors>
           <color name="focus_rect">
@@ -1115,7 +1115,7 @@
     </colorscheme>
   </colorschemes>
   <string_tables>
-    <string_table name="pxabnsnfns10111100101">
+    <string_table name="pxabnsnfns10111000101">
       <string id="three_image_items">items</string>
       <string id="three_image_viewed">viewed</string>
       <string id="three_image_of">of</string>
@@ -1229,7 +1229,7 @@
       </links>
     </outline>
   </nav_data>
-  <resource_data description="&lt;p align='left'&gt;&lt;font face='Calibri' style='font-size: 11px;' size='11' color='#FFFFFF'&gt;Here are some useful links and documents:&lt;/font&gt;&lt;/p&gt;" />
+  <resource_data description="" />
   <transcript_data />
   <glossary_data />
 </bwFrame>
