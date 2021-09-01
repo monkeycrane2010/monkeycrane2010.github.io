@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"> 
+  <link href=" https://cdn.rawgit.com/octoshrimpy/bulma-o-steps/master/bulma-steps.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MonkeyCrane</title>
   <style>
@@ -19,6 +20,7 @@
 <body>
  <h1>Site Title</h1>
   <!----This is the Navigation Bar-->
+
   <nav>
     <div class="nav-wrapper deep-purple">
       <a href="#" class="brand-logo right">Logo</a>
@@ -28,8 +30,56 @@
         <li><a href="/index.html" target="_blank">Site Directory</a></li>
       </ul>
     </div>
-    
   </nav>
+
+    <!----This is the Steps Bar BULMA-->
+   
+    <div class="row">
+    <div class="col s12">
+
+    <ul class="steps is-balanced is-medium">
+      <li class="steps-segment">
+        <span class="steps-marker"></span>
+        <div class="steps-content">
+          <p class="is-size-4">Step 1</p>
+          <p>This is the first step, which means you start here.</p>
+        </div>
+      </li>
+      <li class="steps-segment">
+        <span class="steps-marker"></span>
+        <div class="steps-content">
+          <p class="is-size-4">Step 2</p>
+          <p>This is the second step. Once you complete the first step, you will end up here.</p>
+        </div>
+      </li>
+      <li class="steps-segment is-active">
+        <span class="steps-marker"><i class="material-icons">add</i></span>
+        <div class="steps-content">
+          <p class="is-size-4">Step 3</p>
+          <p>This is the third step. This is halfway between the start and the end.</p>
+        </div>
+      </li>
+      <li class="steps-segment">
+        <span class="steps-marker"></span>
+        <div class="steps-content">
+          <p class="is-size-4">Step 4</p>
+          <p>The fourth step. Nearly there!</p>
+        </div>
+      </li>
+      <li class="steps-segment">
+        <span class="steps-marker"></span>
+        <div class="steps-content">
+          <p class="is-size-4">Step 5</p>
+          <p>And finally the last step. You have successfully completed all 5 steps.</p>
+        </div>
+      </li>
+    </ul>
+
+    </div>
+    </div>
+    </div>
+
+ <!----This is Search area-->    
   <div class="container">
   <div class="row">
   <div class="col s12">
@@ -38,6 +88,8 @@
   <p style="font-size: 18px;">Search keywords: try <strong>green, </strong><strong>orange, </strong><strong>or white.</strong></p>
   </div>
   </div>    
+
+  
  <!----This is the left nav area-->
 
 
@@ -55,8 +107,6 @@
  </ul>
 
 </div>
-</div>
-<div class="row">    
 <div class="col s6 m4 l4">
     <div class="card"  data-keyword="math">
         <a href="/wb Storyline/Calculator - Storyline output/story.html" target="_blank">
