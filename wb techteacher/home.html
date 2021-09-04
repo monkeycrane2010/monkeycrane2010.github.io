@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"> 
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
   <link href=" https://cdn.rawgit.com/octoshrimpy/bulma-o-steps/master/bulma-steps.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MonkeyCrane</title>
@@ -15,6 +16,7 @@
    #filterbtns > li > button{
      font-size: 20px;
    }
+
   </style>
 </head>
 <body>
@@ -22,15 +24,30 @@
   <!----This is the Navigation Bar-->
 
   <nav>
-    <div class="nav-wrapper deep-purple">
+    <div class="nav-wrapper deep-purple" >
       <a href="#" class="brand-logo right">Logo</a>
-      <ul id="nav-mobile" class="left col s6 m4 l4">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="https://docs.google.com/spreadsheets/d/1u7TupRQCdcM1riwnc4Oo7QUNQgJ7eGoXc4dtScwDlxM/edit#gid=1681346090" target="_blank">Link to Google Spreadsheet (READ ONLY)</a></li>
-        <li><a href="/index.html" target="_blank">Site Directory</a></li>
-      </ul>
+      <a href="home.html">Home</a>
+      <a href="https://docs.google.com/spreadsheets/d/1u7TupRQCdcM1riwnc4Oo7QUNQgJ7eGoXc4dtScwDlxM/edit#gid=1681346090" target="_blank">Link to Spreadsheet</a>
+      <a href="/index.html" target="_blank">Site Directory</a>
     </div>
   </nav>
+
+
+  <!----This is Blocks area-->  
+
+<div class="container">
+  <div class="row">
+  <div id="step1"class="col s12 m12 l12">
+    <div id="editor">
+      <p>Hello World!</p>
+      <p>Some initial <strong>bold</strong> text</p>
+      <p><br></p>
+    </div>
+  
+  </div>
+  </div>
+
+  
 
     <!----This is the Steps Bar BULMA-->
    
@@ -77,7 +94,8 @@
 
     </div>
     </div>
-    </div>
+    
+
 
  <!----This is Search area-->    
   <div class="container">
@@ -87,13 +105,14 @@
   </div>
   <p style="font-size: 18px;">Search keywords: try <strong>green, </strong><strong>orange, </strong><strong>or white.</strong></p>
   </div>
+  </div>
   </div>    
 
   
- <!----This is the left nav area-->
+ <!----This is the FILTER BY area-->
 
 
-<div class="container" style="padding: 10px; margin:0px">
+<div class="container">
 <div class="row">
 <div class="col s12">
  
@@ -107,6 +126,8 @@
  </ul>
 
 </div>
+</div>
+<div class="row">
 <div class="col s6 m4 l4">
     <div class="card"  data-keyword="math">
         <a href="/wb Storyline/Calculator - Storyline output/story.html" target="_blank">
@@ -139,7 +160,7 @@
   <div class="card" data-keyword="english">
       <a href="/wb Storyline/Mobile - Storyline output/story.html" target="_blank">
       <div class="card-image">
-      <img src="/wb techteacher/images/SPECIAL_icons/orange/chat_orange.png" width="150px" height="150px">
+      <img src="/wb techteacher/images/SPECIAL_icons/orange/chat_orange.png" width="150" height="150">
       </div>
       <div class="card-content">
       <span style="color:black; font-weight: bold;">Mobile 123</span><br/>
@@ -151,14 +172,15 @@
 </div>
 <div class="col s6 m4 l4">
   <div class="card" data-keyword="math">
-      <div class="card-image">
-      <img src="/wb techteacher/images/SPECIAL_icons/purple/listen_purple.png" width="150px" height="150px">
+    <a href="/wb techteacher/pages/polleverywhere.html"> 
+    <div class="card-image">
+      <img src="/wb techteacher/images/SPECIAL_icons/purple/listen_purple.png" width="150" height="150">
       </div>
       <div class="card-content">
-      <span style="color:black; font-weight: bold;">Storyline # 1</span><br/>
+      <span style="color:black; font-weight: bold;">Poll Everywhere</span><br/>
       </div>
       <div class="card-action">
-      <a href="#">This is a lnk</a>
+       This is a lnk</a>
       </div>
       </div>
 </div>
@@ -191,14 +213,25 @@
 </div>
 </div>
 <!----This is the second main area-->
-
-
-
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 <script>
+
+
 $(document).ready(function(){
+
+  /*-- Initialize Quill editor ----*/
+
+  var quill = new Quill('#editor', {
+    theme: 'snow'
+  });
+
+
+
+/*-- Regular Javascript ---- */
 
 $('#search').on('click', function(){
   let user_text = $('#input1').val(); /* val()  must be used*/
