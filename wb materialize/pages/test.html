@@ -50,9 +50,10 @@
 </div>
 
 <!----This is home area-->
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeY5xU3dRLlNiLUovNQbUkwb6jEeh1Emz0VQQ8PP1KH5eKPAg/viewform?embedded=true" width="640" height="542" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-
+<h2>Test</h2>
+<div id="leftbox">Yellow</div>
+<button id="add" class="medium green white-text"><i class="material-icons">add_circle</i>Add</button>
+<button id="subtract" class="medium light-blue white-text"><i class="material-icons">remove</i>Down</button>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
@@ -60,10 +61,17 @@
 <script>
 $(document).ready(function(){
 /*-- Regular Javascript ---- */
-        
+let leftbox = $('#leftbox');
+
+$('#add').on('click', function(){
+   leftbox.toggleClass('green')
+});
            
-        
-        
+
+$('#subtract').on('click', function(){
+   leftbox.toggleClass('blue')
+});
+
 });
 </script>
 </body>
