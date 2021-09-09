@@ -62,14 +62,17 @@
 $(document).ready(function(){
 /*-- Regular Javascript ---- */
 let leftbox = $('#leftbox');
+leftbox = 0;
 
 $('#add').on('click', function(){
-   leftbox.toggleClass('green');
+   leftbox +=1;
+   $('#leftbox').addClass('blue-text').html(leftbox);
 });
            
 
 $('#subtract').on('click', function(){
-   leftbox.toggleClass('yellow');
+    leftbox -=1;
+   $('#leftbox').toggleClass('yellow').html(leftbox);
 });
 
 });
