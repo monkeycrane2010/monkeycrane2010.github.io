@@ -65,6 +65,16 @@ $(document).ready(function(){
 let leftbox = $('#leftbox').css('position', 'relative');
 let counter = 0;
 
+$(this).keydown(function(e){
+ console.log(e.key + " => " + e.keyCode);
+ if(e.key === "j"){
+   $('body').css("background-color", "yellow")
+ }else{
+   alert(e.key + " !! ");
+ }
+
+
+});
 
 $('#add').on('click', function(){
    counter -=10;
